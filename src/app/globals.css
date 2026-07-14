@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Franie';
+  src: url('../../public/fonts/Franie/FranieVariableTest-Regular-BF64c31f3d73b64.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'Unineue';
+  src: url('../../public/fonts/Unineue/UniNeue-Trial-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Harabara';
+  src: url('../../public/fonts/Harabara/Harabara\ Mais\ Demo.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-unineue: 'Unineue', sans-serif;
+  --font-franie: 'Franie', sans-serif;
+  --font-harabara: 'Harabara', sans-serif;
+  --color-correio-inteligente-100: oklch(0.5157 0.0823 180.64);
+  --color-correio-inteligente-200: oklch(0.3157 0.0429 204.81);
+  --color-correio-inteligente-300: oklch(0.8917 0.1744 160.52);
+  --color-correio-inteligente-400: oklch(0.272 0.0252 187.39);
+  --color-correio-inteligente-500: oklch(0.3507 0.0554 182.36);
+  --color-konnectai-primary: oklch(0.1994 0.0218 195.55);
+  --color-konnectai-secondary: oklch(0.7963 0.1747 161.43);
+  --color-konnectai-gray: oklch(0.9607 0.0017 247.84);
+}
+
+h1{
+  @apply text-5xl
 }

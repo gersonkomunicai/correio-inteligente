@@ -2,64 +2,65 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      <div className="flex flex-col">
+        <a href={`https://wa.me/558488418983?text=Quero%20mais%20informações%20sobre%20o%20Correio%20Inteligente.`} target="_blank" >
+          <img src="whatsapp.png" className="fixed bottom-10 right-10 h-15" alt="" />
+        </a>
+        <div className="flex h-200 items-center justify-around bg-linear-to-r from-konnectai-primary from-60% to-black">
+          <div className="flex font-unineue rounded-md bg-linear-to-r from-konnectai-primary/60 from-60% to-black/60 backdrop-blur-md items-center justify-between px-50 fixed top-8 h-20 ">
+            <div className="flex items-center justify-around h-auto container">
+              <a href='/'>
+                <img src="logoHorizontal.png" className="max-h-15" alt="Logo do Correio Inteligente" />
+              </a>
+              <div className="flex items-center justify-between px-10 w-150">
+                <button className="text-gray-100 font-bold text-lg">Canais</button>
+                <button className="text-gray-100 font-bold text-lg">Quem Somos</button>
+                <button className="text-gray-100 font-bold text-lg">Blog</button>
+                <button className="text-gray-100 font-bold text-lg">Contatos</button>
+              </div>
+              <a className="w-80 flex items-center justify-center bg-gray-100 text-konnectai-primary p-4 rounded-full text-lg" href="">Fale com um Especialista</a>
+            </div>
+          </div>
+          <div className="flex items-center justify-around">
+            <div className="flex flex-col font-unineue w-140">
+              <img src="Iso.png" className="max-h-30 w-30" alt="" />
+              <div>
+                <h1 className="bg-linear-to-r font-bold from-green-200 from-1% to-konnectai-secondary bg-clip-text text-transparent">Envie mensagens em escala com segurança e performance</h1>
+                <p className="text-gray-100 text-lg pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
+                  mensageria da Konnectaí via <span className="font-bold">API Oficial do
+                    WhatsApp</span>, ideal para empresas que precisam se
+                  comunicar com milhares de clientes de forma
+                  rápida, segura e eficiente.</p>
+              </div>
+              <div className="mt-10 p-3 w-60 flex items-center justify-center rounded-full bg-linear-to-r text-konnectai-primary from-green-200 from-1% to-konnectai-secondary">
+                <span className="text-xl">Fale conosco</span>
+              </div>
+            </div>
+            <div>
+              <img src="1.png" className="h-200 w-auto max-h-200" alt="" />
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="flex flex-col items-center text-correio-inteligente-500  justify-center bg-[url('/background-waves.jpg')] h-120 bg-cover bg-no-repeat bg-center">
+          <h1 className="font-black font-unineue ">Muito além de disparos de mensagens</h1>
+          <span className="mt-10 italic text-lg">
+            O <span className="font-bold ">Correio Inteligente</span> foi desenvolvido para empresas que precisam escalar sua comunicação sem perder qualidade</span>
+          <span className="italic text-lg">ou controle. Com tecnologia baseada na <span className="font-bold">API Oficial do WhatsApp</span>, você garante entregas mais estáveis, evita</span>
+          <span className="italic text-lg">bloqueios e mantém total conformidade com as políticas da plataforma.
+          </span>
+          <span className="italic text-lg">Seja para campanhas, notificações ou cobranças, sua mensagem chega no momento certo e da forma certa.
+          </span>
         </div>
-      </main>
-    </div>
+        <div className="flex">
+          <div className="flex items-center font-unineue flex-col bg-konnectai-primary w-screen">
+            <h2 className="mt-30 text-4xl w-100 font-bold bg-linear-to-r from-green-200 to-correio-inteligente-300 bg-clip-text text-transparent">Por que usar o Correio Inteligente?</h2>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
