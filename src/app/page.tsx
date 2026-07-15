@@ -1,6 +1,8 @@
-import Image from "next/image";
+import CardWhy from "../../components/CardWhy";
+import { menuItems } from "../../data/listWhy";
 
 export default function Home() {
+  
   return (
     <main>
       <div className="flex flex-col">
@@ -52,12 +54,15 @@ export default function Home() {
           <span className="italic text-lg">Seja para campanhas, notificações ou cobranças, sua mensagem chega no momento certo e da forma certa.
           </span>
         </div>
-        <div className="flex">
-          <div className="flex items-center font-unineue flex-col bg-konnectai-primary w-screen">
-            <h2 className="mt-30 text-4xl w-100 font-bold bg-linear-to-r from-green-200 to-correio-inteligente-300 bg-clip-text text-transparent">Por que usar o Correio Inteligente?</h2>
+        <div className="flex bg-correio-inteligente-600 items-center justify-center h-250">
+          <div className="flex font-unineue flex-col">
+            <h2 className=" text-4xl w-100 font-bold bg-linear-to-r from-green-200 to-correio-inteligente-300 bg-clip-text text-transparent">Por que usar o Correio Inteligente?</h2>
+            <div className="flex pt-5 flex-wrap ">
+              <CardWhy menuItems={menuItems}></CardWhy>
+            </div>
           </div>
           <div>
-            
+            <img src="/2.png" className="max-w-130  ml-30" alt="Celular Exemplo" />
           </div>
         </div>
       </div>
