@@ -1,7 +1,7 @@
-import { MenuItems } from "../data/listWhy"
+import { MenuWhy } from "../data/lists"
 
 interface CardWhyProps {
-    menuItems: MenuItems[]
+    menuItems: MenuWhy[]
 }
 
 export default function CardWhy({ menuItems }: CardWhyProps) {

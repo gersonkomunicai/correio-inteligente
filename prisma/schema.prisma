@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// A partir do Prisma 7, a connection string não fica mais aqui — ver prisma.config.ts
+// (usado pelo CLI/migrate) e src/lib/prisma.ts (usado em runtime pelo PrismaClient).
+datasource db {
+  provider = "postgresql"
+}
+
+// Lead capturado pelo formulário de contato do final da landing page.
+model Lead {
+  id      String @id @default(cuid())
+
+  // Campos obrigatórios no formulário
+  name    String
+  company String
+  email   String
+  phone   String
+
+  // Campo opcional no formulário
+  companyWebsite String?
+
+  // Consentimentos (LGPD) — o form só pode ser enviado com os dois marcados como true
+  acceptsCommunication Boolean
+  acceptsPrivacyPolicy Boolean
+
+  createdAt DateTime @default(now())
+}
