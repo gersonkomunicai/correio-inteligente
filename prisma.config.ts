@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { defineConfig } from "prisma/config";
 
 // Usado pelo CLI do Prisma (generate/migrate/studio) para saber como

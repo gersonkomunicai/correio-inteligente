@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
-import { resend } from "@/lib/resend";
+import { getResend } from "@/lib/resend";
 import { leadSchema } from "@/lib/schemas/lead";
 
 // POST /api/leads
@@ -46,9 +46,14 @@ export async function POST(request: Request) {
   // O e-mail é "melhor esforço": se o Resend falhar, o lead já está salvo,
   // então não derrubamos a requisição por causa disso — só registramos o erro.
   try {
-    await resend.emails.send({
+    // O SDK do Resend não lança exceção pra erros da API (ex: sandbox sem
+    // domínio verificado) — ele devolve { error } dentro da resposta, sem
+    // rejeitar a Promise. Por isso checamos o `error` do retorno também, e
+    // não só o try/catch (que cobre coisas como chave ausente, que aí sim
+    // lançam na hora de construir o client).
+    const { error } = await getResend().emails.send({
       from: "Correio Inteligente <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL_TO ?? "contato@konnectai.com.br",
+      to: process.env.CONTACT_EMAIL_TO ?? "gersonjunior@komunicai.com",
       subject: `Novo lead: ${data.company}`,
       text: [
         `Nome: ${data.name}`,
@@ -60,6 +65,10 @@ export async function POST(request: Request) {
         `Aceite de política de privacidade: sim`,
       ].join("\n"),
     });
+
+    if (error) {
+      console.error("Falha ao enviar e-mail de notificação do lead:", error);
+    }
   } catch (error) {
     console.error("Falha ao enviar e-mail de notificação do lead:", error);
   }
