@@ -52,7 +52,7 @@ export async function POST(request: Request) {
     // não só o try/catch (que cobre coisas como chave ausente, que aí sim
     // lançam na hora de construir o client).
     const { error } = await getResend().emails.send({
-      from: "Correio Inteligente <onboarding@resend.dev>",
+      from: "Correio Inteligente <no-reply@correiointeligente.com.br>",
       to: process.env.CONTACT_EMAIL_TO ?? "gersonjunior@komunicai.com",
       subject: `Novo lead: ${data.company}`,
       text: [
@@ -71,6 +71,26 @@ export async function POST(request: Request) {
     }
   } catch (error) {
     console.error("Falha ao enviar e-mail de notificação do lead:", error);
+  }
+  try {
+    const { error } = await getResend().emails.send({
+      from: "Correio Inteligente <no-reply@correiointeligente.com.br>",
+      to: data.email,
+      subject: `${data.name}, contato recebido!`,
+      text: [
+      `${data.name}, estamos gratos por receber o seu contato.`, 
+      `Esperamos oferecer uma solução agradável para ${data.company}.`,
+      `Em breve nosso time comercial entrará em contato com você.`,
+      `Seja bem vindo(a) ao Correio Inteligente.`].join(
+        '\n'
+      )
+    });
+
+    if (error) {
+      console.error("Falha ao enviar o email para o cliente.", error)
+    }
+  } catch (error) {
+    console.error("Falha ao enviar o email para o cliente.", error)
   }
 
   return NextResponse.json({ success: true, id: lead.id }, { status: 201 });
