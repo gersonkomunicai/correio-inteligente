@@ -32,7 +32,7 @@ export default () => {
                     <p className="font-bold">Redes Sociais</p>
                     <a href={`https://www.instagram.com/correiointeligente`} target="_blank" className="mt-2">Instagram</a>
                     <a href={`https://www.facebook.com/correiointeligente`} target="_blank" className="mt-2">Facebook</a>
-                    <p className="mt-2">Linkedin</p>
+                    <a href={`https://www.linkedin.com/company/grupo-komunica%C3%AD`} className="mt-2">Linkedin</a>
                 </div>
             </div>
         </footer>

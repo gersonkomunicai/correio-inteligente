@@ -88,7 +88,7 @@ export default function Home() {
               <a className="text-gray-100" href="#contato">Fale com um Especialista</a>
             </Reveal>
           </div>
-          <div className="flex flex-col items-center justify-center h-auto md:h-screen py-16 md:py-0 px-4 bg-correio-inteligente-700">
+          <div id="quemsomos" className="flex flex-col items-center justify-center h-auto md:h-screen py-16 md:py-0 px-4 bg-correio-inteligente-700">
             <Reveal direction="left" className="flex flex-col items-center">
               <h1 className="flex items-center justify-center text-center w-full max-w-270 text-gray-100 font-bold">Modernize a comunicação da sua prefeitura com o Correio Inteligente</h1>
               <span className="flex justify-center text-center w-full max-w-240 text-xl text-gray-100 pt-10">Uma plataforma desenvolvida especialmente para governos, prefeituras e instituições públicas que desejam automatizar, organizar e centralizar a comunicação com cidadãos de forma moderna, segura e eficiente.</span>

@@ -15,9 +15,9 @@ export default function Navbar() {
                     </a>
                     <div className="flex items-center justify-between px-10 w-150">
                         <button className="text-gray-100 font-bold text-lg">Canais</button>
-                        <button className="text-gray-100 font-bold text-lg">Quem Somos</button>
+                        <a href="#quemsomos" className="text-gray-100 font-bold text-lg">Quem Somos</a>
                         <button className="text-gray-100 font-bold text-lg">Blog</button>
-                        <button className="text-gray-100 font-bold text-lg">Contatos</button>
+                        <a href="" className="text-gray-100 font-bold text-lg">Contatos</a>
                     </div>
                     <a className="w-80 flex items-center justify-center hover:bg-gray-100 hover:text-correio-inteligente-100 text-gray-100 transition-all font-bold duration-300 ease-in p-4 rounded-full text-lg" href="#contato">Fale com um Especialista</a>
                 </div>

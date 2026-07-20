@@ -7,7 +7,9 @@ import { LeadInput, leadSchema } from "@/lib/schemas/lead"
 
 type SubmitStatus = 'idle' | 'loading' | 'success' | 'error'
 
-
+declare global {
+    interface Window { dataLayer: any[] }
+}
 
 export default function ContactForm() {
     const [name, setName] = useState('')
@@ -50,6 +52,10 @@ export default function ContactForm() {
                 setStatus('error')
             } else {
                 setStatus('success')
+
+                if (window.dataLayer) {
+                    window.dataLayer.push({ event: 'lead_form_submit' })
+                }
             }
 
         } catch {
@@ -64,11 +70,11 @@ export default function ContactForm() {
                 <span className="text-xl pt-5 w-full text-center md:text-left text-gray-100">Comece agora a enviar mensagens com mais eficiência, segurança e resultados.</span>
                 <div className="relative flex flex-col rounded-2xl mt-5 w-full max-w-130 p-3 bg-correio-inteligente-500">
                     {status === 'success' ? (
-                    <div className="flex items-center justify-between rounded-md absolute inset-x-4 p-4 w-auto bg-correio-inteligente-900 text-correio-inteligente-200">
-                        <p className="">Informações enviadas! Entraremos em contato.</p>
-                        <X className="w-4 h-4 size-4" onClick={() => setStatus('idle')}></X>
-                    </div>
-                ) : ''}
+                        <div className="flex items-center justify-between rounded-md absolute inset-x-4 p-4 w-auto bg-correio-inteligente-900 text-correio-inteligente-200">
+                            <p className="">Informações enviadas! Entraremos em contato.</p>
+                            <X className="w-4 h-4 size-4" onClick={() => setStatus('idle')}></X>
+                        </div>
+                    ) : ''}
                     <span className="text-xl font-bold text-gray-100">Junte-se a nós e transforme sua comunicação!</span>
                     <form onSubmit={HandleSubmit} className="flex pt-8 flex-col">
                         <label className="text-sm text-gray-100" htmlFor="">Nome Completo*</label>
@@ -137,7 +143,7 @@ export default function ContactForm() {
                         </div>
                     </form>
                 </div>
-                
+
             </div>
         </div>
     )
