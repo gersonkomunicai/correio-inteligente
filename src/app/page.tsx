@@ -1,13 +1,10 @@
-import { Mail, MapPin, ShieldCheck } from "lucide-react";
+
 import CardDemonstration from "../../components/CardDemonstration";
 import CardWho from "../../components/CardWho";
 import CardWhy from "../../components/CardWhy";
 import { menuWhy } from "../../data/lists";
 import { menuWho } from "../../data/lists";
 import { menuDemonstration } from "../../data/lists";
-import { BsInstagram, BsWhatsapp, BsYoutube } from "react-icons/bs";
-import { FaFacebook } from "react-icons/fa";
-import { LiaLinkedin } from "react-icons/lia";
 import ContactForm from "../../components/ContactForm";
 import Reveal from "../../components/Reveal";
 import Footer from "../../components/Footer";

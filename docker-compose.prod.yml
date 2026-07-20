@@ -1,0 +1,29 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_GTM_ID: ${NEXT_PUBLIC_GTM_ID}
+    container_name: correio-inteligente-app
+    restart: unless-stopped
+    environment:
+      - HOSTNAME=0.0.0.0
+    env_file:
+      - .env.production
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik_network"
+      - "traefik.http.routers.correio-inteligente.rule=Host(`correiointeligente.com.br`)"
+      - "traefik.http.routers.correio-inteligente.entrypoints=websecure"
+      - "traefik.http.routers.correio-inteligente.tls.certresolver=letsencrypt"
+      - "traefik.http.services.correio-inteligente.loadbalancer.server.port=3000"
+    networks:
+      - traefik_network
+      - komunicai_db_network
+
+networks:
+  traefik_network:
+    external: true
+  komunicai_db_network:
+    external: true
+    name: plataforma-komunicai_internal
