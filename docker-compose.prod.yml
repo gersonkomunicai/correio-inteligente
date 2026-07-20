@@ -17,6 +17,16 @@ services:
       - "traefik.http.routers.correio-inteligente.entrypoints=websecure"
       - "traefik.http.routers.correio-inteligente.tls.certresolver=letsencrypt"
       - "traefik.http.services.correio-inteligente.loadbalancer.server.port=3000"
+      # Redireciona correiointeligente.com / www.correiointeligente.com (sem .br)
+      # pro domínio .com.br oficial, preservando o caminho da URL.
+      - "traefik.http.middlewares.correio-com-redirect.redirectregex.regex=^https?://(?:www\\.)?correiointeligente\\.com(.*)"
+      - "traefik.http.middlewares.correio-com-redirect.redirectregex.replacement=https://www.correiointeligente.com.br$${1}"
+      - "traefik.http.middlewares.correio-com-redirect.redirectregex.permanent=true"
+      - "traefik.http.routers.correio-com-redirect.rule=Host(`correiointeligente.com`) || Host(`www.correiointeligente.com`)"
+      - "traefik.http.routers.correio-com-redirect.entrypoints=web,websecure"
+      - "traefik.http.routers.correio-com-redirect.middlewares=correio-com-redirect"
+      - "traefik.http.routers.correio-com-redirect.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.correio-com-redirect.service=noop@internal"
     networks:
       - traefik_network
       - komunicai_db_network
