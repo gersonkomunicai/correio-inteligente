@@ -13,7 +13,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik_network"
-      - "traefik.http.routers.correio-inteligente.rule=Host(`correiointeligente.com.br`)"
+      - "traefik.http.routers.correio-inteligente.rule=Host(`correiointeligente.com.br`) || Host(`www.correiointeligente.com.br`)"
       - "traefik.http.routers.correio-inteligente.entrypoints=websecure"
       - "traefik.http.routers.correio-inteligente.tls.certresolver=letsencrypt"
       - "traefik.http.services.correio-inteligente.loadbalancer.server.port=3000"
