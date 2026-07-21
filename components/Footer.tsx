@@ -21,7 +21,7 @@ export default () => {
                     <p className="text-xs text-correio-inteligente-200 mt-2">Todos os direitos reservados</p>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center md:items-start text-correio-inteligente-200 h-auto md:h-60 md:mt-30 font-unineue gap-8 md:gap-0">
+            <div className="flex flex-col md:flex-row items-center md:items-start text-correio-inteligente-200 h-auto md:h-60 md:mt-20 font-unineue gap-8 md:gap-0">
                 <div className="flex flex-col items-center md:items-start w-full max-w-60">
                     <p className="font-bold">Contato</p>
                     <p className="mt-2">Rua Coronel Del Prett, 72, CEP 59.584-000, Centro - Touros/RN</p>

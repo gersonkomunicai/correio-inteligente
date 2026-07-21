@@ -7,9 +7,9 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <div className="font-unineue">
-            <div className="hidden md:flex rounded-full w-full bg-linear-to-r container from-konnectai-primary/30 to-black/30 backdrop-blur-xs items-center justify-between px-40 fixed top-5 h-20 z-50">
-                <div className="flex items-center justify-around h-auto">
+        <div className="font-unineue flex justify-center">
+            <div className="hidden md:flex rounded-full bg-linear-to-r from-konnectai-primary/30 to-black/30 backdrop-blur-xs px-40 fixed top-7 h-20 z-50">
+                <div className="flex items-center h-auto ">
                     <a href='/'>
                         <img src="logoHorizontal.png" className="max-h-15" alt="Logo do Correio Inteligente" />
                     </a>
