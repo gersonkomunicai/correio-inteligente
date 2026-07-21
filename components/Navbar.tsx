@@ -8,8 +8,8 @@ export default function Navbar() {
 
     return (
         <div className="font-unineue">
-            <div className="hidden md:flex rounded-full bg-linear-to-r from-konnectai-primary/30 to-black/30 backdrop-blur-xs items-center justify-between px-50 fixed top-8 h-20 z-50">
-                <div className="flex items-center justify-around h-auto container">
+            <div className="hidden md:flex rounded-full w-full bg-linear-to-r container from-konnectai-primary/30 to-black/30 backdrop-blur-xs items-center justify-between px-40 fixed top-5 h-20 z-50">
+                <div className="flex items-center justify-around h-auto">
                     <a href='/'>
                         <img src="logoHorizontal.png" className="max-h-15" alt="Logo do Correio Inteligente" />
                     </a>

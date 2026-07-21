@@ -14,14 +14,14 @@ export default function Home() {
 
   return (
     <div>
-      <main>
+      <main >
         <div className="flex scroll-smooth flex-col">
           <a href={`https://wa.me/558488418983?text=Quero%20mais%20informações%20sobre%20o%20Correio%20Inteligente.`} target="_blank" >
-            <img src="whatsapp.png" className="fixed bottom-10 right-10 h-15" alt="" />
+            <img src="whatsapp.png" className="fixed w-10 md:fixed bottom-10 right-10 md:w-15" alt="" />
           </a>
           <div className="flex h-auto md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-konnectai-primary from-60% to-black px-4">
             <Navbar></Navbar>
-            <div className="flex flex-col md:flex-row items-center justify-around gap-10">
+            <div className="flex flex-col md:flex-row items-center gap-10">
               <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left font-unineue w-full max-w-140">
                 <img src="Iso.png" className="max-h-30 w-30" alt="" />
                 <div>
@@ -37,7 +37,9 @@ export default function Home() {
                 </a>
               </Reveal>
               <Reveal direction="right" delay={0.15} className="hidden md:block">
-                <img src="7.png" className="md:h-200 w-auto max-h-200" alt="" />
+                <div className="flex h-200 items-end">
+                  <img src="7.png" className="md:h-160 flex justify-end w-auto max-h-200" alt="" />
+                </div>
               </Reveal>
             </div>
           </div>
@@ -55,20 +57,20 @@ export default function Home() {
               </span>
             </Reveal>
           </div>
-          <div className="flex flex-col md:flex-row bg-correio-inteligente-600 items-center justify-center h-auto md:h-250 py-16 md:py-0 px-4 gap-10">
+          <div className="flex flex-col md:flex-row bg-correio-inteligente-600 items-center justify-center h-auto md:h-220 py-16 md:py-0 px-4 gap-10">
             <div className="flex font-unineue flex-col items-center md:items-start">
               <Reveal direction="left">
-                <h2 className="text-4xl w-full max-w-100 text-center md:text-left font-bold bg-linear-to-r from-correio-inteligente-900 from-25% to-correio-inteligente-800 bg-clip-text text-transparent">Por que usar o Correio Inteligente?</h2>
+                <h2 className="text-4xl w-100 max-w-100 text-center md:text-left font-bold bg-linear-to-r from-correio-inteligente-900 from-25% to-correio-inteligente-800 bg-clip-text text-transparent">Por que usar o Correio Inteligente?</h2>
               </Reveal>
               <Reveal delay={0.15} className="flex pt-5 flex-wrap justify-center">
                 <CardWhy menuItems={menuWhy}></CardWhy>
               </Reveal>
             </div>
             <Reveal direction="right" delay={0.2} className="hidden md:block">
-              <img src="/2.png" className="max-w-130 ml-30" alt="Celular Exemplo" />
+              <img src="/2.png" className="max-w-130" alt="Celular Exemplo" />
             </Reveal>
           </div>
-          <div className="flex flex-col items-center justify-center bg-[url('/background-waves.jpg')] bg-cover bg-center bg-no-repeat h-auto md:h-screen py-16 md:py-0 px-4">
+          <div className="flex flex-col items-center justify-center bg-[url('/background-waves.jpg')] bg-cover bg-center bg-no-repeat h-auto md:h-200 py-16 md:py-0 px-4">
             <Reveal className="flex flex-col items-center">
               <h2 className="text-3xl font-black text-correio-inteligente-200 text-center">Para quem é</h2>
               <span className="uppercase text-correio-inteligente-700/50 text-lg pt-5 flex justify-center text-center w-full max-w-200">Desenvolvido para operações que exigem escala,</span>
@@ -85,7 +87,7 @@ export default function Home() {
               <a className="text-gray-100" href="#contato">Fale com um Especialista</a>
             </Reveal>
           </div>
-          <div id="quemsomos" className="flex flex-col items-center justify-center h-auto md:h-screen py-16 md:py-0 px-4 bg-correio-inteligente-700">
+          <div id="quemsomos" className="flex flex-col items-center justify-center h-auto md:py-16 md:py-0 px-4 bg-correio-inteligente-700">
             <Reveal direction="left" className="flex flex-col items-center">
               <h1 className="flex items-center justify-center text-center w-full max-w-270 text-gray-100 font-bold">Modernize a comunicação da sua prefeitura com o Correio Inteligente</h1>
               <span className="flex justify-center text-center w-full max-w-240 text-xl text-gray-100 pt-10">Uma plataforma desenvolvida especialmente para governos, prefeituras e instituições públicas que desejam automatizar, organizar e centralizar a comunicação com cidadãos de forma moderna, segura e eficiente.</span>
