@@ -16,10 +16,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-br"
-      className='h-full antialiased'
+      className='h-full antialiased overflow-x-hidden'
     >
-
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col overflow-x-hidden" suppressHydrationWarning>
         {gtmId && (
           <Script id="gtm-script" strategy="afterInteractive">
             {`(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
