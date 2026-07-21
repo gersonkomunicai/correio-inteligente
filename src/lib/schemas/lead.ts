@@ -11,7 +11,7 @@ export const leadSchema = z.object({
 
   // Aceita string vazia (campo em branco no form) tratando como "não informado"
   companyWebsite: z
-    .union([z.url("Site inválido."), z.literal("")])
+    .union([z.url("É necessário colocar o protocolo: 'http' ou 'https'."), z.literal("")])
     .optional()
     .transform((value) => (value ? value : undefined)),
 

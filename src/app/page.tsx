@@ -16,7 +16,7 @@ export default function Home() {
     <div>
       <main >
         <div className="flex scroll-smooth flex-col">
-          <a href={`https://wa.me/558488418983?text=Quero%20mais%20informações%20sobre%20o%20Correio%20Inteligente.`} target="_blank" >
+          <a href={`https://wa.me/5584994146984?text=Quero%20mais%20informações%20sobre%20o%20Correio%20Inteligente.`} target="_blank" >
             <img src="whatsapp.png" className="fixed w-10 md:fixed bottom-10 right-10 md:w-15" alt="" />
           </a>
           <Navbar />
