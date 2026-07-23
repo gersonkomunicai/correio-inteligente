@@ -21,6 +21,7 @@ export default function ContactForm() {
     const [acceptsPrivacyPolicy, setAcceptsPrivacyPolicy] = useState(false)
     const [error, setError] = useState<Partial<Record<keyof LeadInput, string[]>>>()
     const [status, setStatus] = useState<SubmitStatus>('idle')
+    const [noSite, setNoSite] = useState(false)
 
     async function HandleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
@@ -109,15 +110,22 @@ export default function ContactForm() {
                         {error?.phone?.[0] && (
                             <span className="text-red-500 text-xs">{error.phone[0]}</span>
                         )}
-                        <label className="text-gray-100 mt-4" htmlFor="">Site da Empresa</label>
-                        <div className={`flex w-full border rounded-xl p-1 items-center ${error?.companyWebsite?.[0] ? 'border-red-500' : 'border-gray-100'}`}>
-                            <Globe className="w-5 h-5 size-4 mr-2 text-gray-100" />
-                            <input type="text" value={companyWebsite} onChange={(e) => setCompanyWebsite(e.target.value)} className="w-full text-gray-100 focus:outline-none " />
+
+                        {noSite ? '' : <div  className="mt-4">
+                            <label className="text-gray-100" htmlFor="">Site da Empresa</label>
+                            <div className={`flex w-full border rounded-xl p-1 items-center ${error?.companyWebsite?.[0] ? 'border-red-500' : 'border-gray-100'}`}>
+                                <Globe className="w-5 h-5 size-4 mr-2 text-gray-100" />
+                                <input type="text" value={companyWebsite} onChange={(e) => setCompanyWebsite(e.target.value)} className="w-full text-gray-100 focus:outline-none " />
+                            </div>
+                        </div>}
+                        <div className="flex pt-2 items-center">
+                            <input className="ml-1" type="checkbox" name="" id="" onClick={() => { setNoSite(!noSite) }} />
+                            <span className=" text-gray-100 pl-2 ">Não temos site</span>
                         </div>
                         {error?.companyWebsite?.[0] && (
                             <span className="text-red-500 text-xs">{error.companyWebsite[0]}</span>
                         )}
-                        <div className="flex items-center pt-8">
+                        <div className="flex items-center pt-4">
                             <input checked={acceptsPrivacyPolicy} onChange={(e) => setAcceptsPrivacyPolicy(e.target.checked)} type="checkbox" className="size-4 mr-2 ml-1 transition-all duration-300 ease-in" name="termo" id="" />
                             <label className="text-gray-100" htmlFor="">Concordo com a política de Privacidade e Termos de Uso.</label>
                         </div>

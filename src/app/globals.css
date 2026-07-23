@@ -21,7 +21,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('../../public/fonts/LibreBaskerville/LibreBaskerville-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreBaskervilleItalic';
+  src: url('../../public/fonts/LibreBaskerville/LibreBaskerville-Italic-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+}
 @theme {
+  --font-libreNormal: 'LibreBaskerville', serif;
+  --font-libreItalic: 'LibreBaskervilleItalic', serif;
   --font-unineue: 'Unineue', sans-serif;
   --font-franie: 'Franie', sans-serif;
   --font-harabara: 'Harabara', sans-serif;

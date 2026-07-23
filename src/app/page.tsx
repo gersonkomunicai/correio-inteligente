@@ -20,7 +20,7 @@ export default function Home() {
             <img src="whatsapp.png" className="fixed w-10 md:fixed bottom-10 right-10 md:w-15" alt="" />
           </a>
           <Navbar />
-          <div className="flex h-auto  md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-konnectai-primary from-60% to-black px-4">
+          <div className="flex h-auto  md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-correio-inteligente-200 from-60% to-black px-4">
             <div className="flex flex-col  justify-center md:flex-row items-center gap-10">
               <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left font-unineue w-full max-w-140">
                 <img src="Iso.png" className="max-h-30 w-30" alt="" />
@@ -87,7 +87,7 @@ export default function Home() {
               <a className="text-gray-100" href="#contato">Fale com um Especialista</a>
             </Reveal>
           </div>
-          <div id="quemsomos" className="flex flex-col items-center justify-center h-auto md:py-16 py-0 px-4 bg-correio-inteligente-700">
+          <div className="flex flex-col items-center justify-center h-auto md:py-16 py-0 px-4 bg-correio-inteligente-700">
             <Reveal direction="left" className="flex flex-col items-center">
               <h1 className="flex items-center justify-center text-center w-full max-w-270 text-gray-100 font-bold">Modernize a comunicação da sua prefeitura com o Correio Inteligente</h1>
               <span className="flex justify-center text-center w-full max-w-240 text-xl text-gray-100 pt-10">Uma plataforma desenvolvida especialmente para governos, prefeituras e instituições públicas que desejam automatizar, organizar e centralizar a comunicação com cidadãos de forma moderna, segura e eficiente.</span>
@@ -101,17 +101,19 @@ export default function Home() {
               <a className="flex items-center justify-center text-center mt-10 p-4 w-full max-w-90 font-bold text-gray-700 rounded-full bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800" href="#contato">Solução Inteligente para Órgãos Públicos</a>
             </Reveal>
           </div>
-          <div id="contato" className="flex flex-col md:flex-row h-auto md:h-200 py-16 md:py-0 px-4 items-center justify-center gap-10 bg-correio-inteligente-200">
+          <div id="contato" className="flex flex-col md:flex-row h-auto md:h-200 py-20 px-4 items-center justify-center gap-10 bg-correio-inteligente-200">
             <Reveal direction="left">
               <ContactForm></ContactForm>
             </Reveal>
             <Reveal direction="right" delay={0.15} className="hidden md:block">
-              <img src="/modelo2.png" className="flex items-end max-w-141 h-auto" alt="" />
+              <div className="h-full">
+                <img src="/modelo2.png" className="flex items-end max-w-141 h-auto" alt="" />
+              </div>
             </Reveal>
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
 
   );
