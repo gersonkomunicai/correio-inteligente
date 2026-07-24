@@ -9,9 +9,17 @@ export const leadSchema = z.object({
   email: z.email("E-mail inválido."),
   phone: z.string().trim().min(10, "Telefone inválido."),
 
-  // Aceita string vazia (campo em branco no form) tratando como "não informado"
+  // Aceita string vazia (campo em branco no form) tratando como "não informado".
+  // Se o usuário não colocar o protocolo, assume "https://" automaticamente.
   companyWebsite: z
-    .union([z.url("É necessário colocar o protocolo: 'http' ou 'https'."), z.literal("")])
+    .preprocess((value) => {
+      if (typeof value !== "string") return value;
+
+      const trimmed = value.trim();
+      if (trimmed === "" || /^https?:\/\//i.test(trimmed)) return trimmed;
+
+      return `https://${trimmed}`;
+    }, z.union([z.url("Insira uma url válida."), z.literal("")]))
     .optional()
     .transform((value) => (value ? value : undefined)),
 
