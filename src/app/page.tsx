@@ -21,24 +21,29 @@ export default function Home() {
           </a>
           <Navbar />
           <div className="flex h-auto md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-correio-inteligente-200 from-60% to-black px-4">
+            <div className="absolute left-10 -mt-100 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/10" />
+            <div className="absolute left-90 mt-120 w-60 h-60 rounded-full blur-2xl bg-correio-inteligente-100/30" />
+            <div className="absolute -right-120 w-150 h-150 rounded-full blur-3xl bg-correio-inteligente-100/20" />
+            <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
+            <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="flex flex-col  justify-center md:flex-row items-center gap-10">
               <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left font-unineue w-full max-w-140">
                 <img src="Iso.png" className="max-h-30 w-30" alt="" />
                 <div>
-                  <h1 className="bg-linear-to-r font-harabara font-bold from-correio-inteligente-900 from-10% to-correio-inteligente-800 bg-clip-text text-transparent">Envie mensagens em escala com segurança e performance</h1>
-                  <p className="text-gray-100 text-lg pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
+                  <h1 className="bg-linear-to-r font-harabara font-bold relative from-correio-inteligente-900 from-10% to-correio-inteligente-800 bg-clip-text text-transparent">Envie mensagens em escala com segurança e performance</h1>
+                  <p className="text-gray-100 relative text-lg pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
                     mensageria da Konnectaí via <span className="font-bold">API Oficial do
                       WhatsApp</span>, ideal para empresas que precisam se
                     comunicar com milhares de clientes de forma
                     rápida, segura e eficiente.</p>
                 </div>
-                <a href="#contato" className="mt-10 p-3 w-full max-w-60 flex items-center justify-center rounded-full bg-linear-to-r text-konnectai-primary from-green-200 from-1% to-konnectai-secondary">
+                <a href="#contato" className="mt-10 p-3 w-full relative max-w-60 flex items-center justify-center rounded-full bg-linear-to-r text-konnectai-primary from-green-200 from-1% to-konnectai-secondary">
                   <span className="text-xl">Fale conosco</span>
                 </a>
               </Reveal>
               <Reveal direction="right" delay={0.15} className="hidden md:block">
                 <div className="flex h-200 items-end">
-                  <img src="7.png" className="md:h-160 flex justify-end w-auto max-h-200" alt="" />
+                  <img src="7.png" className="md:h-160 relative flex justify-end w-auto max-h-200" alt="" />
                 </div>
               </Reveal>
             </div>
@@ -57,12 +62,17 @@ export default function Home() {
               </span>
             </Reveal>
           </div>
-          <div className="flex flex-col md:flex-row bg-correio-inteligente-600 items-center justify-center h-auto md:h-220 py-16 md:py-0 px-4 gap-10">
+          <div className="flex flex-col md:flex-row bg-correio-inteligente-200 items-center justify-center h-auto md:h-220 py-16 md:py-0 px-4 gap-10">
+            <div className="absolute left-10 -mt-100 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/10" />
+            <div className="absolute left-60 mt-70 w-60 h-60 rounded-full blur-2xl bg-correio-inteligente-100/30" />
+            <div className="absolute right-10 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/20" />
+            <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
+            <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="flex font-unineue flex-col items-center md:items-start">
               <Reveal direction="left">
                 <h2 className="text-4xl w-100 max-w-100 text-center md:text-left font-bold bg-linear-to-r from-correio-inteligente-900 from-25% to-correio-inteligente-800 bg-clip-text text-transparent">Por que usar o Correio Inteligente?</h2>
               </Reveal>
-              <Reveal delay={0.15} className="flex pt-5 flex-wrap justify-center">
+              <Reveal delay={0.15} className="flex pt-5 flex-wrap relative justify-center">
                 <CardWhy menuItems={menuWhy}></CardWhy>
               </Reveal>
             </div>
@@ -87,13 +97,18 @@ export default function Home() {
               <a className="text-gray-100" href="#contato">Fale com um Especialista</a>
             </Reveal>
           </div>
-          <div className="flex flex-col items-center justify-center h-auto md:py-16 py-0 px-4 bg-correio-inteligente-700">
+          <div className="flex flex-col items-center justify-center h-auto md:py-16 py-0 px-4 bg-correio-inteligente-200">
+            <div className="absolute left-10 -mt-100 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/10" />
+            <div className="absolute left-60 mt-70 w-60 h-60 rounded-full blur-2xl bg-correio-inteligente-100/30" />
+            <div className="absolute right-10 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/20" />
+            <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
+            <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <Reveal direction="left" className="flex flex-col items-center">
               <h1 className="flex items-center justify-center text-center w-full max-w-270 text-gray-100 font-bold">Modernize a comunicação da sua prefeitura com o Correio Inteligente</h1>
               <span className="flex justify-center text-center w-full max-w-240 text-xl text-gray-100 pt-10">Uma plataforma desenvolvida especialmente para governos, prefeituras e instituições públicas que desejam automatizar, organizar e centralizar a comunicação com cidadãos de forma moderna, segura e eficiente.</span>
               <span className="flex justify-center text-center pt-5 w-full max-w-240 text-xl text-gray-100">O Correio Inteligente foi pensado para facilitar a comunicação entre órgãos públicos e cidadãos, trazendo mais agilidade, organização e eficiência para o atendimento.</span>
             </Reveal>
-            <Reveal direction="right" delay={0.15} className="flex flex-wrap items-center justify-center mt-15 w-full max-w-300">
+            <Reveal direction="right" delay={0.15} className="flex relative flex-wrap items-center justify-center mt-15 w-full max-w-300">
               <CardDemonstration menuDemonstrations={menuDemonstration}></CardDemonstration>
             </Reveal>
             <Reveal delay={0.3} className="flex flex-col items-center">
@@ -102,12 +117,20 @@ export default function Home() {
             </Reveal>
           </div>
           <div id="contato" className="flex flex-col md:flex-row h-auto md:h-200 py-20 px-4 items-center justify-center gap-10 bg-correio-inteligente-200">
-            <Reveal direction="left">
-              <ContactForm></ContactForm>
+            <div className="absolute left-10 -mt-100 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/10" />
+            <div className="absolute left-60 mt-70 w-60 h-60 rounded-full blur-2xl bg-correio-inteligente-100/30" />
+            <div className="absolute right-10 mt-70 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/20" />
+            <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
+            <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
+            <div className="absolute  w-70 h-70 rotate-45 blur-2xl bg-correio-inteligente-100/20" />
+            <Reveal direction="left" className="relative">
+              <h1 className="bg-linear-to-r font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent">Pronto para escalar sua comunicação?</h1>
+              <span className="text-xl pt-5 w-full text-center md:text-left text-gray-100">Comece agora a enviar mensagens com mais eficiência, segurança e resultados.</span>
+              <ContactForm />
             </Reveal>
             <Reveal direction="right" delay={0.15} className="hidden md:block">
               <div className="h-full">
-                <img src="/modelo2.png" className="flex items-end max-w-141 h-auto" alt="" />
+                <img src="/modelo2.png" className="flex relative items-end max-w-141 h-auto" alt="" />
               </div>
             </Reveal>
           </div>

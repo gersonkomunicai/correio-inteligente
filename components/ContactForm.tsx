@@ -11,7 +11,11 @@ declare global {
     interface Window { dataLayer: any[] }
 }
 
-export default function ContactForm() {
+interface ContactFormProps{
+    className?: string
+}
+
+export default function ContactForm({className}:ContactFormProps) {
     const [name, setName] = useState('')
     const [company, setCompany] = useState('')
     const [email, setEmail] = useState('')
@@ -67,8 +71,7 @@ export default function ContactForm() {
     return (
         <div>
             <div className="flex flex-col justify-center">
-                <h1 className="bg-linear-to-r font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent">Pronto para escalar sua comunicação?</h1>
-                <span className="text-xl pt-5 w-full text-center md:text-left text-gray-100">Comece agora a enviar mensagens com mais eficiência, segurança e resultados.</span>
+                
                 <div className="relative flex flex-col rounded-2xl mt-5 w-full max-w-130 p-3 bg-correio-inteligente-500">
                     {status === 'success' ? (
                         <div className="flex items-center justify-between rounded-md absolute inset-x-4 p-4 w-auto bg-correio-inteligente-900 text-correio-inteligente-200">
@@ -76,12 +79,12 @@ export default function ContactForm() {
                             <X className="w-4 h-4 size-4" onClick={() => setStatus('idle')}></X>
                         </div>
                     ) : ''}
-                    <span className="text-xl font-bold text-gray-100">Junte-se a nós e transforme sua comunicação!</span>
+                    <span className="text-xl flex justify-center font-bold text-gray-100">Junte-se a nós e transforme sua comunicação!</span>
                     <form onSubmit={HandleSubmit} className="flex pt-8 flex-col">
-                        <label className="text-sm text-gray-100" htmlFor="">Nome Completo*</label>
+                        <label className="text-sm text-gray-100" htmlFor="">Seu Nome*</label>
                         <div className={`flex w-full border rounded-xl p-1 items-center ${error?.name?.[0] ? 'border-red-500' : 'border-gray-100'}`}>
                             <User className="w-5 h-5 size-4 mr-2 text-gray-100"></User>
-                            <input type="text" placeholder="Nome Completo" value={name} onChange={(e) => setName(e.target.value)} className="text-gray-100 w-full  focus:outline-none " />
+                            <input type="text" placeholder="Como você quer que a gente te chame?" value={name} onChange={(e) => setName(e.target.value)} className="text-gray-100 w-full  focus:outline-none " />
                         </div>
                         {error?.name?.[0] && (
                             <span className="text-red-500 text-xs">{error.name[0]}</span>
@@ -102,7 +105,7 @@ export default function ContactForm() {
                         {error?.email?.[0] && (
                             <span className="text-red-500 text-xs">{error.email[0]}</span>
                         )}
-                        <label className="text-gray-100 mt-4" htmlFor="">Celular*</label>
+                        <label className="text-gray-100 mt-4" htmlFor="">Whatsapp*</label>
                         <div className={`flex w-full border rounded-xl p-1 items-center ${error?.phone?.[0] ? 'border-red-500' : 'border-gray-100'}`}>
                             <Smartphone className="w-5 h-5 size-4 mr-2 text-gray-100"></Smartphone>
                             <input type="text" placeholder="(21) 987654321" value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full text-gray-100 focus:outline-none " />
@@ -115,11 +118,11 @@ export default function ContactForm() {
                             <label className="text-gray-100" htmlFor="">Site da Empresa</label>
                             <div className={`flex w-full border rounded-xl p-1 items-center ${error?.companyWebsite?.[0] ? 'border-red-500' : 'border-gray-100'}`}>
                                 <Globe className="w-5 h-5 size-4 mr-2 text-gray-100" />
-                                <input type="text" value={companyWebsite} onChange={(e) => setCompanyWebsite(e.target.value)} className="w-full text-gray-100 focus:outline-none " />
+                                <input type="text" placeholder={`https://meusite.com.br`} value={companyWebsite} onChange={(e) => setCompanyWebsite(e.target.value)} className="w-full text-gray-100 focus:outline-none " />
                             </div>
                         </div>}
                         <div className="flex pt-2 items-center">
-                            <input className="ml-1" type="checkbox" name="" id="" onClick={() => { setNoSite(!noSite) }} />
+                            <input className="ml-1" type="checkbox"  name="" id="" onClick={() => { setNoSite(!noSite) }} />
                             <span className=" text-gray-100 pl-2 ">Não temos site</span>
                         </div>
                         {error?.companyWebsite?.[0] && (
