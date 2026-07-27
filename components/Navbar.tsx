@@ -7,19 +7,33 @@ import { usePathname } from "next/navigation"
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const url = usePathname()
+    const [subMenuSegments, setSubMenuSegments] = useState(false)
+    const [subMenuCases, setSubMenuCases] = useState(false)
+    const url = usePathname().split('/')
+    
     return (
         <div className="font-unineue flex justify-center">
             <div className="hidden md:flex rounded-full bg-linear-to-r from-konnectai-primary/30 to-black/30 backdrop-blur-xs px-40 fixed top-7 h-20 z-50">
                 <div className="flex items-center h-auto ">
                     <a href='/'>
-                        <img src="logoHorizontal.png" className="max-h-12" alt="Logo do Correio Inteligente" />
+                        <img src="/logoHorizontal.png" className="max-h-12" alt="Logo do Correio Inteligente" />
                     </a>
                     <div className="flex items-center justify-between px-10 w-170">
-                        <a href="/quem-somos" title="Quem Somos" className={` ${url === '/quem-somos' ? 'bg-correio-inteligente-800' : ''} text-gray-100 p-2 rounded-md font-bold text-lg`}>Quem Somos</a>
-                        <a href="/segmentos" title="Segmentos" className={` ${url === '/segmentos' ? 'bg-correio-inteligente-800' : ''} text-gray-100 p-2 rounded-md font-bold text-lg`}>Segmentos</a>
-                        <a href="/cases-de-sucesso" title="Cases de Sucesso" className={` ${url === '/cases-de-sucesso' ? 'bg-correio-inteligente-800' : ''} text-gray-100 p-2 rounded-md font-bold text-lg`}>Cases de Sucesso</a>
-                        <a href="/planos" title="Planos" className={` ${url === '/planos' ? 'bg-correio-inteligente-800' : ''} text-gray-100 p-2 rounded-md font-bold text-lg`}>Planos</a>
+                        <a href="/quem-somos" title="Quem Somos" className={` ${url[1] === 'quem-somos' ? 'text-correio-inteligente-800' : 'text-gray-100'}  p-2 rounded-md font-bold text-lg`}>Quem Somos</a>
+                        <div className="relative group">
+                            <a href="#" title="Segmentos" className={` ${url[1] === 'segmentos' ? 'text-correio-inteligente-800' : 'text-gray-100'}  p-2 rounded-md font-bold text-lg`}>Segmentos</a>
+                            <div className="absolute hidden group-hover:flex flex-col top-full left-0 pt-2 min-w-40">
+                                <div className="flex flex-col rounded-md bg-correio-inteligente-200 p-2 gap-1 shadow-xl">
+                                    <a href="/segmentos/bancos" className={`${url[2] === 'bancos' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in font-bold text-base rounded-md p-2 `}>Bancos e Fintechs</a>
+                                    <a href="/segmentos/governos" className={`${url[2] === 'governos' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in font-bold text-base rounded-md p-2 `}>Governos e ONGs</a>
+                                    <a href="/segmentos/varejo" className={`${url[2] === 'varejo' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in font-bold text-base rounded-md p-2 `}>Varejo</a>
+                                    <a href="/segmentos/saude" className={`${url[2] === 'saude' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in font-bold text-base rounded-md p-2 `}>Saúde</a>
+                                    <a href="/segmentos/educacao" className={`${url[2] === 'educacao' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in font-bold text-base rounded-md p-2 `}>Educação</a>
+                                    <a href="/segmentos/seguradoras" className={`${url[2] === 'seguradoras' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in font-bold text-base rounded-md p-2 `}>Seguradoras</a>                                </div>
+                            </div>
+                        </div>
+                        <a href="/cases-de-sucesso" title="Cases de Sucesso" className={` ${url[1] === 'cases-de-sucesso' ? 'text-correio-inteligente-800' : 'text-gray-100'}  p-2 rounded-md font-bold text-lg`}>Cases de Sucesso</a>
+                        <a href="/planos" title="Planos" className={` ${url[1] === 'planos' ? 'text-correio-inteligente-800' : 'text-gray-100'}  p-2 rounded-md font-bold text-lg`}>Planos</a>
                     </div>
 
                     <a title="Fale com um Especialista" className="w-80 flex items-center justify-center hover:bg-gray-100 hover:text-correio-inteligente-100 text-gray-100 transition-all font-bold duration-300 ease-in p-4 rounded-full text-lg" href={`https://wa.me/5584994146984?text=Quero%20mais%20informações%20sobre%20o%20Correio%20Inteligente.`} target="_blank">Fale com um Especialista</a>
@@ -42,11 +56,33 @@ export default function Navbar() {
 
             {
                 isMenuOpen && (
-                    <div className="flex md:hidden flex-col fixed top-22 left-4 right-4 z-40 gap-2 rounded-2xl bg-linear-to-r from-konnectai-primary to-black p-4">
-                        <a href="/quem-somos" onClick={() => setIsMenuOpen(false)} className={`${url === '/quem-somos' ? 'bg-correio-inteligente-800 rounded-md' : ''} text-gray-100 font-bold text-lg text-left py-2`}>Quem Somos</a>
-                        <button onClick={() => setIsMenuOpen(false)} className="text-gray-100 font-bold text-lg text-left py-2">Segmentos</button>
-                        <button onClick={() => setIsMenuOpen(false)} className="text-gray-100 font-bold text-lg text-left py-2">Cases de Sucesso</button>
-                        <button onClick={() => setIsMenuOpen(false)} className="text-gray-100 font-bold text-lg text-left py-2">Planos</button>
+                    <div className="flex md:hidden flex-col fixed top-22 left-4 right-4 z-40 gap-2 rounded-2xl bg-linear-to-r from-correio-inteligente-200 to-black p-4">
+                        <a href="/quem-somos" className={`${url[1] === 'quem-somos' ? 'text-correio-inteligente-100 rounded-md' : 'text-gray-100'} font-bold text-lg text-left py-2`}>Quem Somos</a>
+                        <button onClick={() => setSubMenuSegments(!subMenuSegments)} className="text-gray-100 font-bold text-lg text-left py-2">Segmentos</button>
+                        {subMenuSegments && (
+                            <div className="flex flex-col border-gray-100 bg-correio-inteligente-200">
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Bancos e Fintechs</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Governos e ONGs</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Varejo</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Saúde</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Educação</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Seguradoras</a>
+
+                            </div>
+                        )}
+                        <button onClick={() => setSubMenuCases(!subMenuCases)} className="text-gray-100 font-bold text-lg text-left py-2">Cases de Sucesso</button>
+                        {subMenuCases && (
+                            <div className="flex flex-col border-gray-100 bg-correio-inteligente-200">
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Bancos e Fintechs</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Governos e ONGs</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Varejo</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Saúde</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Educação</a>
+                                <a href="/segmentos/bancos" className="p-2 text-gray-100 font-bold text-lg text-left">Seguradoras</a>
+
+                            </div>
+                        )}
+                        <a href="/planos" className="text-gray-100 font-bold text-lg text-left py-2">Planos</a>
                         <a
                             href="#contato"
                             onClick={() => setIsMenuOpen(false)}

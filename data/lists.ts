@@ -14,11 +14,72 @@ export interface MenuWho {
     image: string;
 }
 
+
+
 export interface MenuDemonstration {
     id: string
     title: string;
     text: string;
 } 
+
+export interface MenuPricing {
+    id: string;
+    plan: string;
+    value: string;
+    differentials: string[],
+    href: string
+}
+
+export const menuPricing: MenuPricing[] =[
+    {
+        id: 'basic',
+        plan: 'Básico',
+        value: '199',
+        differentials: [
+            'Envios de até 10.000 mensagens mensais.',
+            'Nunc accumsan fermentum tristique.',
+            'Cras consectetur odio leo, a finibus tortor porttitor at.',
+            'Duis ullamcorper massa ac nunc placerat auctor.'
+        ],
+        href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%2010.000%20mensagens.'
+    },
+    {
+        id: 'pro',
+        plan: 'Pro',
+        value: '299',
+        differentials: [
+            'Envios de até 20.000 mensagens mensais.',
+            'Nunc accumsan fermentum tristique.',
+            'Cras consectetur odio leo, a finibus tortor porttitor at.',
+            'Duis ullamcorper massa ac nunc placerat auctor.'
+        ],
+        href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%2020.000%20mensagens.'
+    },
+    {
+        id: 'advanced',
+        plan: 'Avançado',
+        value: '399',
+        differentials: [
+            'Envios de até 30.000 mensagens mensais.',
+            'Nunc accumsan fermentum tristique.',
+            'Cras consectetur odio leo, a finibus tortor porttitor at.',
+            'Duis ullamcorper massa ac nunc placerat auctor.'
+        ],
+        href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%2030.000%20mensagens.'
+    },
+    {
+        id: 'faleconosco',
+        plan: '+',
+        value: '*',
+        differentials: [
+            'Quantas mensagens sua empresa precisar.',
+            'Nunc accumsan fermentum tristique.',
+            'Cras consectetur odio leo, a finibus tortor porttitor at.',
+            'Duis ullamcorper massa ac nunc placerat auctor.'
+        ],
+        href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%20ilimitadas%20mensagens.'
+    }
+]
 export const menuWhy: MenuWhy[] = [
     {
         id: 'send',
@@ -118,3 +179,4 @@ export const menuDemonstration: MenuDemonstration[] = [
         text: 'Proteção e armazenamento seguro das informações.',
     },
 ]
+

@@ -20,7 +20,7 @@ export default function Home() {
             <img src="whatsapp.png" className="fixed w-10 md:fixed bottom-10 right-10 md:w-15" alt="" />
           </a>
           <Navbar />
-          <div className="flex h-auto  md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-correio-inteligente-200 from-60% to-black px-4">
+          <div className="flex h-auto md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-correio-inteligente-200 from-60% to-black px-4">
             <div className="flex flex-col  justify-center md:flex-row items-center gap-10">
               <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left font-unineue w-full max-w-140">
                 <img src="Iso.png" className="max-h-30 w-30" alt="" />

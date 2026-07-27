@@ -30,7 +30,7 @@ export default () => {
                                 typewriter.typeString('A infraestrutura mais confiável para envios em longa escala do mercado.').callFunction(() => { setTimeout(() => setAppear(!appear), 300) }).start()
                             }} ></Typewriter> */}
                             <Reveal>
-                                <h2 className="bg-linear-to-r text-4xl md:text-6xl py-3 font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent">A solução mais confiável para envios em longa escala do mercado.</h2>
+                                <h2 className="bg-linear-to-r text-5xl md:text-6xl py-3 font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent">A solução mais confiável para envios em longa escala do mercado.</h2>
                             </Reveal>
                             <Reveal direction="left">
                                 <div className="h-1 border border-gray-800 bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800 md:my-8 my-3 w-100" />
