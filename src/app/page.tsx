@@ -27,18 +27,18 @@ export default function Home() {
             <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="flex flex-col  justify-center md:flex-row items-center gap-10">
-              <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left font-unineue w-full max-w-140">
+              <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left w-full max-w-140">
                 <img src="Iso.png" className="max-h-30 w-30" alt="" />
                 <div>
-                  <h1 className="bg-linear-to-r font-harabara font-bold relative from-correio-inteligente-900 from-10% to-correio-inteligente-800 bg-clip-text text-transparent">Envie mensagens em escala com segurança e performance</h1>
-                  <p className="text-gray-100 relative text-lg pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
+                  <h1 className="bg-linear-to-r  relative from-correio-inteligente-900 from-10% to-correio-inteligente-800 bg-clip-text text-transparent">Envie <span className="font-bold">mensagens</span> em escala com <span className="font-bold">segurança</span> e <span className="font-bold">performance</span></h1>
+                  <p className=" relative text-lg text-correio-inteligente-900 pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
                     mensageria da Konnectaí via <span className="font-bold">API Oficial do
                       WhatsApp</span>, ideal para empresas que precisam se
                     comunicar com milhares de clientes de forma
                     rápida, segura e eficiente.</p>
                 </div>
-                <a href="#contato" className="mt-10 p-3 w-full relative max-w-60 flex items-center justify-center rounded-full bg-linear-to-r text-konnectai-primary from-green-200 from-1% to-konnectai-secondary">
-                  <span className="text-xl">Fale conosco</span>
+                <a href="#contato" className="mt-10 p-3 w-full relative max-w-60 flex items-center justify-center rounded-full bg-correio-inteligente-900 text-correio-inteligente-200 ">
+                  <span className="text-lg">Fale conosco</span>
                 </a>
               </Reveal>
               <Reveal direction="right" delay={0.15} className="hidden md:block">
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center text-correio-inteligente-500 justify-center bg-[url('/background-waves.jpg')] h-auto md:h-120 py-16 md:py-0 bg-cover bg-no-repeat bg-center px-4">
             <Reveal>
-              <h1 className="font-black font-franie text-center">Muito além de disparos de mensagens</h1>
+              <h1 className="font-black text-center">Muito além de disparos de mensagens</h1>
             </Reveal>
             <Reveal delay={0.15} className="flex flex-col items-center text-center">
               <span className="mt-10 italic text-lg">
@@ -138,7 +138,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
 
   );

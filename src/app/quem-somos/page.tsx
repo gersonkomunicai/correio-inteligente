@@ -3,7 +3,7 @@
 import Navbar from "../../../components/Navbar"
 import Typewriter from 'typewriter-effect'
 import Reveal from "../../../components/Reveal"
-import { ChevronDown } from "lucide-react"
+import { Check, ChevronDown } from "lucide-react"
 
 export default () => {
     return (
@@ -34,7 +34,7 @@ export default () => {
                             </Reveal>
                             <Reveal direction="left">
                                 <div className="h-1 border border-gray-800 bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800 md:my-8 my-3 w-100" />
-                                <span className="md:text-xl text-lg text-gray-100 md:font-medium font-light">A solução que nasceu para transformar a
+                                <span className="md:text-xl text-lg text-gray-100 md:font-medium font-light">A resposta que nasceu para transformar a
                                     forma como empresas e instituições se comunicam
                                     com seus clientes. Unimos tecnologia, segurança e
                                     automação para tornar cada mensagem mais
@@ -53,18 +53,28 @@ export default () => {
                     <div className="absolute bg-correio-inteligente-100/40 w-10 h-10 rotate-45 right-50 blur-sm" />
                     <div className="flex flex-col items-center md:px-35 px-5 w-full">
                         <div className="md:flex flex-col md:w-220">
-                            <h2 className="text-4xl bg-linear-to-r bg-clip-text text-transparent from-correio-inteligente-200 to-correio-inteligente-800 font-bold font-unineue text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <h2 className="text-4xl bg-linear-to-r bg-clip-text text-transparent from-correio-inteligente-200 p-3 to-correio-inteligente-800 text-center">A infraestrutura <span className="font-bold">completa</span> para a sua empresa, num <span className="font-bold">único lugar</span>.</h2>
                         </div>
                         <div className="md:flex justify-center mt-10">
                             <div className="md:flex text-left items-start md:mr-10 ">
                                 <Reveal direction="left">
-                                    <span className="md:text-lg">Fusce vitae odio non ligula aliquet imperdiet ut vel lectus.
-                                        Pellentesque feugiat mi a ullamcorper auctor. Fusce vel ex lobortis, accumsan nisl quis,
-                                        laoreet tellus. Integer condimentum aliquam fermentum.
-                                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                        Cras ac leo et mauris malesuada elementum at et arcu. Pellentesque habitant morbi tristique
-                                        senectus et netus et malesuada fames ac turpis egestas.
-                                        Sed tristique ligula quis viverra aliquam. </span>
+                                    <div className="flex flex-col">
+                                        <span className="md:text-2xl text-correio-inteligente-200">O <span className="font-bold italic">Correio Inteligente</span> nasceu com o propósito de apoiar operações que exigem alto nível de controle, padronização e governança na comunicação digital. Ele possui uma infraestrutura completa para comunicação empresarial, com foco em performance, segurança e escala, integrando canais e automatizando jornadas de relacionamento.</span>
+                                        <span className="md:text-2xl text-correio-inteligente-200"> Algumas coisas que orientam nosso trabalho são: </span>
+                                        <div className="flex items-center  m-3">
+                                            <Check className="w-8 h-8 size-4  text-correio-inteligente-200" />
+                                            <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  busca pela <span className="font-bold">inovação</span> que se manifesta em uma <span className="font-bold">evolução constante</span> para elevar a <span className="font-bold">qualidade e a inteligência</span> das interações digitais.</span>
+                                        </div>
+                                        <div className="flex items-center m-3">
+                                            <Check className="flex items-center justify-center w-7 h-7 size-4 text-correio-inteligente-200" />
+                                            <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  priorizando a <span className="font-bold">segurança, confiabilidade e boas práticas em toda a operação de mensagens.</span> </span>
+                                        </div>
+                                        <div className="flex items-center m-3">
+                                            <Check className="flex items-center justify-center w-7 h-7 size-4 text-correio-inteligente-200" />
+                                            <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  priorizando a <span className="font-bold">segurança, confiabilidade e boas práticas em toda a operação de mensagens.</span> </span>
+                                        </div>
+                                        
+                                    </div>
                                 </Reveal>
                                 <div className="absolute bg-correio-inteligente-100/20 w-50 h-50 rotate-45 left-130 mt-30 blur-2xl" />
                             </div>
@@ -81,24 +91,25 @@ export default () => {
                     <div className="absolute bg-correio-inteligente-300/10 w-5 h-5 rotate-45 left-121 mt-40 blur-xs" />
                     <div className="absolute bg-correio-inteligente-300/10 w-100 h-100 rounded-full right-100 blur-3xl" />
                     <div className="flex h-full items-center">
-                        <div className="hidden md:flex flex-col items-center justify-center text-left w-[50%] h-140 bg-correio-inteligente-900">
+                        <div className="hidden md:flex flex-col items-center justify-center text-left w-[50%] h-110 bg-correio-inteligente-900">
                             <Reveal direction="left">
                                 <div className="w-150 ml-20">
-                                    <h2 className="bg-linear-to-r p-3 from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent font-bold text-3xl">Sobre o Correio Inteligente</h2>
-                                    <h2 className="bg-linear-to-r p-3 text-gray-600 text-3xl">Praesent blandit lectus non tempor fermentum. Aliquam porta rutrum placerat. Duis eleifend vitae lorem eu placerat. Nulla nec suscipit lectus.</h2>
+                                    <h2 className="bg-linear-to-r p-2 from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent font-bold text-3xl">Sobre o Correio Inteligente</h2>
+                                    <h2 className="bg-linear-to-r px-2 text-gray-600 text-3xl">Nossa história, missão e visão.</h2>
                                 </div>
                             </Reveal>
                         </div>
-                        <div className="h-auto flex text-center md:w-[50%] md:h-140 bg-correio-inteligente-200">
+                        <div className="h-auto flex items-center text-center md:w-[50%] md:h-110 bg-correio-inteligente-200">
                             <Reveal direction="right">
                                 <div className="flex flex-col justify-center m-5">
                                     <h2 className="md:hidden bg-linear-to-r py-3 from-correio-inteligente-800 to-correio-inteligente-900 bg-clip-text text-transparent font-bold text-4xl">Sobre o Correio Inteligente</h2>
-                                    <h2 className="md:hidden bg-linear-to-r py-3 text-gray-300 text-2xl">Praesent blandit lectus non tempor fermentum. Aliquam porta rutrum placerat. Duis eleifend vitae lorem eu placerat. Nulla nec suscipit lectus.</h2>
-                                    <div className="flex flex-col text-lg text-gray-100 text-center md:text-left">
-                                        <span className="py-2">
-                                            Nunc sit amet risus quis odio euismod tincidunt in eu nulla. Praesent facilisis dapibus facilisis. Nullam pulvinar viverra mauris ut luctus. Mauris eleifend est non ipsum fermentum efficitur. Fusce faucibus diam et dapibus accumsan. Nullam iaculis sit amet ante sed sagittis. Phasellus hendrerit eu dui non lobortis.</span>
+                                    <h2 className="md:hidden bg-linear-to-r py-3 text-gray-300 text-2xl">Nossa história, missão e visão.</h2>
+                                    <div className="flex flex-col md:h-auto  justify-center items-center text-lg text-gray-100 text-center md:text-left">
+                                        <span className="">
+                                            O Correio Inteligente foi criado para <span className="font-bold">simplificar a comunicação</span> entre organizações e pessoas, combinando <span className="font-bold">tecnologia, automação, segurança</span> e <span className="font-bold">integração de canais</span> em uma plataforma preparada para diferentes contextos de operação — do atendimento ao cidadão a fluxos corporativos de relacionamento com clientes.
+                                        </span>
                                         <span>
-                                            Aliquam erat volutpat. Aenean venenatis porttitor convallis. Ut a laoreet elit. Donec tincidunt sodales massa, et finibus sem lacinia commodo. Fusce ac risus mauris. Integer molestie purus ac dictum tincidunt. Proin laoreet felis lorem, porttitor pulvinar est tempor id. Integer eleifend, eros a pellentesque vehicula, nunc sem fringilla dui, et aliquam ipsum orci eget mi. Proin ac eleifend odio, quis hendrerit neque.
+                                            Nossa missão é transformar a comunicação empresarial em uma experiência <span className="font-bold">simples, segura</span> e <span className="font-bold">inteligente</span>. Nossa busca é alcançar um patamar de reconhecimento nacional em <span className="font-bold">soluções de comunicação digita</span>. Por esse motivo nós priorizamos <span className="font-bold">proteção, confiabilidade e boas práticas</span> em toda a operação de mensagens.
                                         </span>
                                     </div>
 

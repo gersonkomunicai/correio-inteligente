@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title: "Correio Inteligente",
@@ -34,7 +35,11 @@ export default function RootLayout({
           </noscript>
         )}
         {children}
+        <footer>
+          <Footer></Footer>
+        </footer>
       </body>
+      
     </html>
   );
 }

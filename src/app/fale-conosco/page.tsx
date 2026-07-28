@@ -34,11 +34,7 @@ export default () => {
                         <ContactForm className="md:w-130" />
                     </div>
                 </div>
-
             </div>
-            <footer>
-                <Footer></Footer>
-            </footer>
         </div>
     )
 }
