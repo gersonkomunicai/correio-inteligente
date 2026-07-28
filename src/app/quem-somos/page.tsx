@@ -18,7 +18,7 @@ export default () => {
                         <Navbar />
                     </Reveal>
                     <div className="flex w-full items-center justify-around h-screen">
-                        <div className="flex w-100 md:w-250 md:mt-0 text-left flex-col">
+                        <div className="flex mt-25 w-100 md:w-250 md:mt-20 text-left flex-col">
                             <Reveal>
                                 <span className="md:text-lg text-md text-gray-100">QUEM SOMOS</span>
                             </Reveal>
@@ -117,7 +117,7 @@ export default () => {
                         <div className="flex items-center text-center md:flex md:items-start flex-col justify-center md:text-left h-full md:w-[50%] pr-5">
                             <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-4xl py-5">Lorem ipsum dolor sit amet</h2>
                             <span>Donec finibus turpis metus, ut accumsan massa blandit ac. Cras sagittis porta dui. Vivamus pellentesque risus sed fermentum lacinia. Suspendisse id dui nunc. Phasellus sed elit vulputate, euismod ante sit amet, laoreet tortor. </span>
-                            <a href="#começo" className="flex my-5 w-30 items-center md:justify-start mt-8 rounded-md bg-correio-inteligente-200 text-correio-inteligente-900 p-3">
+                            <a href="/fale-conosco" className="flex my-5 w-30 items-center md:justify-start mt-8 rounded-md bg-correio-inteligente-200 text-correio-inteligente-900 p-3">
                                 <span>Fale conosco</span>
                             </a>
                         </div>

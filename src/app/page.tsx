@@ -123,9 +123,11 @@ export default function Home() {
             <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="absolute  w-70 h-70 rotate-45 blur-2xl bg-correio-inteligente-100/20" />
-            <Reveal direction="left" className="relative">
-              <h1 className="bg-linear-to-r font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent">Pronto para escalar sua comunicação?</h1>
-              <span className="text-xl pt-5 w-full text-center md:text-left text-gray-100">Comece agora a enviar mensagens com mais eficiência, segurança e resultados.</span>
+            <Reveal direction="left" className="relative py-5">
+              <div className="flex flex-col py-5">
+                <h1 className="bg-linear-to-r font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent">Pronto para escalar sua comunicação?</h1>
+                <span className="text-xl w-full text-center md:text-left text-gray-100">Comece agora a enviar mensagens com mais eficiência, segurança e resultados.</span>
+              </div>
               <ContactForm />
             </Reveal>
             <Reveal direction="right" delay={0.15} className="hidden md:block">

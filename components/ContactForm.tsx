@@ -11,11 +11,12 @@ declare global {
     interface Window { dataLayer: any[] }
 }
 
-interface ContactFormProps{
+interface ContactFormProps {
     className?: string
 }
 
-export default function ContactForm({className}:ContactFormProps) {
+
+export default function ContactForm({className}: ContactFormProps) {
     const [name, setName] = useState('')
     const [company, setCompany] = useState('')
     const [email, setEmail] = useState('')
@@ -72,7 +73,7 @@ export default function ContactForm({className}:ContactFormProps) {
         <div>
             <div className="flex flex-col justify-center">
                 
-                <div className="relative flex flex-col rounded-2xl mt-5 w-full max-w-130 p-3 bg-correio-inteligente-500">
+                <div className={`relative flex flex-col ${className} rounded-2xl p-3 bg-correio-inteligente-500`}>
                     {status === 'success' ? (
                         <div className="flex items-center justify-between rounded-md absolute inset-x-4 p-4 w-auto bg-correio-inteligente-900 text-correio-inteligente-200">
                             <p className="">Informações enviadas! Entraremos em contato.</p>
