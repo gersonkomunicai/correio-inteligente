@@ -12,7 +12,7 @@ export default function Navbar() {
     const url = usePathname().split('/')
 
     return (
-        <div className="font-unineue flex justify-center">
+        <div className="flex justify-center">
             <div className="hidden md:flex rounded-full bg-linear-to-r from-konnectai-primary/30 to-black/30 backdrop-blur-xs px-40 fixed top-7 h-20 z-50">
                 <div className="flex items-center h-auto ">
                     <a href='/'>

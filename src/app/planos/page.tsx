@@ -24,7 +24,7 @@ export default () => {
                             <div className="w-100 h-1 my-8 bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800" />
                         </Reveal>
                         <Reveal direction="left">
-                            <span className="md:text-xl text-lg text-gray-100 md:font-medium font-light">Maecenas nec leo sit amet risus aliquet laoreet. Nulla a lobortis diam, non faucibus elit. Nunc bibendum elementum urna eget laoreet</span>
+                            <span className="md:text-xl text-lg text-gray-100 md:font-medium font-light">Escolha o plano ideal para automatizar cobranças, notificações e campanhas via WhatsApp com segurança, velocidade e escalabilidade.</span>
                         </Reveal>
                         <Reveal direction="left">
                             <a className="w-30 flex my-10 items-center p-3 text-correio-inteligente-200 bg-correio-inteligente-900" href="#preco">
@@ -37,11 +37,12 @@ export default () => {
             </div>
             <div id="preco" className="flex snap-center flex-col items-center py-16 justify-start h-auto bg-gray-100">
                 <div className="flex flex-col w-150 text-center">
-                    <h2 className="text-4xl font-unineue font-bold bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent">Curabitur sed massa dictum</h2>
-                    <span className="text-gray-500 pt-5">Sed eleifend, quam eu mollis volutpat, elit ligula dapibus arcu, vel elementum lectus neque facilisis urna. Vivamus justo mauris, maximus non elit sed, blandit aliquam nibh. Aenean elementum elit sed fermentum bibendum.</span>
+                    <h2 className="text-4xl font-unineue font-bold bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent">Planos que acompanham o crescimento da sua empresa</h2>
+                    <span className="text-gray-500 pt-5">Nossos planos foram desenvolvidos para atender desde operações em crescimento até grandes volumes de comunicação, oferecendo desempenho, confiabilidade e suporte especializado.</span>
                 </div>
-                <div className="flex items-center justify-center flex-wrap mt-10">
+                <div className="flex items-start justify-center flex-wrap mt-10">
                     <CardPricing></CardPricing>
+                    
                 </div>
             </div>
 

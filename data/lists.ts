@@ -20,64 +20,78 @@ export interface MenuDemonstration {
     id: string
     title: string;
     text: string;
-} 
+}
 
 export interface MenuPricing {
     id: string;
     plan: string;
     value: string;
     differentials: string[],
+    mostSaled?: boolean,
     href: string
 }
 
-export const menuPricing: MenuPricing[] =[
+export const menuPricing: MenuPricing[] = [
     {
         id: 'basic',
-        plan: 'Básico',
-        value: '199',
+        plan: 'Starter',
+        value: '0,42',
         differentials: [
-            'Envios de até 10.000 mensagens mensais.',
-            'Nunc accumsan fermentum tristique.',
-            'Cras consectetur odio leo, a finibus tortor porttitor at.',
-            'Duis ullamcorper massa ac nunc placerat auctor.'
+            'Envios de 10.000 mensagens mensais.',
+            '1 canal',
+            '1 usuário',
+            'Campanhas ilimitadas',
+            'Agendamento de mensagens',
+            'Relatórios básicos',
+            'Suporte por e-mail',
+            'Estrutura de disparo em até 48h úteis',
         ],
         href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%2010.000%20mensagens.'
     },
     {
         id: 'pro',
-        plan: 'Pro',
-        value: '299',
+        plan: 'Professional',
+        value: '0,40',
         differentials: [
-            'Envios de até 20.000 mensagens mensais.',
-            'Nunc accumsan fermentum tristique.',
-            'Cras consectetur odio leo, a finibus tortor porttitor at.',
-            'Duis ullamcorper massa ac nunc placerat auctor.'
+            'Envios de 20.000 mensagens mensais.',
+            '2 canais de Whatsapp',
+            'Até 3 usuários',
+            'Campanhas ilimitadas',
+            'Agendamento de mensagens',
+            'API',
+            'Suporte via Whatsapp',
+            'Estrutura de disparo em até 48h úteis',
+
         ],
         href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%2020.000%20mensagens.'
     },
     {
         id: 'advanced',
         plan: 'Avançado',
-        value: '399',
+        value: '0,39',
         differentials: [
-            'Envios de até 30.000 mensagens mensais.',
-            'Nunc accumsan fermentum tristique.',
-            'Cras consectetur odio leo, a finibus tortor porttitor at.',
-            'Duis ullamcorper massa ac nunc placerat auctor.'
+            'Envios de 30.000 mensagens mensais.',
+            'Até 5 canais de Whatsapp',
+            'Usuários ilimitados',
+            'Agendamento de mensagens',
+            'API/Webhook',
+            'Suporte prioritário',
+            'SLA reduzido',
+            'Estrutura de disparo em até 36h úteis'
         ],
         href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%2030.000%20mensagens.'
     },
     {
-        id: 'faleconosco',
-        plan: '+',
-        value: '*',
+        id: 'personalizado',
+        plan: 'Personalizado',
+        value: '0,39*',
         differentials: [
-            'Quantas mensagens sua empresa precisar.',
+            'Mais de 30.000 mensagens.',
             'Nunc accumsan fermentum tristique.',
             'Cras consectetur odio leo, a finibus tortor porttitor at.',
             'Duis ullamcorper massa ac nunc placerat auctor.'
         ],
-        href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%20ilimitadas%20mensagens.'
+        href: 'https://wa.me/5584994146984?text=Quero%20contratar%20um%20plano%20de%20mensagens%20ilimitadas.'
     }
 ]
 export const menuWhy: MenuWhy[] = [

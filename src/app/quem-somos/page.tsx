@@ -67,12 +67,9 @@ export default () => {
                                         </div>
                                         <div className="flex items-center m-3">
                                             <Check className="flex items-center justify-center w-7 h-7 size-4 text-correio-inteligente-200" />
-                                            <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  priorizando a <span className="font-bold">segurança, confiabilidade e boas práticas em toda a operação de mensagens.</span> </span>
+                                            <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  prioridade para <span className="font-bold">segurança, confiabilidade e boas práticas</span> em toda a operação de mensagens.</span>
                                         </div>
-                                        <div className="flex items-center m-3">
-                                            <Check className="flex items-center justify-center w-7 h-7 size-4 text-correio-inteligente-200" />
-                                            <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  priorizando a <span className="font-bold">segurança, confiabilidade e boas práticas em toda a operação de mensagens.</span> </span>
-                                        </div>
+                                        
                                         
                                     </div>
                                 </Reveal>
@@ -126,8 +123,8 @@ export default () => {
 
                     <div className="absolute p-10 flex w-[65%] h-140 items-center rounded-xl bg-correio-inteligente-900">
                         <div className="flex items-center text-center md:flex md:items-start flex-col justify-center md:text-left h-full md:w-[50%] pr-5">
-                            <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-4xl py-5">Lorem ipsum dolor sit amet</h2>
-                            <span>Donec finibus turpis metus, ut accumsan massa blandit ac. Cras sagittis porta dui. Vivamus pellentesque risus sed fermentum lacinia. Suspendisse id dui nunc. Phasellus sed elit vulputate, euismod ante sit amet, laoreet tortor. </span>
+                            <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-4xl py-5">Pronto para transformar sua comunicação?</h2>
+                            <span>Converse com nosso time e descubra a melhor solução para automatizar seus envios e potencializar os resultados da sua empresa.</span>
                             <a href="/fale-conosco" className="flex my-5 w-30 items-center md:justify-start mt-8 rounded-md bg-correio-inteligente-200 text-correio-inteligente-900 p-3">
                                 <span>Fale conosco</span>
                             </a>
