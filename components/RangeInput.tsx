@@ -4,9 +4,9 @@ import { useMemo, useState } from "react";
 // ---------------------------------------------------------------------------
 // Config do domínio (ajuste esses números conforme os planos reais)
 // ---------------------------------------------------------------------------
-const CUSTOM_MIN = 40_000;
+const CUSTOM_MIN = 100_000;
 const CUSTOM_MAX = 1_000_000;
-const PRICE_PER_MESSAGE = 0.39;
+const PRICE_PER_MESSAGE = 0.29;
 const SLIDER_STEPS = 1000; // resolução "neutra" do input range
 const DEFAULT_MESSAGES = 100_000;
 

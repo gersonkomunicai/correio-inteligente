@@ -84,7 +84,7 @@ export const menuPricing: MenuPricing[] = [
     {
         id: 'personalizado',
         plan: 'Personalizado',
-        value: '0,39*',
+        value: '0,29*',
         differentials: [
             'Mais de 30.000 mensagens.',
             'Nunc accumsan fermentum tristique.',

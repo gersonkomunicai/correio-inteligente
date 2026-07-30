@@ -20,7 +20,7 @@ export default () => {
                     (
                         <div className="flex flex-col ml-4 mt-2">
                             <p className="text-sm">Volume customizado</p>
-                            <p className="text-xs">De 40.000 até 1.000.000 de mensagens</p>
+                            <p className="text-xs">De 100.000 até 1.000.000 de mensagens</p>
                             <PlanVolumeSlider />
                         </div>
                     ) : price.differentials.map((differential) => (
