@@ -1,9 +1,10 @@
 // import { ChevronDown } from "lucide-react"
-// import Navbar from "../../../components/Navbar"
+// // import Navbar from "../../../components/Navbar"
 // import Reveal from "../../../components/Reveal"
 // import CardPricing from "../../../components/CardPricing"
+// import ThreeScene from "../../../components/ThreeScene"
+import Cta from "../../../components/Cta"
 import Navbar from "../../../components/Navbar"
-import ThreeScene from "../../../components/ThreeScene"
 
 
 // export default () => {
@@ -17,7 +18,7 @@ import ThreeScene from "../../../components/ThreeScene"
 //                 <Reveal direction="left">
 //                     <Navbar />
 //                 </Reveal>
-//                 <div className="flex snap-center items-center justify-center h-full ">
+//                 <div className="flex items-center justify-center h-full ">
 //                     <div className="w-100 md:w-250 md:mt-0 text-left flex-col">
 //                         <Reveal direction="left">
 //                             <span className=" text-lg text-gray-100">PLANOS</span>
@@ -57,6 +58,7 @@ export default () => {
     return (
         <div className="h-100">
             <Navbar></Navbar>
+            <Cta className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" ></Cta>
             {/* <ThreeScene></ThreeScene> */}
         </div>
     )
