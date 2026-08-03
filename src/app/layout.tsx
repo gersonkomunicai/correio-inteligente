@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import Footer from "../../components/Footer";
+import Cta from "../../components/Cta";
 
 export const metadata: Metadata = {
   title: "Correio Inteligente",
@@ -34,12 +35,15 @@ export default function RootLayout({
             <iframe src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`} height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
           </noscript>
         )}
-        {children}
+        <main>
+          {children}
+
+        </main>
         <footer>
           <Footer></Footer>
         </footer>
       </body>
-      
+
     </html>
   );
 }

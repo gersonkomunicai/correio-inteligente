@@ -2,6 +2,8 @@
 // import Navbar from "../../../components/Navbar"
 // import Reveal from "../../../components/Reveal"
 // import CardPricing from "../../../components/CardPricing"
+import Navbar from "../../../components/Navbar"
+import ThreeScene from "../../../components/ThreeScene"
 
 
 // export default () => {
@@ -53,6 +55,9 @@
 // }
 export default () => {
     return (
-        <div></div>
+        <div className="h-100">
+            <Navbar></Navbar>
+            {/* <ThreeScene></ThreeScene> */}
+        </div>
     )
 }

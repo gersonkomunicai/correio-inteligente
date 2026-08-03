@@ -24,12 +24,12 @@ export default function Navbar() {
                             <a href="#" title="Segmentos" className={` ${url[1] === 'segmentos' ? 'text-correio-inteligente-800' : 'text-gray-100'} hover:text-correio-inteligente-800 transition-all ease-in duration-200  p-2 rounded-md font-bold text-lg`}>Segmentos</a>
                             <div className="absolute hidden group-hover:flex flex-col top-full left-0 pt-2 min-w-40">
                                 <div className="flex flex-col rounded-md bg-correio-inteligente-200 p-2 gap-1 shadow-xl">
-                                    <a href="/segmentos/bancos" className={`${url[2] === 'bancos' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in  text-base rounded-md p-2 `}>Bancos e Fintechs</a>
-                                    <a href="/segmentos/governos" className={`${url[2] === 'governos' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Governos e ONGs</a>
-                                    <a href="/segmentos/varejo" className={`${url[2] === 'varejo' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Varejo</a>
-                                    <a href="/segmentos/saude" className={`${url[2] === 'saude' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in  text-base rounded-md p-2 `}>Saúde</a>
-                                    <a href="/segmentos/educacao" className={`${url[2] === 'educacao' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Educação</a>
-                                    <a href="/segmentos/seguradoras" className={`${url[2] === 'seguradoras' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Seguradoras</a>                                </div>
+                                    <a href="/segmentos/bancos" className={`${url[2] === 'bancos' ? 'text-correio-inteligente-200 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in  text-base rounded-md p-2 `}>Bancos e Fintechs</a>
+                                    <a href="/segmentos/governos" className={`${url[2] === 'governos' ? 'text-correio-inteligente-200 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Governos e ONGs</a>
+                                    <a href="/segmentos/varejo" className={`${url[2] === 'varejo' ? 'text-correio-inteligente-200 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Varejo</a>
+                                    <a href="/segmentos/saude" className={`${url[2] === 'saude' ? 'text-correio-inteligente-200 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in  text-base rounded-md p-2 `}>Saúde</a>
+                                    <a href="/segmentos/educacao" className={`${url[2] === 'educacao' ? 'text-correio-inteligente-200 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Educação</a>
+                                    <a href="/segmentos/seguradoras" className={`${url[2] === 'seguradoras' ? 'text-correio-inteligente-200 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Seguradoras</a>                                </div>
                             </div>
                         </div>
                         <div className="relative group">
@@ -37,7 +37,7 @@ export default function Navbar() {
                             <div className="absolute hidden group-hover:flex flex-col top-full left-0 pt-2 min-w-40">
                                 <div className="flex flex-col rounded-md bg-correio-inteligente-200 p-2 gap-1 shadow-xl">
                                     <a href="/cases/grupo-aval" className={`${url[2] === 'grupo-aval' ? 'text-correio-inteligente-200 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Grupo Aval</a>
-                                    <a href="/cases/bellinati-perez" className={`${url[2] === 'bellinati-perez' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in  text-base rounded-md p-2 `}>Bellinati Perez</a>
+                                    {/* <a href="/cases/bellinati-perez" className={`${url[2] === 'bellinati-perez' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in  text-base rounded-md p-2 `}>Bellinati Perez</a> */}
                                     <a href="/cases/toledo-piza" className={`${url[2] === 'toledo-piza' ? 'text-gray-100 bg-correio-inteligente-800 ' : 'hover:text-gray-700 text-gray-100 hover:bg-correio-inteligente-900'} transition-all duration-200 ease-in text-base rounded-md p-2 `}>Toledo Piza</a>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ export default function Navbar() {
                         {subMenuCases && (
                             <div className="flex flex-col border-gray-100 bg-correio-inteligente-200">
                                 <a href="/cases/grupo-aval" className={`${url[2] === 'grupo-aval' ? 'bg-correio-inteligente-800' : ''} p-2 text-gray-100 font-bold text-lg text-left`}>Grupo Aval</a>
-                                <a href="/cases/bellinati-perez" className={`${url[2] === 'bellinati-perez' ? 'bg-correio-inteligente-800' : ''} p-2 text-gray-100 font-bold text-lg text-left`}>Bellinati Perez</a>
+                                {/* <a href="/cases/bellinati-perez" className={`${url[2] === 'bellinati-perez' ? 'bg-correio-inteligente-800' : ''} p-2 text-gray-100 font-bold text-lg text-left`}>Bellinati Perez</a> */}
                                 <a href="/cases/toledo-piza" className={`${url[2] === 'toledo-piza' ? 'bg-correio-inteligente-800' : ''} p-2 text-gray-100 font-bold text-lg text-left`}>Toledo Piza</a>
 
                             </div>

@@ -6,7 +6,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Sorts';
+  src: url('../../public/fonts/Sorts/SortsMillGoudy-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Unineue';
   src: url('../../public/fonts/Unineue/UniNeue-Trial-Regular.ttf') format('ttf');
@@ -35,6 +40,7 @@
 }
 @theme {
   --font-libreNormal: 'LibreBaskerville', serif;
+  --font-sorts: 'Sorts', serif;
   --font-libreItalic: 'LibreBaskervilleItalic', serif;
   --font-unineue: 'Unineue', sans-serif;
   --font-franie: 'Franie', sans-serif;
