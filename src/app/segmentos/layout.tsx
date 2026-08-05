@@ -7,7 +7,7 @@ export default function SegmentosLayout({ children }: { children: React.ReactNod
         <div className="h-auto">
             <Navbar />
             {children}
-            <Cta className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" />
+            {/* <Cta className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" /> */}
 
         </div>
     )

@@ -1,6 +1,7 @@
 import { ArrowDown, ArrowUp, BanknoteArrowUp, Bot, MessageCircleCheck, MessageSquareDot, Shield, TrendingUp } from "lucide-react"
 import Reveal from "../../../../components/Reveal"
 import CardSegments from "../../../../components/CardSegments"
+import Cta from "../../../../components/Cta"
 
 export default () => {
     return (
@@ -13,11 +14,11 @@ export default () => {
                                 <p className="text-lg text-gray-100 uppercase">BANCOS E FINTECHS</p>
                             </Reveal>
                             <Reveal direction="up">
-                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">A plataforma de comunicação via WhatsApp desenvolvida para bancos e instituições financeiras.</h2>
+                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">A comunicação inteligente para bancos e fintechs.</h2>
                                 <div className="h-0.5 bg-linear-to-r w-80 my-2 md:my-4 from-correio-inteligente-900 to-correio-inteligente-800 "></div>
                             </Reveal>
                             <Reveal direction="left">
-                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize cobranças, notificações, campanhas, renegociações e comunicações transacionais com segurança, escala e altas taxas de entrega.</p>
+                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize cobranças, notificações, renegociações e comunicações financeiras com uma plataforma segura, escalável e integrada à API Oficial do WhatsApp Business.</p>
                                 <a href="/fale-conosco" className="flex items-center justify-center p-3 w-60 bg-correio-inteligente-900 text-correio-inteligente-200">Solicitar Demonstração</a>
                             </Reveal>
                         </div>
@@ -31,7 +32,7 @@ export default () => {
                 <h2 className="text-center max-w-4xl bg-linear-to-r from-correio-inteligente-200 pb-2 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl mt-6">Muito além do envio de mensagens.</h2>
                 <h2 className="text-center max-w-4xl bg-linear-to-r pb-2 from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl mb-6">Uma plataforma para acelerar resultados.</h2>
                 <div className="md:flex items-center">
-                    <p className="text-lg text-gray-500 max-w-4xl text-center">Transforme o WhatsApp em um canal estratégico para reduzir custos operacionais, aumentar a recuperação de crédito e melhorar a experiência dos seus clientes em toda a jornada financeira.</p>
+                    <p className="text-lg text-gray-500 max-w-4xl text-center pr-2">Mais recuperação de crédito. Menos custos operacionais. Clientes melhor informados. Tudo isso através do canal que eles mais utilizam.</p>
                     <div className="md:w-[0.1px] md:h-35 md:left-1/2 md:bg-gradient-to-b md:from-transparent md:via-correio-inteligente-100" />
                     <img src="/Iso.png" className="md:max-w-40" alt="" />
                     <div />
@@ -40,9 +41,9 @@ export default () => {
             <div className="flex flex-col h-auto items-center bg-gray-100">
                 <div className="container md:px-30">
                     <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-3"></h2>
-                    <div className="md:flex text-center items-center text-correio-inteligente-100 justify-between">
+                    <div className="md:flex text-center items-start text-correio-inteligente-100 justify-between">
                         <div className="flex flex-col items-center max-w-xl">
-                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Donec interdum tortor nunc, a volutpat magna malesuada id.</h2>
+                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação inteligente para um mercado que exige confiança.</h2>
                             <div className="flex justify-center items-center w-120">
                                 <img src="/ceo.jpeg" className="rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
                             </div>
@@ -96,25 +97,25 @@ export default () => {
                             <div className="flex items-center p-3">
                                 <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
                                 <div className="flex items-end">
-                                    <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">XX%</p>
-                                    <span className="pl-3 text-gray-700 text-md">Pellentesque condimentum lobortis nunc sed dignissim</span>
+                                    {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">79%</p> */}
+                                    <span className="pl-3 text-correio-inteligente-100 font-bold text-md">Automatize processos repetitivos e reduza o tempo gasto com comunicações manuais.</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
                                 <ArrowDown className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
                                 <div className="flex items-end">
-                                    <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">XX%</p>
-                                    <span className="pl-3 text-gray-700 text-md">Pellentesque condimentum lobortis nunc sed dignissim</span>
+                                    {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">2%</p> */}
+                                    <span className="pl-3 text-correio-inteligente-100 text-md font-bold">Diminua ligações, retrabalho e recursos utilizados em campanhas tradicionais.</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
                                 <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
                                 <div className="flex items-end">
-                                    <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">XX%</p>
-                                    <span className="pl-3 text-gray-700 text-md">Pellentesque condimentum lobortis nunc sed dignissim</span>
+                                    {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">60%</p> */}
+                                    <span className="pl-3 text-correio-inteligente-100 text-md font-bold">Utilize o WhatsApp para alcançar clientes em um canal com alta taxa de leitura e engajamento.</span>
                                 </div>
                             </div>
-                            <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Sed ut tortor ipsum. Sed maximus vel urna ultrices convallis. Ut ac odio lacus. </h2>
+                            <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma plataforma desenvolvida para acompanhar o crescimento da sua operação, independentemente do volume de mensagens ou da complexidade dos processos.</h2>
                         </div>
                         <div className="hidden md:flex w-150 h-120 items-center">
                             <img src="/Iso.png" className="aspect-square" alt="" />
@@ -123,15 +124,21 @@ export default () => {
                     <div className="flex flex-col justify-center my-10 items-center">
                         <div className="max-w-2xl text-center">
                             <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-2">Por que instituições financeiras escolhem o Correio Inteligente?</h2>
+                            <p className="text-lg text-gray-600">Nossa plataforma reúne tecnologia, automação e segurança para tornar a comunicação financeira mais eficiente, escalável e orientada a resultados.</p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center my-5">
-                            <CardSegments className="m-2" image="/handshake.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunicação confiável, autenticada e em conformidade com os padrões oficiais da Meta."/>
-                            <CardSegments className='m-2' image="/handshake.jpeg" title='Automação de campanhas e notificações' subtitle="Crie fluxos inteligentes para cobranças, lembretes e comunicações recorrentes sem esforço manual."/>
-                            <CardSegments className='m-2' image="/handshake.jpeg" title='Gestão centralizada das comunicações' subtitle="Administre campanhas, históricos e interações em uma única plataforma intuitiva."/>
+                            <CardSegments className="m-2" image="/handshake.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunicação confiável, autenticada e em conformidade com os padrões oficiais da Meta." />
+                            <CardSegments className='m-2' image="/handshake.jpeg" title='Automação de campanhas e notificações' subtitle="Crie fluxos inteligentes para cobranças, lembretes e comunicações recorrentes sem esforço manual." />
+                            <CardSegments className='m-2' image="/handshake.jpeg" title='Gestão centralizada das comunicações' subtitle="Administre campanhas, históricos e interações em uma única plataforma intuitiva." />
                         </div>
                     </div>
                 </div>
             </div>
+            <Cta title="Pronto para transformar a comunicação da sua instituição financeira?" 
+            description="Descubra como bancos, financeiras e fintechs utilizam o Correio Inteligente para automatizar processos, aumentar a eficiência operacional e fortalecer o relacionamento com seus clientes." 
+            button="Solicitar Demonstração"
+            className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" />
+
         </div >
     )
 }
