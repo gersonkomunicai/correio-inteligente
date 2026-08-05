@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, Bot } from "lucide-react"
+import { ArrowDown, ArrowUp, BanknoteArrowUp, Bot, MessageCircleCheck, MessageSquareDot, Shield, TrendingUp } from "lucide-react"
 import Reveal from "../../../../components/Reveal"
 import CardSegments from "../../../../components/CardSegments"
 
@@ -13,78 +13,86 @@ export default () => {
                                 <p className="text-lg text-gray-100 uppercase">BANCOS E FINTECHS</p>
                             </Reveal>
                             <Reveal direction="up">
-                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">Comunicação inteligente para bancos e fintechs</h2>
-                                <div className="h-0.5 bg-linear-to-r w-80 my-2 md:my-8 from-correio-inteligente-900 to-correio-inteligente-800 "></div>
+                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">A plataforma de comunicação via WhatsApp desenvolvida para bancos e instituições financeiras.</h2>
+                                <div className="h-0.5 bg-linear-to-r w-80 my-2 md:my-4 from-correio-inteligente-900 to-correio-inteligente-800 "></div>
                             </Reveal>
                             <Reveal direction="left">
-                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize cobranças, notificações e campanhas de relacionamento pelo WhatsApp, ampliando o alcance da sua operação com mais agilidade, segurança e eficiência.</p>
+                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize cobranças, notificações, campanhas, renegociações e comunicações transacionais com segurança, escala e altas taxas de entrega.</p>
                                 <a href="/fale-conosco" className="flex items-center justify-center p-3 w-60 bg-correio-inteligente-900 text-correio-inteligente-200">Solicitar Demonstração</a>
                             </Reveal>
                         </div>
                         <Reveal direction="right">
-                            <img src="/heroBanco.png" className="max-w-2xl rounded-bl-4xl rounded-tl-xl rounded-br-lg" alt="" />
+                            <img src="/heroBanco.png" className="hidden md:flex md:max-w-2xl md:rounded-bl-4xl md:rounded-tl-xl md:rounded-br-lg" alt="" />
                         </Reveal>
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-center h-auto md:h-100 bg-gray-100">
-                <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-6">Morbi pretium ultrices nisl ut tincidunt.</h2>
-                <div className="flex items-center">
-                    {/* <div className="md:h-[0.1px] md:w-full md:top-1/2 md:bg-gradient-to-b md:from-transparent md:via-correio-inteligente-100"/> */}
-                    <p className="text-lg text-gray-500 max-w-4xl text-center">Aliquam nec eleifend magna. Ut vulputate erat vel neque rutrum, sed accumsan eros ultrices. Nam egestas a nunc ac eleifend. Aliquam dapibus quis magna nec semper. Donec facilisis nibh nec malesuada iaculis. Mauris mollis semper elit id vestibulum. Praesent convallis lacinia mauris, vel convallis lectus iaculis ut.</p>
+            <div className="flex flex-col items-center justify-center h-auto bg-gray-100 md:h-100 ">
+                <h2 className="text-center max-w-4xl bg-linear-to-r from-correio-inteligente-200 pb-2 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl mt-6">Muito além do envio de mensagens.</h2>
+                <h2 className="text-center max-w-4xl bg-linear-to-r pb-2 from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl mb-6">Uma plataforma para acelerar resultados.</h2>
+                <div className="md:flex items-center">
+                    <p className="text-lg text-gray-500 max-w-4xl text-center">Transforme o WhatsApp em um canal estratégico para reduzir custos operacionais, aumentar a recuperação de crédito e melhorar a experiência dos seus clientes em toda a jornada financeira.</p>
                     <div className="md:w-[0.1px] md:h-35 md:left-1/2 md:bg-gradient-to-b md:from-transparent md:via-correio-inteligente-100" />
-                    <img src="/Iso.png" className="max-w-40" alt="" />
+                    <img src="/Iso.png" className="md:max-w-40" alt="" />
                     <div />
                 </div>
             </div>
             <div className="flex flex-col h-auto items-center bg-gray-100">
-                <div className="container px-30">
+                <div className="container md:px-30">
                     <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-3"></h2>
-                    <div className="flex items-center text-correio-inteligente-100 justify-between">
-                        <div className="flex flex-col text-center items-center mr-3">
-                            <h2 className="text-4xl max-w-2xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Donec interdum tortor nunc, a volutpat magna malesuada id.</h2>
-                            <div className="flex items-center w-100 h-80">
-                                <img src="/Iso.png" className="aspect-square " alt="" />
+                    <div className="md:flex text-center items-center text-correio-inteligente-100 justify-between">
+                        <div className="flex flex-col items-center max-w-xl">
+                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Donec interdum tortor nunc, a volutpat magna malesuada id.</h2>
+                            <div className="flex justify-center items-center w-120">
+                                <img src="/ceo.jpeg" className="rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
                             </div>
                         </div>
-                        <div className="flex flex-col divide-y divide-correio-inteligente-100">
+                        <div className="md:flex flex-col px-5 divide-y divide-correio-inteligente-100">
                             <div className="flex items-center py-4">
-                                <Bot className="bg-correio-inteligente-900 rounded-full p-3 w-13 h-13" />
+                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                    <BanknoteArrowUp className="size-7" />
+                                </div>
                                 <div className="flex flex-col max-w-md">
-                                    <p className="text-xl pl-3">Vivamus tempus imperdiet rhoncus.</p>
-                                    <span className="text-gray-400 pl-3">In tempor nisl metus, sit amet interdum enim pellentesque at. Ut risus justo, semper cursus faucibus sit amet, molestie quis ante.</span>
+                                    <p className="text-xl font-bold pl-3">Recuperação de Crédito</p>
+                                    <span className="text-gray-700 pl-3">Automatize campanhas de cobrança, acordos e renegociações para aumentar o índice de recuperação.</span>
                                 </div>
 
                             </div>
                             <div className="flex items-center py-4">
-                                <Bot className="rounded-full bg-correio-inteligente-900 p-3 w-13 h-13" />
+                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                    <MessageCircleCheck className='size-7' />
+                                </div>
                                 <div className="flex flex-col max-w-md">
-                                    <p className="text-xl pl-3">Vivamus tempus imperdiet rhoncus.</p>
-                                    <span className="text-gray-400 pl-3">In tempor nisl metus, sit amet interdum enim pellentesque at. Ut risus justo, semper cursus faucibus sit amet, molestie quis ante.</span>
+                                    <p className="text-xl font-bold pl-3">Comunicação Transacional</p>
+                                    <span className="text-gray-700 pl-3">Envie notificações de pagamento, vencimentos, confirmações e avisos importantes em tempo real.</span>
                                 </div>
 
                             </div>
                             <div className="flex items-center py-4">
-                                <Bot className="bg-correio-inteligente-900 rounded-full p-3 w-13 h-13" />
+                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                    <TrendingUp className="size-7" />
+                                </div>
                                 <div className="flex flex-col max-w-md">
-                                    <p className="text-xl pl-3">Vivamus tempus imperdiet rhoncus.</p>
-                                    <span className="text-gray-400 pl-3">In tempor nisl metus, sit amet interdum enim pellentesque at. Ut risus justo, semper cursus faucibus sit amet, molestie quis ante.</span>
+                                    <p className="text-xl font-bold pl-3">Escala</p>
+                                    <span className="text-gray-700 pl-3">Milhares de mensagens enviadas simultaneamente com estabilidade e alta disponibilidade.</span>
                                 </div>
                             </div>
                             <div className="flex items-center py-4">
-                                <Bot className="bg-correio-inteligente-900 rounded-full p-3 w-13 h-13" />
+                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                    <Shield className="size-7" />
+                                </div>
                                 <div className="flex flex-col max-w-md">
-                                    <p className="text-xl pl-3">Vivamus tempus imperdiet rhoncus.</p>
-                                    <span className="text-gray-400 pl-3">In tempor nisl metus, sit amet interdum enim pellentesque at. Ut risus justo, semper cursus faucibus sit amet, molestie quis ante.</span>
+                                    <p className="text-xl pl-3 font-bold">Segurança</p>
+                                    <span className="text-gray-700 pl-3">Comunicação através da API Oficial do WhatsApp Business, com rastreabilidade e controle das interações.</span>
                                 </div>
                             </div>
-                            <a href="" className="my-8 text-center rounded-xl w-full py-4 bg-correio-inteligente-200 text-gray-100">Fale com um especialista</a>
+                            <a href="/fale-conosco" className="flex my-8 justify-center text-center rounded-xl p-4 bg-correio-inteligente-200 text-gray-100">Fale com um especialista</a>
                         </div>
                     </div>
                     <div className="flex bg-gray-100 items-center justify-between py-10 h-auto">
                         <div className="flex flex-col max-w-xl">
-                            <h2 className="pl-3 text-center text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent">Proin a euismod purus. Morbi massa neque, pretium vitae ullamcorper non, viverra ut odio.</h2>
-                            <p className="text-gray-700 py-3 text-md text-center">Quisque viverra justo vitae augue maximus, eget dapibus quam molestie. Nulla auctor, neque id sodales suscipit, lectus eros cursus massa, quis gravida sapien enim ut neque. Etiam ac ex fermentum, rutrum arcu quis, pulvinar justo.</p>
+                            <h2 className="pl-3 text-center text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 p-2 bg-clip-text text-transparent">Tecnologia preparada para operações de alta demanda.</h2>
+                            <p className="text-gray-700 py-3 text-md text-center">Nossa infraestrutura foi desenvolvida para oferecer desempenho, estabilidade e segurança em operações que exigem alta disponibilidade e grandes volumes de comunicação.</p>
                             <div className="flex items-center p-3">
                                 <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
                                 <div className="flex items-end">
@@ -108,19 +116,18 @@ export default () => {
                             </div>
                             <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Sed ut tortor ipsum. Sed maximus vel urna ultrices convallis. Ut ac odio lacus. </h2>
                         </div>
-                        <div className="flex w-150 h-120 items-center">
+                        <div className="hidden md:flex w-150 h-120 items-center">
                             <img src="/Iso.png" className="aspect-square" alt="" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-center my-10 items-center">
                         <div className="max-w-2xl text-center">
-                            <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent">Nulla viverra leo orci, non ornare ante vestibulum vel.</h2>
-                            <p className="text-lg py-2 text-gray-700">Suspendisse posuere orci non sapien semper, in consectetur erat consectetur. In nulla arcu, egestas non ex at, sagittis mollis nunc.</p>
+                            <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-2">Por que instituições financeiras escolhem o Correio Inteligente?</h2>
                         </div>
-                        <div className="flex my-5">
-                            <CardSegments className="m-2" image="/handshake.jpeg"/>
-                            <CardSegments className='m-2' image="/handshake.jpeg"/>
-                            <CardSegments className='m-2' image="/handshake.jpeg"/>
+                        <div className="flex flex-wrap items-center justify-center my-5">
+                            <CardSegments className="m-2" image="/handshake.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunicação confiável, autenticada e em conformidade com os padrões oficiais da Meta."/>
+                            <CardSegments className='m-2' image="/handshake.jpeg" title='Automação de campanhas e notificações' subtitle="Crie fluxos inteligentes para cobranças, lembretes e comunicações recorrentes sem esforço manual."/>
+                            <CardSegments className='m-2' image="/handshake.jpeg" title='Gestão centralizada das comunicações' subtitle="Administre campanhas, históricos e interações em uma única plataforma intuitiva."/>
                         </div>
                     </div>
                 </div>
