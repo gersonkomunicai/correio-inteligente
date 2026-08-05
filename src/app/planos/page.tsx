@@ -56,9 +56,7 @@ import Navbar from "../../../components/Navbar"
 // }
 export default () => {
     return (
-        <div className="h-100">
-            <Navbar></Navbar>
-            <Cta className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" ></Cta>
+        <div className="">
             {/* <ThreeScene></ThreeScene> */}
         </div>
     )
