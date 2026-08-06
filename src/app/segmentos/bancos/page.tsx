@@ -134,7 +134,8 @@ export default () => {
                     </div>
                 </div>
             </div>
-            <Cta title="Pronto para transformar a comunicação da sua instituição financeira?" 
+            <Cta image="/model2.jpeg"
+            title="Pronto para transformar a comunicação da sua instituição financeira?" 
             description="Descubra como bancos, financeiras e fintechs utilizam o Correio Inteligente para automatizar processos, aumentar a eficiência operacional e fortalecer o relacionamento com seus clientes." 
             button="Solicitar Demonstração"
             className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" />

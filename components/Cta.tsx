@@ -3,7 +3,7 @@ interface CtaProps{
     title: string
     description: string
     button: string
-    image?: string
+    image: string
 }
 export default ({className, title, description, button, image}: CtaProps ) => {
     return (

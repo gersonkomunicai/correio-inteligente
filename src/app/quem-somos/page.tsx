@@ -117,7 +117,7 @@ export default () => {
                     </div>
                 </div>
 
-                <Cta className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200"></Cta>
+                {/* <Cta className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200"></Cta> */}
 
             </div>
         </main>

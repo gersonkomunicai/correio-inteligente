@@ -3,7 +3,6 @@
 // import Reveal from "../../../components/Reveal"
 // import CardPricing from "../../../components/CardPricing"
 // import ThreeScene from "../../../components/ThreeScene"
-import Cta from "../../../components/Cta"
 import Navbar from "../../../components/Navbar"
 
 

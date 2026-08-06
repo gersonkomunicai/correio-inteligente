@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import Footer from "../../components/Footer";
-import Cta from "../../components/Cta";
 
 export const metadata: Metadata = {
   title: "Correio Inteligente",
