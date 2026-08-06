@@ -68,8 +68,6 @@ export default () => {
                                             <Check className="flex items-center justify-center w-7 h-7 size-4 text-correio-inteligente-200" />
                                             <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  prioridade para <span className="font-bold">segurança, confiabilidade e boas práticas</span> em toda a operação de mensagens.</span>
                                         </div>
-
-
                                     </div>
                                 </Reveal>
                                 <div className="absolute bg-correio-inteligente-100/20 w-50 h-50 rotate-45 left-130 mt-30 blur-2xl" />
@@ -116,7 +114,11 @@ export default () => {
                         </div>
                     </div>
                 </div>
-
+                <Cta image="/model2.jpeg"
+                    title="Pronto para transformar sua comunicação?"
+                    description="Converse com nosso time e descubra a melhor solução para automatizar seus envios e potencializar os resultados da sua empresa."
+                    button="Fale com um Especialista"
+                    className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" />
                 {/* <Cta className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200"></Cta> */}
 
             </div>
