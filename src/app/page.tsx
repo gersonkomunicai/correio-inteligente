@@ -77,10 +77,10 @@ export default function Home() {
               </Reveal>
             </div>
             <Reveal direction="right" delay={0.2} className="hidden md:block">
-              <Image width={1000} height={1000} src="/2.png" className="hidden lg:max-w-130 relative" alt="Celular Exemplo" />
+              <Image width={1000} height={1000} src="/2.png" className="hidden lg:flex lg:max-w-130 relative" alt="Celular Exemplo" />
             </Reveal>
           </div>
-          <div className="flex flex-col items-center justify-center bg-[url('/background-waves.jpg')] bg-cover bg-center bg-no-repeat md:h-auto py-16  px-4">
+          <div className="flex flex-col items-center justify-center bg-[url('/background-waves.webp')] bg-cover bg-center bg-no-repeat md:h-auto py-16  px-4">
             <Reveal className="flex flex-col items-center">
               <h2 className="text-3xl font-black text-correio-inteligente-200 text-center">Para quem é</h2>
               <span className="uppercase text-correio-inteligente-700/50 text-lg pt-5 flex justify-center text-center w-full max-w-200">Desenvolvido para operações que exigem escala,</span>
