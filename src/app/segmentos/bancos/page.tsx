@@ -7,14 +7,20 @@ import Image from 'next/image'
 export default () => {
     return (
         <div className="flex flex-col">
-            <div className="absolute bg-correio-inteligente-100/20 w-200 h-200 rounded-full -left-100 -bottom-100 blur-2xl" />
-            <div className="absolute bg-correio-inteligente-300/10 w-150 h-150 rotate-45 right-140 top-20 blur-3xl" />
-            <div className="absolute bg-correio-inteligente-300/10 w-5 h-5 rotate-45 left-100 top-20 blur-xs" />
-            <div className="absolute bg-correio-inteligente-100/20 w-200 h-200 rounded-full -right-100 -top-100 blur-2xl" />
-            <div className="h-screen bg-correio-inteligente-200 bg-center bg-no-repeat bg-cover ">
+            <div className="h-auto bg-correio-inteligente-200/500 relative overflow-hidden">
+            <video
+            autoPlay
+            preload="none"
+            muted
+            loop
+            playsInline
+            className="absolute top-1/2 left-1/2 min-h-full min-w-full h-auto -translate-x-1/2 -translate-y-1/2 object-cover -z-10">
+                <source src="/enterprise.mp4" type="video/mp4"/>
+
+            </video>
                 <div className="flex items-center justify-center h-screen">
-                    <div className="flex container items-center justify-center">
-                        <div className="flex flex-col max-w-3xl  p-3">
+                    <div className="flex container items-start justify-start">
+                        <div className="flex flex-col max-w-4xl pl-7">
                             <Reveal direction="left">
                                 <p className="text-lg text-gray-100 uppercase">BANCOS E FINTECHS</p>
                             </Reveal>
@@ -27,9 +33,9 @@ export default () => {
                                 <a href="/fale-conosco" className="flex items-center justify-center p-3 w-60 bg-correio-inteligente-900 text-correio-inteligente-200">Solicitar Demonstração</a>
                             </Reveal>
                         </div>
-                        <Reveal direction="right">
+                        {/* <Reveal direction="right">
                             <Image width={1000} height={1000} src="/heroBanco.png" className="hidden md:flex md:relative md:max-w-2xl md:rounded-bl-4xl md:rounded-tl-xl md:rounded-br-lg" alt="" />
-                        </Reveal>
+                        </Reveal> */}
                     </div>
                 </div>
             </div>
@@ -38,23 +44,23 @@ export default () => {
                 <h2 className="text-center max-w-5xl bg-linear-to-r pb-2 from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl mb-6">Uma plataforma para <span className="font-bold">acelerar resultados</span>.</h2>
                 <div className="md:flex items-center">
                     <p className="text-lg text-gray-500 max-w-4xl text-center pr-2">Mais recuperação de crédito. Menos custos operacionais. Clientes melhor informados. Tudo isso através do canal que eles mais utilizam.</p>
-                    <div className="md:w-[0.1px] md:h-35 md:left-1/2 md:bg-gradient-to-b md:from-transparent md:via-correio-inteligente-100" />
-                    <img src="/Iso.png" className="md:max-w-40" alt="" />
+                    <div className="lg:w-[0.1px] lg:h-35 lg:left-1/2 lg:bg-gradient-to-b lg:from-transparent lg:via-correio-inteligente-100" />
+                    <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:flex max-w-40" alt="" />
                     <div />
                 </div>
             </div>
             <div className="flex flex-col h-auto items-center bg-gray-100">
                 <div className="container my-10 md:px-30">
                     <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-3"></h2>
-                    <div className="md:flex text-center items-start text-correio-inteligente-100 justify-between">
+                    <div className="lg:flex text-center items-start text-correio-inteligente-100 justify-between">
                         <div className="flex flex-col items-center max-w-xl">
                             <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação inteligente para um mercado que <span className="font-bold">exige confiança</span>.</h2>
-                            <div className="flex justify-center items-center w-160">
-                                <video muted autoPlay loop preload="none" src="/enterprise.mp4" className="rounded-lg mt-3"></video>
-                                {/* <img src="/ceo.jpeg" className="rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" /> */}
+                            <div className="lg:flex justify-center items-center w-160">
+                                {/* <video muted autoPlay loop preload="none" src="/enterprise.mp4" className="rounded-lg mt-3"></video> */}
+                                <Image width={1000} height={1000} src="/heroBanco.png" className="hidden lg:flex rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
                             </div>
                         </div>
-                        <div className="md:flex flex-col px-5 divide-y divide-correio-inteligente-100">
+                        <div className="flex flex-col px-5 divide-y divide-correio-inteligente-100">
                             <div className="flex items-center py-4">
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <BanknoteArrowUp className="size-7" />
@@ -123,8 +129,8 @@ export default () => {
                             </div>
                             <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma plataforma desenvolvida para acompanhar o crescimento da sua operação, independentemente do volume de mensagens ou da complexidade dos processos.</h2>
                         </div>
-                        <div className="hidden md:flex w-150 h-120 items-center">
-                            <img src="/Iso.png" className="aspect-square" alt="" />
+                        <div className="hidden lg:flex max-w-2xl h-auto items-center">
+                            <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:aspect-square" alt="" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-center my-10 items-center">

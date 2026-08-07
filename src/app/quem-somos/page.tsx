@@ -4,6 +4,7 @@ import Navbar from "../../../components/Navbar"
 import Reveal from "../../../components/Reveal"
 import { Check, ChevronDown } from "lucide-react"
 import Cta from "../../../components/Cta"
+import Image from 'next/image'
 export default () => {
     return (
         <main>
@@ -73,7 +74,7 @@ export default () => {
                                 <div className="absolute bg-correio-inteligente-100/20 w-50 h-50 rotate-45 left-130 mt-30 blur-2xl" />
                             </div>
                             <Reveal direction="right">
-                                <img className="hidden md:flex w-150 min-w-130" src="/model.jpeg" alt="" />
+                                <Image width={1000} height={1000} className="hidden md:flex w-150 min-w-130" src="/model.jpeg" alt="" />
                             </Reveal>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
-
+import Image from 'next/image'
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,10 +13,10 @@ export default function Navbar() {
 
     return (
         <div className="flex justify-center">
-            <div className="hidden md:flex rounded-full bg-linear-to-r from-konnectai-primary/30 to-black/30 backdrop-blur-xs px-40 fixed top-7 h-20 z-50">
+            <div className="hidden lg:flex rounded-full bg-linear-to-r from-konnectai-primary/30 to-black/30 backdrop-blur-xs px-40 fixed top-7 h-20 z-50">
                 <div className="flex items-center h-auto ">
                     <a href='/'>
-                        <img src="/logoHorizontal.png" className="max-h-12" alt="Logo do Correio Inteligente" />
+                        <Image width={150} height={12}  src="/logoHorizontal.png" className="max-h-12" alt="Logo do Correio Inteligente" />
                     </a>
                     <div className="flex items-center justify-between px-10 w-170">
                         <a href="/quem-somos" title="Quem Somos" className={` ${url[1] === 'quem-somos' ? 'text-correio-inteligente-800' : 'text-gray-100'} hover:text-correio-inteligente-800 transition-all ease-in duration-200 p-2 rounded-md font-bold text-lg`}>Quem Somos</a>
@@ -50,9 +50,9 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <div className="flex md:hidden items-center justify-between fixed top-4 left-4 right-4 z-50 px-4 h-16 rounded-full bg-linear-to-r from-konnectai-primary/40 to-black/40 backdrop-blur-xs">
+            <div className="flex lg:hidden items-center justify-between fixed top-4 left-4 right-4 z-50 px-4 h-16 rounded-full bg-linear-to-r from-konnectai-primary/40 to-black/40 backdrop-blur-xs">
                 <a href='/'>
-                    <img src="/logoHorizontal.png" className="max-h-10" alt="Logo do Correio Inteligente" />
+                    <Image width={120} height={24} src="/logoHorizontal.png" className="max-h-10" alt="Logo do Correio Inteligente" />
                 </a>
                 <button onClick={() => setIsMenuOpen((open) => !open)} aria-label="Abrir menu">
                     {isMenuOpen ? (

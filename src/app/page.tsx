@@ -7,7 +7,7 @@ import { menuWho } from "../../data/lists";
 import { menuDemonstration } from "../../data/lists";
 import ContactForm from "../../components/ContactForm";
 import Reveal from "../../components/Reveal";
-import Footer from "../../components/Footer";
+import Image from 'next/image'
 import Navbar from "../../components/Navbar";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <main >
         <div className="flex scroll-smooth flex-col">
           <a href={`https://wa.me/5584994146984?text=Quero%20mais%20informações%20sobre%20o%20Correio%20Inteligente.`} target="_blank" >
-            <img src="whatsapp.png" className="fixed w-10 md:fixed bottom-10 right-10 md:w-15" alt="" />
+            <Image width={1000} height={1000} src="/whatsapp.png" className="fixed w-10 md:fixed bottom-10 right-10 md:w-15" alt="" />
           </a>
           <Navbar />
           <div className="flex h-auto md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-correio-inteligente-200 from-60% to-black px-4">
@@ -28,7 +28,7 @@ export default function Home() {
             <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="flex flex-col  justify-center md:flex-row items-center gap-10">
               <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left w-full max-w-140">
-                <img src="Iso.png" className="max-h-30 w-30" alt="" />
+                <Image width={1000} height={1000} src="/Iso.png" className="max-h-30 w-30" alt="" />
                 <div>
                   <h1 className="bg-linear-to-r  relative from-correio-inteligente-900 from-10% to-correio-inteligente-800 bg-clip-text text-transparent">Envie <span className="font-bold">mensagens</span> em escala com <span className="font-bold">segurança</span> e <span className="font-bold">performance</span></h1>
                   <p className=" relative text-lg text-correio-inteligente-900 pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
@@ -43,7 +43,7 @@ export default function Home() {
               </Reveal>
               <Reveal direction="right" delay={0.15} className="hidden md:block">
                 <div className="flex h-200 items-end">
-                  <img src="7.png" className="md:h-160 relative flex justify-end w-auto max-h-200" alt="" />
+                  <Image width={1000} height={1000} src="/7.png" className="hidden lg:max-h-160 relative lg:flex justify-end w-auto max-h-200" alt="" />
                 </div>
               </Reveal>
             </div>
@@ -77,10 +77,10 @@ export default function Home() {
               </Reveal>
             </div>
             <Reveal direction="right" delay={0.2} className="hidden md:block">
-              <img src="/2.png" className="max-w-130" alt="Celular Exemplo" />
+              <Image width={1000} height={1000} src="/2.png" className="hidden lg:max-w-130 relative" alt="Celular Exemplo" />
             </Reveal>
           </div>
-          <div className="flex flex-col items-center justify-center bg-[url('/background-waves.jpg')] bg-cover bg-center bg-no-repeat h-auto md:h-200 py-16 md:py-0 px-4">
+          <div className="flex flex-col items-center justify-center bg-[url('/background-waves.jpg')] bg-cover bg-center bg-no-repeat md:h-auto py-16  px-4">
             <Reveal className="flex flex-col items-center">
               <h2 className="text-3xl font-black text-correio-inteligente-200 text-center">Para quem é</h2>
               <span className="uppercase text-correio-inteligente-700/50 text-lg pt-5 flex justify-center text-center w-full max-w-200">Desenvolvido para operações que exigem escala,</span>
@@ -132,7 +132,7 @@ export default function Home() {
             </Reveal>
             <Reveal direction="right" delay={0.15} className="hidden md:block">
               <div className="h-full">
-                <img src="/modelo2.png" className="flex relative items-end max-w-141 h-auto" alt="" />
+                <Image width={1000} height={1000} src="/modelo2.png" className="hidden lg:flex relative items-end max-w-141 h-auto" alt="" />
               </div>
             </Reveal>
           </div>

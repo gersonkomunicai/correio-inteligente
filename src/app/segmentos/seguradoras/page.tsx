@@ -2,18 +2,24 @@ import { ArrowDown, ArrowUp, BanknoteArrowUp, Bot, MessageCircleCheck, MessageSq
 import Reveal from "../../../../components/Reveal"
 import CardSegments from "../../../../components/CardSegments"
 import Cta from "../../../../components/Cta"
+import Image from 'next/image'
 
 export default function Seguradoras() {
     return (
         <div className="flex flex-col">
-            <div className="absolute bg-correio-inteligente-100/20 w-200 h-200 rounded-full -left-100 -bottom-100 blur-2xl" />
-            <div className="absolute bg-correio-inteligente-300/10 w-150 h-150 rotate-45 right-140 top-20 blur-3xl" />
-            <div className="absolute bg-correio-inteligente-300/10 w-5 h-5 rotate-45 left-100 top-20 blur-xs" />
-            <div className="absolute bg-correio-inteligente-100/20 w-200 h-200 rounded-full -right-100 -top-100 blur-2xl" />
-            <div className="h-screen bg-correio-inteligente-200 bg-center bg-no-repeat bg-cover ">
+            
+            <div className="h-auto bg-correio-inteligente-200/50 w-full relative overflow-hidden">
+                <video autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="none"
+                    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover -z-10">
+                    <source src="/videoSecurity.mp4" type="video/mp4" />
+                </video>
                 <div className="flex items-center justify-center h-screen">
-                    <div className="flex container items-center justify-center">
-                        <div className="flex flex-col max-w-3xl  p-3">
+                    <div className="flex container items-start justify-start">
+                        <div className="flex flex-col max-w-4xl pl-7">
                             <Reveal direction="left">
                                 <p className="text-lg text-gray-100 uppercase">SEGURADORAS</p>
                             </Reveal>
@@ -26,9 +32,9 @@ export default function Seguradoras() {
                                 <a href="/fale-conosco" className="flex items-center justify-center p-3 w-60 bg-correio-inteligente-900 text-correio-inteligente-200">Solicitar Demonstração</a>
                             </Reveal>
                         </div>
-                        <Reveal direction="right">
-                            <img src="/heroBanco.png" className="hidden md:flex md:relative md:max-w-2xl md:rounded-bl-4xl md:rounded-tl-xl md:rounded-br-lg" alt="" />
-                        </Reveal>
+                        {/* <Reveal direction="right">
+                            <Image width={1000} height={1000} src="/heroSecurity.png" className="hidden lg:flex md:relative md:max-w-2xl md:rounded-bl-4xl md:rounded-tl-xl md:rounded-br-lg" alt="" />
+                        </Reveal> */}
                     </div>
                 </div>
             </div>
@@ -38,7 +44,7 @@ export default function Seguradoras() {
                 <div className="md:flex items-center">
                     <p className="text-lg text-gray-500 max-w-4xl text-center pr-2">Mais agilidade no atendimento. Menos processos manuais. Segurados melhor informados. Tudo isso através do canal que eles mais utilizam.</p>
                     <div className="md:w-[0.1px] md:h-35 md:left-1/2 md:bg-gradient-to-b md:from-transparent md:via-correio-inteligente-100" />
-                    <img src="/Iso.png" className="md:max-w-40" alt="" />
+                    <Image width={1000} height={1000} src="/Iso.png" className="md:max-w-40" alt="" />
                     <div />
                 </div>
             </div>

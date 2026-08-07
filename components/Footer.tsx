@@ -1,12 +1,12 @@
 import { BsInstagram } from "react-icons/bs"
 import { FaFacebook } from "react-icons/fa"
-
+import Image from 'next/image'
 export default () => {
     return (
         <footer className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-around text-center md:text-left bg-correio-inteligente-900 h-auto md:h-90 py-10 md:py-0 px-4 gap-10 md:gap-0">
             <div className="md:pt-10 h-auto md:h-full justify-around flex flex-col items-center md:items-start">
                 <div className="flex flex-col items-center md:items-start">
-                    <img src="/logoHorizontalEscura.png" className="w-60 max-w-full" alt="" />
+                    <Image width={1000} height={1000} src="/logoHorizontalEscura.png" className="w-60 max-w-full" alt="" />
                     <p className="text-correio-inteligente-200 text-xs md:pl-30 mt-2 md:mt-0">Powered by Konnectai</p>
                 </div>
                 <div className="flex flex-col items-center md:items-start mt-6 md:mt-0">
