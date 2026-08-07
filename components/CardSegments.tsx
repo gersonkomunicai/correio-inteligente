@@ -1,3 +1,4 @@
+import Image from 'next/image'
 interface CardSegmentsProps {
     className?: string
     image: string
@@ -12,7 +13,7 @@ export default ({ image, className, title, subtitle }: CardSegmentsProps) => {
                 <p className="text-center text-gray-700 p-3 text-sm">{subtitle}</p>
             </div>
             <div className="w-full flex items-end justify-center h-auto">
-                <img src={image} className="rounded-b-md" alt="" />
+                <Image width={1000} height={1000} src={image} className="rounded-b-md" alt="" />
             </div>
         </div>
     )

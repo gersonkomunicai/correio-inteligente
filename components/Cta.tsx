@@ -1,3 +1,4 @@
+import Image from 'next/image'
 interface CtaProps{
     className?:string 
     title: string
@@ -23,7 +24,7 @@ export default ({className, title, description, button, image}: CtaProps ) => {
                 </div>
 
                 <div className="hidden md:flex items-center h-full">
-                    <img className="flex w-120 min-w-60 items-center" src={image} alt="" />
+                    <Image width={1000} height={1000} className="flex w-120 min-w-60 items-center" src={image} alt="" />
                 </div>
             </div>
         </div>

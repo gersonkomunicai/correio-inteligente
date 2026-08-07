@@ -2,6 +2,7 @@ import { ArrowDown, ArrowUp, BanknoteArrowUp, Bot, MessageCircleCheck, MessageSq
 import Reveal from "../../../../components/Reveal"
 import CardSegments from "../../../../components/CardSegments"
 import Cta from "../../../../components/Cta"
+import Image from 'next/image'
 
 export default () => {
     return (
@@ -27,7 +28,7 @@ export default () => {
                             </Reveal>
                         </div>
                         <Reveal direction="right">
-                            <img src="/heroBanco.png" className="hidden md:flex md:relative md:max-w-2xl md:rounded-bl-4xl md:rounded-tl-xl md:rounded-br-lg" alt="" />
+                            <Image width={1000} height={1000} src="/heroBanco.png" className="hidden md:flex md:relative md:max-w-2xl md:rounded-bl-4xl md:rounded-tl-xl md:rounded-br-lg" alt="" />
                         </Reveal>
                     </div>
                 </div>
@@ -49,7 +50,7 @@ export default () => {
                         <div className="flex flex-col items-center max-w-xl">
                             <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação inteligente para um mercado que <span className="font-bold">exige confiança</span>.</h2>
                             <div className="flex justify-center items-center w-160">
-                                <video muted autoPlay loop src="/enterprise.mp4" className="rounded-lg mt-3"></video>
+                                <video muted autoPlay loop preload="none" src="/enterprise.mp4" className="rounded-lg mt-3"></video>
                                 {/* <img src="/ceo.jpeg" className="rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" /> */}
                             </div>
                         </div>
