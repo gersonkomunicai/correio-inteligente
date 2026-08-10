@@ -9,7 +9,7 @@ export default () => {
     return (
         <main>
             <div className="flex flex-col w-screen">
-                <div className="md:flex flex-col bg-correio-inteligente-200 h-screen">
+                <div className="lg:flex items-center flex-col bg-correio-inteligente-200 h-screen">
                     <div className="absolute bg-correio-inteligente-100/20 w-200 h-200 rounded-full -left-100 -bottom-100 blur-2xl" />
                     <div className="absolute bg-correio-inteligente-300/10 w-150 h-150 rotate-45 right-140 top-20 blur-3xl" />
                     <div className="absolute bg-correio-inteligente-300/10 w-5 h-5 rotate-45 left-100 top-20 blur-xs" />
@@ -17,10 +17,10 @@ export default () => {
                     <Reveal direction="right">
                         <Navbar />
                     </Reveal>
-                    <div className="flex w-full items-center justify-around h-screen">
-                        <div className="flex mt-25 w-100 md:w-250 md:mt-20 text-left flex-col">
+                    <div className="flex relative w-full items-center pl-7 container h-screen">
+                        <div className="flex justify-start max-w-4xl pl-7 mt-25 lg:mt-20 text-left flex-col">
                             <Reveal>
-                                <span className="md:text-lg text-md text-gray-100">QUEM SOMOS</span>
+                                <span className="lg:text-lg text-md text-gray-100">QUEM SOMOS</span>
                             </Reveal>
                             {/* <Typewriter options={{
                                 wrapperClassName: 'bg-linear-to-r text-6xl py-3 font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent',
@@ -33,8 +33,8 @@ export default () => {
                                 <h2 className="bg-linear-to-r text-5xl md:text-6xl py-3 font-bold from-correio-inteligente-900 to-correio-inteligente-800 bg-clip-text text-transparent">A solução mais confiável para envios em longa escala do mercado.</h2>
                             </Reveal>
                             <Reveal direction="left">
-                                <div className="h-1 border border-gray-800 bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800 md:my-8 my-3 w-100" />
-                                <span className="md:text-xl text-lg text-gray-100 md:font-medium font-light">A resposta que nasceu para transformar a
+                                <div className="h-1 bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800 md:my-8 my-3 w-100" />
+                                <span className="lg:text-xl text-lg text-gray-100 md:font-medium font-light">A resposta que nasceu para transformar a
                                     forma como empresas e instituições se comunicam
                                     com seus clientes. Unimos tecnologia, segurança e
                                     automação para tornar cada mensagem mais
@@ -52,16 +52,16 @@ export default () => {
                 <div id="começo" className="flex items-start py-16 justify-center h-auto md:h-150 bg-gray-100">
                     <div className="absolute bg-correio-inteligente-100/40 w-10 h-10 rotate-45 right-50 blur-sm" />
                     <div className="flex flex-col items-center md:px-35 px-5 w-full">
-                        <div className="md:flex flex-col md:w-220">
+                        <div className="lg:flex flex-col md:w-220">
                             <h2 className="text-4xl bg-linear-to-r bg-clip-text text-transparent from-correio-inteligente-200 p-3 to-correio-inteligente-800 text-center">A infraestrutura <span className="font-bold">completa</span> para a sua empresa, num <span className="font-bold">único lugar</span>.</h2>
                         </div>
-                        <div className="md:flex justify-center mt-10">
-                            <div className="md:flex text-left items-start md:mr-10 ">
+                        <div className="lg:flex justify-center mt-10">
+                            <div className="lg:flex  text-left items-start md:mr-10 ">
                                 <Reveal direction="left">
                                     <div className="flex flex-col">
                                         <span className="md:text-2xl text-correio-inteligente-200">O <span className="font-bold italic">Correio Inteligente</span> nasceu com o propósito de apoiar operações que exigem alto nível de controle, padronização e governança na comunicação digital. Ele possui uma infraestrutura completa para comunicação empresarial, com foco em performance, segurança e escala, integrando canais e automatizando jornadas de relacionamento.</span>
                                         <span className="md:text-2xl text-correio-inteligente-200"> Algumas coisas que orientam nosso trabalho são: </span>
-                                        <div className="flex items-center  m-3">
+                                        <div className="flex items-center my-2">
                                             <Check className="w-8 h-8 size-4  text-correio-inteligente-200" />
                                             <span className="md:text-xl bg-correio-inteligente-900 text-correio-inteligente-200 ml-3">  busca pela <span className="font-bold">inovação</span> que se manifesta em uma <span className="font-bold">evolução constante</span> para elevar a <span className="font-bold">qualidade e a inteligência</span> das interações digitais.</span>
                                         </div>
@@ -74,7 +74,7 @@ export default () => {
                                 <div className="absolute bg-correio-inteligente-100/20 w-50 h-50 rotate-45 left-130 mt-30 blur-2xl" />
                             </div>
                             <Reveal direction="right">
-                                <Image width={1000} height={1000} className="hidden md:flex w-150 min-w-130" src="/model.jpeg" alt="" />
+                                <Image width={1000} height={1000} className="hidden lg:flex w-150 min-w-130" src="/model.jpeg" alt="" />
                             </Reveal>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default () => {
                     <div className="flex h-full items-center">
                         <div className="hidden md:flex flex-col items-center justify-center text-left w-[50%] h-110 bg-correio-inteligente-900">
                             <Reveal direction="left">
-                                <div className="w-150 ml-20">
+                                <div className="max-w-xl ml-20">
                                     <h2 className="bg-linear-to-r p-2 from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent font-bold text-3xl">Sobre o Correio Inteligente</h2>
                                     <h2 className="bg-linear-to-r px-2 text-gray-600 text-3xl">Nossa história, missão e visão.</h2>
                                 </div>

@@ -9,14 +9,14 @@ import Cta from "../../../components/Cta"
 
 export default () => {
     return (
-        <div className="flex w-screen scroll-smooth overflow-clip snap-y snap-mandatory flex-col">
+        <div className="flex w-screen flex-col">
             <div className="w-50 h-50 absolute bg-correio-inteligente-100/20 rotate-45 top-14 left-30 blur-xl" />
             <div className="w-140 h-140 absolute bg-correio-inteligente-100/15 rounded-full top-30 left-100 blur-3xl" />
             <div className="w-20 h-20 absolute bg-correio-inteligente-100/30 rotate-45 bottom-13 right-30 blur-xl" />
             <div className="w-200 h-200 absolute bg-correio-inteligente-100/10 rounded-full top-14 right-40 blur-2xl" />
             <div className="flex flex-col w-full h-screen bg-correio-inteligente-200">
-                <div className="flex items-center justify-center h-full ">
-                    <div className="max-w-2xl px-4 md:px- text-left flex-col">
+                <div className="flex items-center container justify-center h-screen">
+                    <div className="max-w-4xl relative text-left flex-col">
                         <Reveal direction="left">
                             <span className=" text-lg text-gray-100">PLANOS</span>
                         </Reveal>
@@ -25,7 +25,7 @@ export default () => {
                             <div className="w-100 h-1 my-8 bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800" />
                         </Reveal>
                         <Reveal direction="left">
-                            <span className="md:text-xl text-lg text-gray-100 md:font-medium font-light">Escolha o plano ideal para automatizar cobranças, notificações e campanhas via WhatsApp com segurança, velocidade e escalabilidade.</span>
+                            <span className="lg:text-xl text-lg text-gray-100 md:font-medium font-light">Escolha o plano ideal para automatizar cobranças, notificações e campanhas via WhatsApp com segurança, velocidade e escalabilidade.</span>
                         </Reveal>
                         <Reveal direction="left">
                             <a className="w-30 flex my-10 items-center p-3 text-correio-inteligente-200 bg-correio-inteligente-900" href="#preco">

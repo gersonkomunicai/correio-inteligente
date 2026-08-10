@@ -7,17 +7,17 @@ import Image from 'next/image'
 export default () => {
     return (
         <div className="flex flex-col">
-            <div className="h-auto bg-correio-inteligente-200/500 relative overflow-hidden">
-            <video
-            autoPlay
-            preload="none"
-            muted
-            loop
-            playsInline
-            className="absolute top-1/2 left-1/2 min-h-full min-w-full h-auto -translate-x-1/2 -translate-y-1/2 object-cover -z-10">
-                <source src="/enterprise.mp4" type="video/mp4"/>
+            <div className="h-auto bg-correio-inteligente-200/50 relative overflow-hidden">
+                <video
+                    autoPlay
+                    preload="none"
+                    muted
+                    loop
+                    playsInline
+                    className="absolute top-1/2 left-1/2 min-h-full min-w-full h-auto -translate-x-1/2 -translate-y-1/2 object-cover -z-10">
+                    <source src="/enterprise.mp4" type="video/mp4" />
 
-            </video>
+                </video>
                 <div className="flex items-center justify-center h-screen">
                     <div className="flex container items-start justify-start">
                         <div className="flex flex-col max-w-4xl pl-7">
@@ -55,7 +55,7 @@ export default () => {
                     <div className="lg:flex text-center items-start text-correio-inteligente-100 justify-between">
                         <div className="flex flex-col items-center max-w-xl">
                             <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação inteligente para um mercado que <span className="font-bold">exige confiança</span>.</h2>
-                            <div className="lg:flex justify-center items-center w-160">
+                            <div className="flex justify-center items-center w-160">
                                 {/* <video muted autoPlay loop preload="none" src="/enterprise.mp4" className="rounded-lg mt-3"></video> */}
                                 <Image width={1000} height={1000} src="/heroBanco.png" className="hidden lg:flex rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
                             </div>
@@ -130,11 +130,11 @@ export default () => {
                             <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma plataforma desenvolvida para acompanhar o crescimento da sua operação, independentemente do volume de mensagens ou da complexidade dos processos.</h2>
                         </div>
                         <div className="hidden lg:flex max-w-2xl h-auto items-center">
-                            <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:aspect-square" alt="" />
+                            <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:flex lg:aspect-square" alt="" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-center my-10 items-center">
-                        <div className="max-w-2xl text-center">
+                        <div className="text-center">
                             <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-2">Por que <span className="font-bold">instituições financeiras</span> escolhem o Correio Inteligente?</h2>
                             <p className="text-lg text-gray-600">Nossa plataforma reúne tecnologia, automação e segurança para tornar a comunicação financeira mais eficiente, escalável e orientada a resultados.</p>
                         </div>

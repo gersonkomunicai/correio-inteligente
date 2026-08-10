@@ -65,7 +65,7 @@ export default function Navbar() {
 
             {
                 isMenuOpen && (
-                    <div className="flex md:hidden flex-col fixed top-22 left-4 right-4 z-40 gap-2 rounded-2xl bg-linear-to-r from-correio-inteligente-200 to-black p-4">
+                    <div className="flex lg:hidden flex-col fixed top-22 left-4 right-4 z-40 gap-2 rounded-2xl bg-linear-to-r from-correio-inteligente-200 to-black p-4">
                         <a href="/quem-somos" className={`${url[1] === 'quem-somos' ? 'text-correio-inteligente-100 rounded-md' : 'text-gray-100'} font-bold text-lg text-left py-2`}>Quem Somos</a>
                         <button onClick={() => setSubMenuSegments(!subMenuSegments)} className={`${url[1] === 'segmentos' ? 'text-correio-inteligente-800' : 'text-gray-100'} font-bold text-lg text-left py-2`}>Segmentos</button>
                         {subMenuSegments && (
