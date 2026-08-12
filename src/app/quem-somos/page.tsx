@@ -7,7 +7,7 @@ import Image from 'next/image'
 export default () => {
     return (
         <div className="flex flex-col w-screen">
-            <div className="bg-[url('/image.png')] absolute bg-right bg-cover bg-no-repeat w-screen h-screen">
+            <div className="bg-[url('/image.webp')] absolute bg-right bg-cover bg-no-repeat w-screen h-screen">
                 <a href="">oi</a>
             </div>
             <div className="lg:flex items-center flex-col bg-correio-inteligente-200/90 relative h-screen">
