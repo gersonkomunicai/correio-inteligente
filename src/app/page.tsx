@@ -32,7 +32,7 @@ export default function Home() {
                 <div>
                   <h1 className="bg-linear-to-r  relative from-correio-inteligente-900 from-10% to-correio-inteligente-800 bg-clip-text text-transparent">Envie <span className="font-bold">mensagens</span> em escala com <span className="font-bold">segurança</span> e <span className="font-bold">performance</span></h1>
                   <p className=" relative text-lg text-correio-inteligente-900 pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
-                    mensageria da Konnectaí via <span className="font-bold">API Oficial do
+                    mensageria via <span className="font-bold">API Oficial do
                       WhatsApp</span>, ideal para empresas que precisam se
                     comunicar com milhares de clientes de forma
                     rápida, segura e eficiente.</p>
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center text-correio-inteligente-500 justify-center bg-[url('/background-waves.jpg')] h-auto md:h-120 py-16 md:py-0 bg-cover bg-no-repeat bg-center px-4">
             <Reveal>
-              <h1 className="font-black text-center">Muito além de disparos de mensagens</h1>
+              <h1 className="font-black text-center">Escale comunicação sem escalar risco.</h1>
             </Reveal>
             <Reveal delay={0.15} className="flex flex-col items-center text-center">
               <span className="mt-10 italic text-lg">
@@ -77,14 +77,13 @@ export default function Home() {
               </Reveal>
             </div>
             <Reveal direction="right" delay={0.2} className="hidden md:block">
-              <Image width={1000} height={1000} src="/2.png" className="hidden lg:flex lg:max-w-130 relative" alt="Celular Exemplo" />
+              <Image width={1000} height={1000} src="/landingCelphone.png" className="hidden lg:flex lg:max-w-130 relative" alt="Celular Exemplo" />
             </Reveal>
           </div>
           <div className="flex flex-col items-center justify-center bg-[url('/background-waves.webp')] bg-cover bg-center bg-no-repeat md:h-auto py-16  px-4">
             <Reveal className="flex flex-col items-center">
               <h2 className="text-3xl font-black text-correio-inteligente-200 text-center">Para quem é</h2>
-              <span className="uppercase text-correio-inteligente-700/50 text-lg pt-5 flex justify-center text-center w-full max-w-200">Desenvolvido para operações que exigem escala,</span>
-              <span className="uppercase text-correio-inteligente-700/50 text-lg flex justify-center text-center w-full max-w-200">segurança e confiabilidade.</span>
+              <span className="uppercase text-correio-inteligente-700/50 text-lg pt-5 flex justify-center text-center w-full max-w-xl">Desenvolvido para operações que exigem escala sem abrir mão da segurança.</span>
               <span className="text-lg flex pt-5 justify-center text-correio-inteligente-700 text-center w-full max-w-200">O Correio Inteligente atende organizações que precisam se comunicar com grandes volumes de
                 pessoas de forma estruturada, segura e com alto nível de entrega.</span>
               <span className="text-lg pt-5 flex justify-center text-correio-inteligente-700 text-center w-full max-w-200">Nossa infraestrutura é preparada para suportar desde empresas em crescimento até operações de
@@ -104,9 +103,9 @@ export default function Home() {
             <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
             <Reveal direction="left" className="flex flex-col items-center">
-              <h1 className="flex items-center justify-center text-center w-full max-w-270 text-gray-100 font-bold">Modernize a comunicação da sua prefeitura com o Correio Inteligente</h1>
-              <span className="flex justify-center text-center w-full max-w-240 text-xl text-gray-100 pt-10">Uma plataforma desenvolvida especialmente para governos, prefeituras e instituições públicas que desejam automatizar, organizar e centralizar a comunicação com cidadãos de forma moderna, segura e eficiente.</span>
-              <span className="flex justify-center text-center pt-5 w-full max-w-240 text-xl text-gray-100">O Correio Inteligente foi pensado para facilitar a comunicação entre órgãos públicos e cidadãos, trazendo mais agilidade, organização e eficiência para o atendimento.</span>
+              <h1 className="flex items-center justify-center text-center w-full max-w-270 text-gray-100 font-bold">Eleve a comunicação da sua prefeitura com o Correio Inteligente</h1>
+              <span className="flex justify-center text-center w-full max-w-240 text-xl text-gray-100 pt-10">Uma plataforma desenvolvida para governos, prefeituras e instituições públicas que precisam automatizar e centralizar a comunicação com o cidadão sem depender de múltiplos canais dispersos.</span>
+              <span className="flex justify-center text-center pt-5 w-full max-w-240 text-xl text-gray-100">Avisos oficiais, campanhas institucionais e notificações chegam direto no WhatsApp do cidadão, com a estabilidade da API Oficial.</span>
             </Reveal>
             <Reveal direction="right" delay={0.15} className="flex relative flex-wrap items-center justify-center mt-15 w-full max-w-300">
               <CardDemonstration menuDemonstrations={menuDemonstration}></CardDemonstration>

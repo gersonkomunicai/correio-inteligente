@@ -7,11 +7,11 @@ export default () => {
             <div className="md:pt-10 h-auto md:h-full justify-around flex flex-col items-center md:items-start">
                 <div className="flex flex-col items-center md:items-start">
                     <Image width={1000} height={1000} src="/logoHorizontalEscura.png" className="w-60 max-w-full" alt="" />
-                    <p className="text-correio-inteligente-200 text-xs md:pl-30 mt-2 md:mt-0">Powered by Konnectai</p>
+                    
                 </div>
                 <div className="flex flex-col items-center md:items-start mt-6 md:mt-0">
                     <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1">
-                        <span className="text-sm text-correio-inteligente-200">&copy; 2026 Konnectaí LTDA.</span>
+                        <span className="text-sm text-correio-inteligente-200">&copy; 2026 Correio Inteligente</span>
                         <span className="text-sm text-correio-inteligente-200">contato@komunicai.com.br</span>
                         <div className="flex items-center gap-4">
                             <FaFacebook className="w-6 h-6 text-correio-inteligente-200" />

@@ -98,37 +98,37 @@ export const menuWhy: MenuWhy[] = [
     {
         id: 'send',
         label: 'Envio em larga escala',
-        text: 'Dispare milhares de mensagens simultaneamente com alta performance',
+        text: 'Acione milhares de contatos simultaneamente, sem perder ritmo na sua operação.',
         icon: Mail
     },
     {
         id: 'security',
         label: 'Segurança e confiabilidade',
-        text: 'Infraestrutura robusta com baixo risco de bloqueios.',
+        text: 'Infraestrutura própria e dedicada a proteger o número da sua empresa do risco de bloqueio.',
         icon: Lock
     },
     {
         id: 'api',
         label: 'API Oficial do Whatsapp',
-        text: 'Conformidade total com as regras da Meta.',
+        text: 'Conformidade com as diretrizes da Meta e a estabilidade de quem opera pela via oficial.',
         icon: SquareCheck
     },
     {
         id: 'automation',
         label: 'Automação Inteligente',
-        text: 'Programe envios e otimize sua operação.',
+        text: 'Programe o envio, acompanhe o resultado e ajuste o alcance da sua operação.',
         icon: Settings
     },
     {
         id: 'despacho',
-        label: 'Despacho imediato e confiável',
-        text: 'Compartilhe documentos sensíveis diretamente pelo Whatsapp, com criptografia e controle total de acesso.',
+        label: 'Visibilidade total do envio',
+        text: 'Acompanhamento em tempo real de cada mensagem, do envio à leitura.',
         icon: TrendingUp
     },
     {
         id: 'high',
         label: 'Alta taxa de entrega',
-        text: 'Acompanhe quem recebeu, abriu e acessou seus documentos em tempo real.',
+        text: 'Números selecionados estrategicamente para que a mensagem realmente chegue ao cliente.',
         icon: ChartColumnIncreasing
     },
 

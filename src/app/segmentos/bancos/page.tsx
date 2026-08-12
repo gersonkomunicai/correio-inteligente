@@ -25,11 +25,11 @@ export default () => {
                                 <p className="text-lg text-gray-100 uppercase">BANCOS E FINTECHS</p>
                             </Reveal>
                             <Reveal direction="up">
-                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">A comunicação inteligente para bancos e fintechs.</h2>
+                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">A comunicação pensada para os padrões do setor financeiro.</h2>
                                 <div className="h-0.5 bg-linear-to-r w-80 my-2 md:my-4 from-correio-inteligente-900 to-correio-inteligente-800 "></div>
                             </Reveal>
                             <Reveal direction="left">
-                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize cobranças, notificações, renegociações e comunicações financeiras com uma plataforma segura, escalável e integrada à API Oficial do WhatsApp Business.</p>
+                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize cobranças, notificações, renegociações e comunicações financeiras com uma plataforma robusta, criptografada e integrada à API Oficial do WhatsApp Business.</p>
                                 <a href="/fale-conosco" className="flex items-center justify-center p-3 w-60 bg-correio-inteligente-900 text-correio-inteligente-200">Solicitar Demonstração</a>
                             </Reveal>
                         </div>
