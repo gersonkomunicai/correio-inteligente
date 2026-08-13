@@ -50,51 +50,50 @@ export default () => {
                 </div>
             </div>
             <div className="flex flex-col h-auto items-center bg-gray-100">
-                <div className="container my-10 md:px-30">
-                    <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-3"></h2>
+                <div className="container my-10">
                     <div className="lg:flex text-center items-start text-correio-inteligente-100 justify-between">
-                        <div className="flex flex-col items-center max-w-xl">
+                        <div className="flex flex-col items-center lg:max-w-xl">
                             <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Feito para um setor que não abre mão de <span className="font-bold">conformidade</span>.</h2>
                             <div className="flex justify-center items-center w-160">
                                 {/* <video muted autoPlay loop preload="none" src="/enterprise.mp4" className="rounded-lg mt-3"></video> */}
                                 <Image width={1000} height={1000} src="/heroBanco.png" className="hidden lg:flex rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
                             </div>
                         </div>
-                        <div className="flex flex-col px-5 divide-y divide-correio-inteligente-100">
+                        <div className="flex flex-col lg:max-w-xl px-5 divide-y divide-correio-inteligente-100">
                             <div className="flex items-center py-4">
-                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                <div className="flex items-center justify-center p-3 w-14 h-14 shrink-0 rounded-full bg-correio-inteligente-900">
                                     <BanknoteArrowUp className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col ">
                                     <p className="text-xl font-bold pl-3">Recuperação de Crédito</p>
                                     <span className="text-gray-700 pl-3">Automatize campanhas de cobrança, acordos e renegociações para aumentar o índice de recuperação.</span>
                                 </div>
 
                             </div>
                             <div className="flex items-center py-4">
-                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                <div className="flex items-center justify-center p-3 w-14 h-14 shrink-0 rounded-full bg-correio-inteligente-900">
                                     <MessageCircleCheck className='size-7' />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col ">
                                     <p className="text-xl font-bold pl-3">Comunicação Transacional</p>
                                     <span className="text-gray-700 pl-3">Envie notificações de pagamento, vencimentos, confirmações e avisos importantes em tempo real.</span>
                                 </div>
 
                             </div>
                             <div className="flex items-center py-4">
-                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                <div className="flex items-center justify-center p-3 w-14 h-14 shrink-0 rounded-full bg-correio-inteligente-900">
                                     <TrendingUp className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col ">
                                     <p className="text-xl font-bold pl-3">Escala</p>
                                     <span className="text-gray-700 pl-3">Milhares de mensagens enviadas simultaneamente com estabilidade e alta disponibilidade.</span>
                                 </div>
                             </div>
                             <div className="flex items-center py-4">
-                                <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
+                                <div className="flex items-center justify-center p-3 w-14 h-14 shrink-0 rounded-full bg-correio-inteligente-900">
                                     <Shield className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col ">
                                     <p className="text-xl pl-3 font-bold">Segurança</p>
                                     <span className="text-gray-700 pl-3">Comunicação através da API Oficial do WhatsApp Business, com rastreio de status em cada envio.</span>
                                 </div>
@@ -103,31 +102,31 @@ export default () => {
                         </div>
                     </div>
                     <div className="flex bg-gray-100 items-center justify-between py-10 h-auto">
-                        <div className="flex flex-col max-w-xl">
+                        <div className="flex flex-col lg:max-w-xl">
                             <h2 className="pl-3 text-center text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 p-2 bg-clip-text text-transparent">Tecnologia preparada para operações de <span className="font-bold">alta demanda</span>.</h2>
                             <p className="text-gray-700 py-3 text-md text-center">Nossa infraestrutura foi desenvolvida para operações que exigem alta disponibilidade e grandes volumes de comunicação.</p>
                             <div className="flex items-center p-3">
-                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
+                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 shrink-0 w-10 h-10 " />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">79%</p> */}
                                     <span className="pl-3 text-correio-inteligente-100 font-bold text-md">Automatize processos repetitivos e reduza o tempo gasto com comunicações manuais.</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
-                                <ArrowDown className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
+                                <ArrowDown className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 shrink-0 w-10 h-10" />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">2%</p> */}
                                     <span className="pl-3 text-correio-inteligente-100 text-md font-bold">Diminua ligações, retrabalho e recursos utilizados em campanhas tradicionais.</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
-                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
+                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 shrink-0 w-10 h-10 " />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">60%</p> */}
                                     <span className="pl-3 text-correio-inteligente-100 text-md font-bold">Utilize o WhatsApp para alcançar clientes em um canal com alta taxa de leitura e engajamento.</span>
                                 </div>
                             </div>
-                            <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma infraestrutura dimensionada para o volume da sua carteira.</h2>
+                            <h2 className="text-2xl text-center py-8 pl-3 lg:max-w-2xl text-gray-700">Uma infraestrutura dimensionada para o volume da sua carteira.</h2>
                         </div>
                         <div className="hidden lg:flex max-w-2xl h-auto items-center">
                             <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:flex lg:aspect-square" alt="" />

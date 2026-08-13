@@ -48,51 +48,51 @@ export default function Governos() {
                 </div>
             </div>
             <div className="flex flex-col h-auto items-center bg-gray-100">
-                <div className="container my-10 md:px-30">
+                <div className="container my-10">
                     {/* <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-3"></h2> */}
-                    <div className="lg:flex text-center items-start text-correio-inteligente-100 justify-between">
-                        <div className="flex flex-col items-center max-w-xl ">
-                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação inteligente para quem precisa <span className="font-bold">informar milhões de pessoas</span>.</h2>
+                    <div className="lg:flex text-center items-center text-correio-inteligente-100 justify-center lg:justify-between">
+                        <div className="flex flex-col items-center lg:max-w-xl ">
+                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação direta e com <span className="font-bold">grande acesso</span> a população.</h2>
                             <div className="flex justify-center items-center w-160">
                                 {/* <video muted autoPlay loop src="/enterprise.mp4" className="rounded-lg mt-3"></video> */}
                                 <Image src="/gov.png" width={1000} height={1000} className="hidden lg:flex rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
                             </div>
                         </div>
-                        <div className="lg:flex flex-col lg:px-5 divide-y divide-correio-inteligente-100">
-                            <div className="flex justify-center items-center py-4">
+                        <div className="lg:flex flex-col lg:max-w-xl lg:px-5 divide-y divide-correio-inteligente-100">
+                            <div className="flex items-center py-4">
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <BanknoteArrowUp className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col">
                                     <p className="text-xl font-bold pl-3">Comunicação com cidadãos</p>
                                     <span className="text-gray-700 pl-3">Envie avisos, campanhas institucionais e notificações para milhares de pessoas em poucos minutos.</span>
                                 </div>
 
                             </div>
-                            <div className="flex justify-center items-center py-4">
+                            <div className="flex items-center py-4">
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <MessageCircleCheck className='size-7' />
                                 </div>
-                                <div className="flex justify-center flex-col max-w-md">
+                                <div className="flex justify-center flex-col">
                                     <p className="text-xl font-bold pl-3">Agendamentos e confirmações</p>
                                     <span className="text-gray-700 pl-3">Automatize confirmações de atendimentos, vacinação, emissão de documentos e outros serviços públicos.</span>
                                 </div>
 
                             </div>
-                            <div className="flex justify-center items-center py-4">
+                            <div className="flex  items-center py-4">
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <TrendingUp className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col ">
                                     <p className="text-xl font-bold pl-3">Escalabilidade</p>
                                     <span className="text-gray-700 pl-3">Envie grandes volumes de mensagens simultaneamente mantendo estabilidade e alta disponibilidade.</span>
                                 </div>
                             </div>
-                            <div className="flex justify-center items-center py-4">
+                            <div className="flex items-center py-4">
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <Shield className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col">
                                     <p className="text-xl pl-3 font-bold">Segurança</p>
                                     <span className="text-gray-700 pl-3">API Oficial do WhatsApp Business com rastreabilidade, autenticação e conformidade para comunicações institucionais.</span>
                                 </div>
@@ -101,52 +101,52 @@ export default function Governos() {
                         </div>
                     </div>
                     <div className="flex bg-gray-100 items-center justify-between py-10 h-auto">
-                        <div className="flex flex-col max-w-xl">
+                        <div className="flex flex-col lg:max-w-xl">
                             <h2 className="pl-3 text-center text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 p-2 bg-clip-text text-transparent">Tecnologia preparada para atender milhões de cidadãos.</h2>
-                            <p className="text-gray-700 py-3 text-md text-center">Nossa plataforma suporta operações de alta demanda, permitindo que órgãos públicos e organizações sociais mantenham uma comunicação eficiente, organizada e acessível.</p>
+                            <p className="text-gray-700 py-3 text-md text-center">Nossa plataforma suporta operações de alta demanda, permitindo que órgãos públicos e organizações sociais mantenham uma comunicação ágil e acessível.</p>
                             <div className="flex items-center p-3">
-                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
+                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 shrink-0 w-10 h-10 " />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">79%</p> */}
-                                    <span className="pl-3 text-correio-inteligente-100 font-bold text-md">Automatize processos repetitivos e reduza filas de atendimento.</span>
+                                    <span className="pl-3 text-correio-inteligente-100 font-bold text-md">Automatize o envio de avisos e notificações em larga escala.</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
-                                <ArrowDown className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
+                                <ArrowDown className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 shrink-0 w-10 h-10 " />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">2%</p> */}
                                     <span className="pl-3 text-correio-inteligente-100 text-md font-bold">Diminua custos com ligações, SMS e comunicações impressas.</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
-                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
+                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 shrink-0 w-10 h-10 " />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">60%</p> */}
                                     <span className="pl-3 text-correio-inteligente-100 text-md font-bold">Alcance a população em um canal utilizado diariamente.</span>
                                 </div>
                             </div>
-                            <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma plataforma desenvolvida para acompanhar o crescimento da sua operação, independentemente do volume de mensagens ou da complexidade dos processos.</h2>
+                            <h2 className="text-2xl text-center py-8 pl-3 lg:max-w-2xl text-gray-700">Uma estrutura desenvolvida para facilitar a propagação de informações importante em larga escala, no canal que a população já conhece.</h2>
                         </div>
                         <div className="hidden lg:flex w-150 h-120 items-center">
-                            <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:aspect-square" alt="" />
+                            <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:flex lg:aspect-square" alt="" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-center my-10 items-center">
                         <div className="max-w-2xl text-center mb-5">
-                            <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-2">Por que <span className="font-bold">Governos e ONGs</span> podem escolher o Correio Inteligente?</h2>
-                            <p className="text-lg text-gray-600">Nossa plataforma reúne tecnologia, automação e segurança para tornar a comunicação financeira mais eficiente, escalável e orientada a resultados.</p>
+                            <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-2">Por que <span className="font-bold">Governos e ONGs</span> escolhem o Correio Inteligente?</h2>
+                            <p className="text-lg text-gray-600">Reunimos tecnologia e automação numa plataforma pensada para levar comunicação oficial à população em qualquer escala.</p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center my-5">
                             <CardSegments className="m-2" image="/api.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunicação confiável, autenticada e em conformidade com os padrões oficiais da Meta." />
                             <CardSegments className='m-2' image="/automacao.png" title='Campanhas públicas automatizadas' subtitle="Crie fluxos inteligentes para cobranças, lembretes e comunicações recorrentes sem esforço manual." />
-                            <CardSegments className='m-2' image="/gestao.jpeg" title='Comunicação centralizada com cidadãos' subtitle="Administre campanhas, históricos e interações em uma única plataforma intuitiva." />
+                            <CardSegments className='m-2' image="/gestao.jpeg" title='Comunicação centralizada com cidadãos' subtitle="Administre e acompanhe suas campanhas, relatórios e histórico de envio em uma única plataforma." />
                         </div>
                     </div>
                 </div>
             </div>
             <Cta image="/model2.jpeg"
                 title="Transforme a comunicação da sua instituição."
-                description="Leve mais eficiência para programas sociais, campanhas públicas e atendimento ao cidadão com uma plataforma preparada para operações em larga escala."
+                description="Leve informações de programas sociais, campanhas públicas e notificações institucionais à população, com alcance nacional."
                 button="Solicitar Demonstração"
                 className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" />
         </div >
