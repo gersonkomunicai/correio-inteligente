@@ -24,11 +24,11 @@ export default function Governos() {
                                 <p className="text-lg text-gray-100 uppercase">GOVERNOS E ONGS</p>
                             </Reveal>
                             <Reveal direction="up">
-                                <h2 className="text-5xl lg:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">Comunicação oficial mais rápida, acessível e eficiente.</h2>
+                                <h2 className="text-5xl lg:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">A comunicação oficial de Governos e ONGS com a população.</h2>
                                 <div className="h-0.5 bg-linear-to-r w-80 my-2 md:my-4 from-correio-inteligente-900 to-correio-inteligente-800 "></div>
                             </Reveal>
                             <Reveal direction="left">
-                                <p className="text-lg font-bold mb-6 text-gray-100">Utilize a API Oficial do WhatsApp para enviar notificações, campanhas públicas, comunicados e atendimentos automatizados com segurança, escala e alta taxa de entrega.</p>
+                                <p className="text-lg font-bold mb-6 text-gray-100">Envie notificações, campanhas institucionais e comunicados pela API Oficial do Whatsapp, alcançando grande escala com uma única plataforma.</p>
                                 <a href="/fale-conosco" className="flex items-center justify-center p-3 w-60 bg-correio-inteligente-900 text-correio-inteligente-200">Solicitar Demonstração</a>
                             </Reveal>
                         </div>

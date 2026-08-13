@@ -54,7 +54,7 @@ export default () => {
                     <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-3"></h2>
                     <div className="lg:flex text-center items-start text-correio-inteligente-100 justify-between">
                         <div className="flex flex-col items-center max-w-xl">
-                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação inteligente para um mercado que <span className="font-bold">exige confiança</span>.</h2>
+                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Feito para um setor que não abre mão de <span className="font-bold">conformidade</span>.</h2>
                             <div className="flex justify-center items-center w-160">
                                 {/* <video muted autoPlay loop preload="none" src="/enterprise.mp4" className="rounded-lg mt-3"></video> */}
                                 <Image width={1000} height={1000} src="/heroBanco.png" className="hidden lg:flex rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
@@ -96,7 +96,7 @@ export default () => {
                                 </div>
                                 <div className="flex flex-col max-w-md">
                                     <p className="text-xl pl-3 font-bold">Segurança</p>
-                                    <span className="text-gray-700 pl-3">Comunicação através da API Oficial do WhatsApp Business, com rastreabilidade e controle das interações.</span>
+                                    <span className="text-gray-700 pl-3">Comunicação através da API Oficial do WhatsApp Business, com rastreio de status em cada envio.</span>
                                 </div>
                             </div>
                             <a href="/fale-conosco" className="flex my-8 justify-center text-center rounded-xl p-4 bg-correio-inteligente-200 text-gray-100">Fale com um especialista</a>
@@ -105,7 +105,7 @@ export default () => {
                     <div className="flex bg-gray-100 items-center justify-between py-10 h-auto">
                         <div className="flex flex-col max-w-xl">
                             <h2 className="pl-3 text-center text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 p-2 bg-clip-text text-transparent">Tecnologia preparada para operações de <span className="font-bold">alta demanda</span>.</h2>
-                            <p className="text-gray-700 py-3 text-md text-center">Nossa infraestrutura foi desenvolvida para oferecer desempenho, estabilidade e segurança em operações que exigem alta disponibilidade e grandes volumes de comunicação.</p>
+                            <p className="text-gray-700 py-3 text-md text-center">Nossa infraestrutura foi desenvolvida para operações que exigem alta disponibilidade e grandes volumes de comunicação.</p>
                             <div className="flex items-center p-3">
                                 <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-3 w-13 h-13 " />
                                 <div className="flex items-end">
@@ -127,7 +127,7 @@ export default () => {
                                     <span className="pl-3 text-correio-inteligente-100 text-md font-bold">Utilize o WhatsApp para alcançar clientes em um canal com alta taxa de leitura e engajamento.</span>
                                 </div>
                             </div>
-                            <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma plataforma desenvolvida para acompanhar o crescimento da sua operação, independentemente do volume de mensagens ou da complexidade dos processos.</h2>
+                            <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma infraestrutura dimensionada para o volume da sua carteira.</h2>
                         </div>
                         <div className="hidden lg:flex max-w-2xl h-auto items-center">
                             <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:flex lg:aspect-square" alt="" />
@@ -139,9 +139,9 @@ export default () => {
                             <p className="text-lg text-gray-600">Nossa plataforma reúne tecnologia, automação e segurança para tornar a comunicação financeira mais eficiente, escalável e orientada a resultados.</p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center my-5">
-                            <CardSegments className="m-2" image="/api.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunicação confiável, autenticada e em conformidade com os padrões oficiais da Meta." />
+                            <CardSegments className="m-2" image="/api.jpeg" title='Automação de Campanhas e Notificações' subtitle="Crie fluxos automatizados para cobranças, lembretes e comunicações recorrentes, sem esforço manual." />
                             <CardSegments className='m-2' image="/automacao.png" title='Automação de campanhas e notificações' subtitle="Crie fluxos inteligentes para cobranças, lembretes e comunicações recorrentes sem esforço manual." />
-                            <CardSegments className='m-2' image="/gestao.jpeg" title='Gestão centralizada das comunicações' subtitle="Administre campanhas, históricos e interações em uma única plataforma intuitiva." />
+                            <CardSegments className='m-2' image="/gestao.jpeg" title='Campanhas Centralizadas' subtitle="Administre e acompanhe suas campanhas, relatórios e histórico de envio em uma única plataforma." />
                         </div>
                     </div>
                 </div>

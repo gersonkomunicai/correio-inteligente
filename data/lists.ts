@@ -163,24 +163,24 @@ export const menuWho: MenuWho[] = [
 
 export const menuDemonstration: MenuDemonstration[] = [
     {
-        id: 'atendimento',
-        title: 'Atendimento Automatizado',
-        text: 'Automatize respostas, encaminhamentos e processos internos.',
+        id: 'envio',
+        title: 'Envio Automatizado',
+        text: 'Programe campanhas e notificações para toda a população, sem esforço manual.',
     },
     {
-        id: 'integração',
-        title: 'Integração entre Secretarias',
-        text: 'Centralize setores como saúde, educação e administração.',
+        id: 'multipla',
+        title: 'Múltiplas Campanhas',
+        text: 'Envie comunicados distintos para diferente públicos e finalidades, tudo na mesma plataforma.',
     },
     {
-        id: 'protocolos',
-        title: 'Protocolos Digitais',
-        text: 'Organize solicitações e acompanhe atendimentos em tempo real.',
+        id: 'rastreio',
+        title: 'Rastreio em Tempo Real',
+        text: 'Acompanhe o status de cada mensagem: enviada, entregue, lida ou pendente.',
     },
     {
         id: 'relatorios',
-        title: 'Relatórios Inteligentes',
-        text: 'Tenha métricas completas sobre demandas e atendimentos.',
+        title: 'Relatórios de Envio',
+        text: 'Acompanhe métricas completas de campanhas com dashboards em tempo real.',
     },
     {
         id: 'comunicacao',

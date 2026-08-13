@@ -35,8 +35,7 @@ export default () => {
                         </Reveal>
                         <Reveal direction="left">
                             <div className="h-1 bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-800 md:my-8 my-3 w-100" />
-                            <span className="lg:text-xl text-lg text-gray-100 md:font-medium font-light">O Correio Inteligente nasceu para transformar a forma como empresas e instituições se comunicam com seus clientes. 
-imagens para referencia, que podem ser acrescentadas.</span>
+                            <span className="lg:text-xl text-lg text-gray-100 md:font-medium font-light">O Correio Inteligente nasceu para transformar a forma como empresas e instituições se comunicam com seus clientes.</span>
                         </Reveal>
                         <Reveal>
                             <a href="#começo" className="flex my-5 w-35 items-center justify-start mt-8 rounded-md bg-correio-inteligente-900 text-correio-inteligente-200 p-3">
