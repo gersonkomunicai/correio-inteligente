@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 export default () => {
     return (
-        <div className="flex flex-col">
-            <div className="w-100 h-100 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-50 top-30" />
+        <div className="flex flex-col w-screen bg-correio-inteligente-200">
+            <div className="w-screen h-screen absolute bg-[url('/aval_2.png')] bg-center bg-cover bg-no-repeat" />
+            {/* <div className="w-100 h-100 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-50 top-30" />
             <div className="w-80 h-80 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-100 top-20" />
             <div className="w-150 h-150 blur-3xl bg-correio-inteligente-100/20 rotate-45 absolute " />
             <div className="w-10 h-10 blur-lg bg-correio-inteligente-100/20 rotate-45 absolute right-100 bottom-10" />
-            <div className="w-10 h-10 blur-lg bg-correio-inteligente-100/20 rotate-45 absolute left-100 bottom-10" />
-
-            <div className="lg:flex h-auto pt-20 lg:h-screen items-center justify-center bg-correio-inteligente-200">
+            <div className="w-10 h-10 blur-lg bg-correio-inteligente-100/20 rotate-45 absolute left-100 bottom-10" /> */}
+            <div className="lg:flex relative h-auto pt-20 lg:h-screen items-center justify-center bg-correio-inteligente-200/90">
                 <Reveal direction="left">
                     <div className="lg:flex flex-col">
                         <div className="flex p-2 lg:p-0 relative items-center justify-center lg:justify-start">

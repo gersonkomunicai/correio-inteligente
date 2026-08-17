@@ -8,7 +8,6 @@ export default () => {
     return (
         <div className="flex flex-col w-screen">
             <div className="bg-[url('/image.webp')] absolute bg-right bg-cover bg-no-repeat w-screen h-screen">
-                <a href="">oi</a>
             </div>
             <div className="lg:flex items-center flex-col bg-correio-inteligente-200/90 relative h-screen">
                 <div className="absolute bg-correio-inteligente-100/20 w-200 h-200 rounded-full -left-100 -bottom-100 blur-2xl" />
@@ -56,7 +55,7 @@ export default () => {
                         <div className="lg:flex  text-left items-start md:mr-10 ">
                             <Reveal direction="left">
                                 <div className="flex flex-col">
-                                    <span className="md:text-2xl text-correio-inteligente-200">O <span className="font-bold italic">Correio Inteligente</span> nasceu com o propósito de apoiar operações que exigem controle e padronização na comunicação digital. Unimos tecnologia e automação a uma infraestrutura própria, pensada para sustentar operações de alto volume com estabilidade. Algumas coisas que orientam nosso trabalho são:</span>
+                                    <span className="md:text-2xl text-correio-inteligente-200">O <span className="font-bold italic">Correio Inteligente</span> nasceu com o propósito de apoiar operações que exigem controle e padronização na comunicação digital. Unimos tecnologia e automação a uma infraestrutura própria, pensada para sustentar operações de alto volume com estabilidade.</span>
                                     <span className="md:text-2xl text-correio-inteligente-200"> Algumas coisas que orientam nosso trabalho são: </span>
                                     <div className="flex items-center my-2">
                                         <Check className="w-8 h-8 size-4  text-correio-inteligente-200" />

@@ -47,24 +47,23 @@ export default function Educacao() {
                 </div>
             </div>
             <div className="flex flex-col h-auto items-center bg-gray-100">
-                <div className="container mb-10 md:px-30">
-                    <h2 className="bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent text-5xl my-3"></h2>
-                    <div className="lg:flex text-center items-start text-correio-inteligente-100 justify-between">
-                        <div className="flex flex-col items-center max-w-xl">
-                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Comunicação inteligente para instituições que precisam estar <span className="font-bold">sempre conectadas</span>.</h2>
-                            <div className="flex justify-center items-center w-160">
+                <div className="container justify-center items-center mb-10">
+                    <div className="lg:flex text-center items-center  text-correio-inteligente-100 justify-center lg:justify-between">
+                        <div className="flex flex-col items-center lg:max-w-xl">
+                            <h2 className="text-4xl p-2 bg-linear-to-r from-correio-inteligente-100 to-correio-inteligente-800 bg-clip-text text-transparent">Feito para instituições que precisam estar <span className="font-bold">sempre conectadas</span>.</h2>
+                            <div className="items-center w-160">
                                 {/* <video muted autoPlay loop src="/enterprise.mp4" className="rounded-lg mt-3"></video> */}
                                 <Image width={1000} height={1000} src="/heroEducation.png" className="hidden lg:flex rounded-bl-4xl rounded-tl-2xl rounded-tr-xl" alt="" />
                             </div>
                         </div>
-                        <div className="md:flex flex-col px-5 divide-y divide-correio-inteligente-100">
+                        <div className="lg:flex flex-col px-5 lg:max-w-2xl divide-y divide-correio-inteligente-100">
                             <div className="flex items-center py-4">
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <BanknoteArrowUp className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col w-full">
                                     <p className="text-xl font-bold pl-3">Comunicação Acadêmica</p>
-                                    <span className="text-gray-700 pl-3">Envie avisos sobre aulas, provas, trabalhos, eventos, calendário acadêmico e outras informações importantes.</span>
+                                    <span className="text-gray-700 pl-3">Envie avisos sobre eventos, calendário acadêmico e outras informações importantes.</span>
                                 </div>
 
                             </div>
@@ -72,9 +71,9 @@ export default function Educacao() {
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <MessageCircleCheck className='size-7' />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col w-full">
                                     <p className="text-xl font-bold pl-3">Mensalidades e Financeiro</p>
-                                    <span className="text-gray-700 pl-3">Envie lembretes de vencimento, confirmações de pagamento e comunicações financeiras de forma automatizada.</span>
+                                    <span className="text-gray-700 pl-3">Envie lembretes de vencimento e comunicações financeiras de forma automatizada.</span>
                                 </div>
 
                             </div>
@@ -82,7 +81,7 @@ export default function Educacao() {
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <TrendingUp className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col w-full">
                                     <p className="text-xl font-bold pl-3">Matrículas e Rematrículas</p>
                                     <span className="text-gray-700 pl-3">Facilite o contato com alunos e responsáveis durante períodos de matrícula, rematrícula e renovação.</span>
                                 </div>
@@ -91,7 +90,7 @@ export default function Educacao() {
                                 <div className="flex items-center justify-center p-3 w-13 h-13 rounded-full bg-correio-inteligente-900">
                                     <Shield className="size-7" />
                                 </div>
-                                <div className="flex flex-col max-w-md">
+                                <div className="flex flex-col w-full">
                                     <p className="text-xl pl-3 font-bold">Escala e Automação</p>
                                     <span className="text-gray-700 pl-3">Envie milhares de mensagens de forma simultânea, reduzindo processos manuais e acompanhando o crescimento da sua instituição.</span>
                                 </div>
@@ -100,31 +99,31 @@ export default function Educacao() {
                         </div>
                     </div>
                     <div className="flex bg-gray-100 items-center justify-between py-10 h-auto">
-                        <div className="flex flex-col max-w-2xl">
+                        <div className="flex flex-col lg:max-w-2xl">
                             <h2 className="pl-3 text-center text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 p-2 bg-clip-text text-transparent">Tecnologia preparada para a rotina da educação.</h2>
-                            <p className="text-gray-700 py-3 text-md text-center">Nossa infraestrutura foi desenvolvida para oferecer desempenho, estabilidade e segurança mesmo nos períodos de maior demanda da sua instituição.</p>
+                            <p className="text-gray-700 py-3 text-md text-center">Nossa infraestrutura foi desenvolvida para sustentar os períodos de maior demanda da sua instituição, como matrículas e rematrículas.</p>
                             <div className="flex items-center p-3">
-                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 w-10 h-10" />
+                                <ArrowUp className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 w-10 h-10 shrink-0" />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">79%</p> */}
                                     <span className="pl-3 text-correio-inteligente-100 font-bold max-w-xl text-md">Automatize processos repetitivos</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
-                                <ArrowDown className="border rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 w-10 h-10 " />
+                                <ArrowUp className="border shrink-0 rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 w-10 h-10 " />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">2%</p> */}
-                                    <span className="pl-3 text-correio-inteligente-100 text-md max-w-xl font-bold">Reduza retrabalho e custos operacionais</span>
+                                    <span className="pl-3 text-correio-inteligente-100 text-md max-w-xl font-bold">Fortaleça a comunicação financeira da sua instituição.</span>
                                 </div>
                             </div>
                             <div className="flex items-center p-3">
-                                <ArrowUp className="border   rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 w-10 h-10 " />
+                                <ArrowUp className="border shrink-0 rounded-full border-correio-inteligente-100 text-correio-inteligente-100 p-2 w-10 h-10 " />
                                 <div className="flex items-end">
                                     {/* <p className="pl-3 text-4xl font-bold text-correio-inteligente-100">60%</p> */}
-                                    <span className="pl-3 text-correio-inteligente-100 text-md max-w-xl font-bold">Alcance seus alunos pelo WhatsApp</span>
+                                    <span className="pl-3 text-correio-inteligente-100 text-md max-w-xl font-bold">Alcance seus alunos e responsáveis pelo WhatsApp.</span>
                                 </div>
                             </div>
-                            <h2 className="text-2xl text-center py-8 pl-3 max-w-2xl text-gray-700">Uma plataforma preparada para acompanhar sua instituição em todos os momentos — da matrícula ao dia a dia acadêmico.</h2>
+                            <h2 className="text-2xl text-center py-8 pl-3 lg:max-w-2xl text-gray-700">Uma plataforma preparada para acompanhar sua instituição em todos os momentos — da matrícula ao dia a dia acadêmico.</h2>
                         </div>
                         <div className="hidden lg:flex max-w-xl h-120 items-center">
                             <Image width={1000} height={1000} src="/Iso.png" className="hidden lg:flex aspect-square" alt="" />
@@ -133,11 +132,11 @@ export default function Educacao() {
                     <div className="flex flex-col justify-center my-10 items-center">
                         <div className="max-w-2xl text-center">
                             <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-2">Por que instituições de ensino escolhem o Correio Inteligente?</h2>
-                            <p className="text-lg text-gray-600">Nossa plataforma combina tecnologia, automação e segurança para tornar a comunicação com alunos, responsáveis e equipes mais simples, rápida e eficiente.</p>
+                            <p className="text-lg text-gray-600">Reunimos tecnologia e automação numa plataforma pensada para transformar avisos em resultado.</p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center my-5">
-                            <CardSegments className="m-2" image="/api.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunique-se através do canal oficial, com mais segurança, confiabilidade e rastreabilidade." />
-                            <CardSegments className='m-2' image="/automacao.png" title='Comunicações automatizadas' subtitle="Automatize avisos acadêmicos, lembretes financeiros, informações sobre matrícula e outras mensagens importantes." />
+                            <CardSegments className="m-2" image="/api.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunicação oficial entre sua instituição e a comunidade escolar." />
+                            <CardSegments className='m-2' image="/automacao.png" title='Campanhas centralizadas' subtitle="Administre e acompanhe suas campanhas, relatórios e histório de envio em uma única plataforma." />
                             <CardSegments className='m-2' image="/gestao.jpeg" title='Relacionamento centralizado' subtitle="Organize suas comunicações em uma única plataforma e tenha mais controle sobre os contatos realizados pela instituição." />
 
                         </div>

@@ -4,20 +4,20 @@ import CardSegments from "../../../../components/CardSegments"
 import Cta from "../../../../components/Cta"
 import Image from 'next/image'
 
-export default function Varejo () {
+export default function Varejo() {
     return (
         <div className="flex flex-col">
             <div className="h-auto bg-correio-inteligente-200/50 w-full relative overflow-hidden">
-            <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="none"
-            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover -z-10"
-            >
-                <source src="/varejo.mp4" type="video/mp4" />
-            </video>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="none"
+                    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover -z-10"
+                >
+                    <source src="/varejo.mp4" type="video/mp4" />
+                </video>
                 <div className="flex items-center justify-center h-screen">
                     <div className="flex container items-center justify-start">
                         <div className="flex flex-col max-w-4xl pl-7">
@@ -142,8 +142,8 @@ export default function Varejo () {
                 </div>
             </div>
             <Cta image="/model2.jpeg"
-                title="Pronto para transformar a comunicação da sua instituição financeira?"
-                description="Descubra como bancos, financeiras e fintechs utilizam o Correio Inteligente para automatizar processos, aumentar a eficiência operacional e fortalecer o relacionamento com seus clientes."
+                title="Pronto para transformar a comunicação do seu negócio?"
+                description="Descubra com lojas e redes de comércio utilizam o Correio Inteligente para automatizar campanhas e fortalecer o relacionamento com seus clientes."
                 button="Solicitar Demonstração"
                 className="flex h-200 p-10 items-center justify-center bg-correio-inteligente-200" />
 
