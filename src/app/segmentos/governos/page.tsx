@@ -138,7 +138,7 @@ export default function Governos() {
                         </div>
                         <div className="flex flex-wrap items-center justify-center my-5">
                             <CardSegments className="m-2" image="/api.jpeg" title='API Oficial do WhatsApp Business' subtitle="Comunicação confiável, autenticada e em conformidade com os padrões oficiais da Meta." />
-                            <CardSegments className='m-2' image="/automacao.png" title='Campanhas públicas automatizadas' subtitle="Crie fluxos inteligentes para cobranças, lembretes e comunicações recorrentes sem esforço manual." />
+                            <CardSegments className='m-2' image="/automacao.png" title='Campanhas públicas automatizadas' subtitle="Monte campanhas de avisos, lembretes e comunicados em poucos passos." />
                             <CardSegments className='m-2' image="/gestao.jpeg" title='Comunicação centralizada com cidadãos' subtitle="Administre e acompanhe suas campanhas, relatórios e histórico de envio em uma única plataforma." />
                         </div>
                     </div>

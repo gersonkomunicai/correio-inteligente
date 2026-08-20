@@ -47,9 +47,7 @@ export default () => {
                             <div className="flex pb-5 bg-correio-inteligente-900 container">
                                 <h2 className="text-center text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent">Experiência jurídica aliada a <span className="font-bold">eficiência operacional</span></h2>
                             </div>
-                            <p className="text-lg lg:text-left text-center">Com uma atuação especializada e processos que envolvem um grande volume de contatos e negociações, a Toledo Piza busca constantemente aprimorar sua operação e oferecer uma comunicação mais eficiente aos clientes.
-
-                                A combinação entre experiência jurídica, processos estruturados e tecnologia permite que o escritório acompanhe as novas demandas do mercado e encontre maneiras cada vez mais eficientes de conduzir suas operações, mantendo o foco na qualidade do atendimento e na resolução das demandas.</p>
+                            <p className="text-lg lg:text-left text-center">A Toledo Piza é uma sociedade de advogados especializada em recuperação de crédito judicial e extrajudicial, atuando com contratos bancários em todo o território nacional. Como parceira do Banco BV, o escritório precisava de uma estrutura de comunicação capaz de acompanhar o volume de contatos gerado por essa operação.</p>
                         </Reveal>
                     </div>
                 </div>
@@ -63,20 +61,14 @@ export default () => {
                     <div className="flex container p-5">
                 <Reveal direction="up">
                         <div className="flex">
-                            <span className="text-lg text-center mb-10 text-correio-inteligente-200">Com uma operação que envolve a comunicação com clientes ao longo de diferentes etapas de seus processos, a Toledo Piza precisava ampliar sua capacidade de contato sem comprometer a agilidade e a qualidade da comunicação.
-
-                                O desafio estava em alcançar um grande número de pessoas de maneira rápida e organizada, especialmente em situações que exigem acompanhamento, envio de informações, notificações e oportunidades de negociação.
-
-                                À medida que o volume de contatos aumenta, depender exclusivamente de processos manuais torna a operação mais complexa. Era necessário, portanto, contar com uma solução capaz de acompanhar essa escala e, ao mesmo tempo, proporcionar uma comunicação mais eficiente e próxima dos clientes.
-
-                                Nesse cenário, o WhatsApp surgiu como um importante canal para fortalecer o contato e criar novas oportunidades de interação ao longo da jornada de cada cliente.</span>
+                            <span className="text-lg text-center mb-10 text-correio-inteligente-200">Com o volume de contatos gerado pela operação junto ao Banco BV, a Toledo Piza precisava de uma estrutura de comunicação capaz de acompanhar essa escala sem depender de processos manuais. O desafio estava em alcançar um grande número de clientes de forma rápida e organizada, mantendo o controle sobre cada etapa da negociação. Nesse cenário, o WhatsApp surgiu como um canal capaz de sustentar esse volume e aproximar o escritório dos seus clientes.</span>
                         </div>
                 </Reveal>
                     </div>
                 <div className="flex flex-col items-center w-full h-auto">
                     <div className="p-5 bg-correio-inteligente-200">
                         <div className="md:flex my-10 px-10">
-                            <div className="hidden lg:flex lg:min-w-200">
+                            <div className="hidden lg:flex lg:min-w-150">
                                 <Image width={1000} height={1000} src="/handshake.jpeg" className="" alt="" />
                             </div>
                             <Reveal direction="right">
@@ -85,15 +77,8 @@ export default () => {
                                         <div className="flex justify-center lg:justify-start items-center">
                                             <h2 className="bg-linear-to-r from-gray-100 to-correio-inteligente-800 bg-clip-text lg:text-left text-center text-transparent pb-5 text-4xl md:mr-10 md:text-5xl">Como o <span className="font-bold">Correio Inteligente</span> ajudou</h2>
                                         </div>
-                                        <span className="flex flex-col text-center mt-10 md:mt-0 lg:text-left text-correio-inteligente-900 text-lg">Para apoiar a operação da Toledo Piza, o Correio Inteligente trouxe mais automação, escala e organização para a comunicação com os clientes.
-
-                                            A plataforma permitiu estruturar campanhas e realizar disparos pelo WhatsApp em grande volume, ampliando a capacidade de contato e tornando mais ágil o envio de comunicações durante os processos conduzidos pelo escritório.
-
-                                            Com a automação das mensagens, diferentes comunicações puderam ser realizadas de maneira mais rápida e organizada, incluindo notificações, lembretes e contatos relacionados às etapas de negociação e acompanhamento dos clientes.
-
-                                            Além de aumentar a capacidade operacional, o acompanhamento das mensagens enviadas, entregues, lidas e das interações geradas proporcionou uma visão mais clara sobre o desempenho das comunicações.
-
-                                            Dessa forma, o Toledo Piza passou a contar com uma estrutura de comunicação mais escalável, capaz de acompanhar o volume da operação e contribuir para uma jornada de contato mais eficiente.</span>
+                                        <span className="flex flex-col text-center mt-10 md:mt-0 lg:text-left text-correio-inteligente-900 text-lg">Com o Correio Inteligente, a Toledo Piza passou a contar com uma estrutura de campanhas em escala para gerenciar a comunicação com clientes, incluindo as campanhas ligadas à operação junto ao Banco BV. A plataforma permitiu automatizar notificações, lembretes e comunicações relacionadas às etapas de negociação, reduzindo a dependência de processos manuais.
+O acompanhamento em tempo real do status das mensagens enviadas, entregues, lidas e pendentes, deu à Toledo Piza uma visão mais clara sobre o desempenho de cada campanha. Com uma operação mais automatizada, o escritório ampliou sua capacidade de contato e ganhou mais controle sobre cada etapa da comunicação com os clientes.</span>
                                     </div>
                                 </div>
                             </Reveal>

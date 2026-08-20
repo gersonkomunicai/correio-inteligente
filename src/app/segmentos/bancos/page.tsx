@@ -138,7 +138,7 @@ export default () => {
                             <p className="text-lg text-gray-600">Nossa plataforma reúne tecnologia, automação e segurança para tornar a comunicação financeira mais eficiente, escalável e orientada a resultados.</p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center my-5">
-                            <CardSegments className="m-2" image="/api.jpeg" title='Automação de Campanhas e Notificações' subtitle="Crie fluxos automatizados para cobranças, lembretes e comunicações recorrentes, sem esforço manual." />
+                            <CardSegments className="m-2" image="/api.jpeg" title='API Oficial do Whatsapp Business' subtitle="Comunicação confiável, autenticada e em conformidade com os padrões oficiais da Meta." />
                             <CardSegments className='m-2' image="/automacao.png" title='Automação de campanhas e notificações' subtitle="Crie fluxos inteligentes para cobranças, lembretes e comunicações recorrentes sem esforço manual." />
                             <CardSegments className='m-2' image="/gestao.jpeg" title='Campanhas Centralizadas' subtitle="Administre e acompanhe suas campanhas, relatórios e histórico de envio em uma única plataforma." />
                         </div>

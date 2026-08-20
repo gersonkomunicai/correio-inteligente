@@ -24,11 +24,10 @@ export default function Educacao() {
                                 <p className="text-lg text-gray-100 uppercase">EDUCAÇÃO</p>
                             </Reveal>
                             <Reveal direction="up">
-                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">Comunicação inteligente para instituições de ensino.</h2>
-                                <div className="h-0.5 bg-linear-to-r w-80 my-2 md:my-4 from-correio-inteligente-900 to-correio-inteligente-800 "></div>
+                                <h2 className="text-5xl md:text-6xl pb-4 font-bold bg-linear-to-r from-correio-inteligente-900 to-correio-inteligente-300 bg-clip-text text-transparent">Comunicação automatizada para instituições de ensino.</h2>
                             </Reveal>
                             <Reveal direction="left">
-                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize comunicados, avisos, lembretes e notificações para alunos, responsáveis e equipes através da API Oficial do WhatsApp.</p>
+                                <p className="text-lg  font-bold mb-6 text-gray-100">Automatize lembretes de mensalidade, avisos acadêmicos e comunicados para alunos e responsáveis através da API Oficial do WhatsApp.</p>
                                 <a href="/fale-conosco" className="flex items-center justify-center p-3 w-60 bg-correio-inteligente-900 text-correio-inteligente-200">Solicitar Demonstração</a>
                             </Reveal>
                         </div>

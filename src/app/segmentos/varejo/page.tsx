@@ -131,12 +131,12 @@ export default function Varejo() {
                     <div className="flex flex-col justify-center my-10 items-center">
                         <div className="text-center">
                             <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-2">Por que empresas do varejo podem escolher o Correio Inteligente?</h2>
-                            <p className="text-lg text-gray-600">Nossa plataforma reúne tecnologia, automação e segurança para tornar a comunicação financeira mais eficiente, escalável e orientada a resultados.</p>
+                            <p className="text-lg text-gray-600">Reunimos tecnologia e automação numa plataforma feita para transformar alcance em resultado.</p>
                         </div>
                         <div className="flex flex-wrap items-center justify-center my-5">
                             <CardSegments className="m-2" image="/api.jpeg" title='API Oficial do WhatsApp Business' subtitle="Transmita mais confiança com mensagens autenticadas e entregues pelo canal oficial da Meta." />
-                            <CardSegments className='m-2' image="/automacao.png" title='Campanhas e notificações automatizadas' subtitle="Automatize promoções, lançamentos, status de pedidos e ações de relacionamento sem esforço manual." />
-                            <CardSegments className='m-2' image="/gestao.jpeg" title='Relacionamento centralizado' subtitle="Gerencie campanhas, histórico de conversas e interações dos clientes em uma única plataforma." />
+                            <CardSegments className='m-2' image="/automacao.png" title='Campanhas e notificações automatizadas' subtitle="Automatize promoções, lançamentos e ações de relacionamento sem esforço manual." />
+                            <CardSegments className='m-2' image="/gestao.jpeg" title='Campanhas centralizadas' subtitle="Administre e acompanhe suas campanhas, relatórios e histórico de envio em uma única plataforma." />
                         </div>
                     </div>
                 </div>

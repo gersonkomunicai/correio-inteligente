@@ -48,14 +48,7 @@ export default () => {
                             <div className="flex pb-5 mt-20 md:mt-0 justify-center lg:justify-start bg-correio-inteligente-900 container">
                                 <h2 className="text-4xl bg-linear-to-r from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent">Sobre o <span className="font-bold">Grupo Aval</span></h2>
                             </div>
-                            <p className="lg:text-left text-center text-lg">Há mais de 42 anos, o Grupo Aval atua no mercado financeiro oferecendo serviços especializados voltados à localização, contato e relacionamento com clientes, além da condução de processos relacionados à regularização de pendências financeiras.
-
-                                Ao longo de sua trajetória, a empresa consolidou uma atuação pautada pela eficiência, agilidade e excelência no atendimento, utilizando estratégias modernas e recursos tecnológicos para otimizar seus processos e ampliar os resultados de suas operações.
-
-                                Com foco na resolução ágil das demandas e na construção de relacionamentos duradouros, o Grupo Aval busca constantemente aprimorar seus procedimentos, combinando experiência de mercado, inovação e atendimento personalizado para oferecer soluções eficientes aos seus clientes.
-
-                                Essa experiência de mais de quatro décadas reforça o compromisso do Grupo Aval com a qualidade na prestação de serviços e com a busca contínua por melhores resultados, sempre acompanhando as transformações e as novas necessidades do mercado financeiro.</p>
-
+                            <p className="lg:text-left text-center text-lg">Há mais de 42 anos, o Grupo Aval atua no mercado de recuperação de crédito, prestando serviços de cobrança amigável e jurídica para instituições financeiras. Com uma carteira de clientes de volume expressivo, a empresa buscava um parceiro com capacidade de envio diário em escala e suporte dedicado, foi isso que levou o Grupo Aval a adotar o Correio Inteligente como parte de sua estratégia de comunicação.</p>
                         </Reveal>
                     </div>
                 </div>
@@ -70,15 +63,7 @@ export default () => {
                 <div className="flex container p-5">
                     <Reveal direction="up">
                         <div className="flex">
-                            <span className="text-lg text-center mb-10 text-correio-inteligente-200">Com uma operação voltada à localização, comunicação e negociação com clientes, o Grupo Aval precisava encontrar maneiras de tornar seus processos de cobrança mais eficientes e escaláveis. O grande volume de contatos exigia uma comunicação capaz de alcançar um número maior de pessoas de forma rápida, organizada e consistente.
-
-                                Nesse cenário, aumentar a eficiência não significava apenas enviar mais mensagens, mas garantir que elas chegassem aos clientes no momento adequado e criassem novas oportunidades de interação. Era necessário ampliar o alcance das comunicações, reduzir a dependência de processos manuais e tornar a jornada de contato mais dinâmica e eficiente.
-
-                                A empresa buscava, portanto, uma solução que acompanhasse o ritmo de sua operação e permitisse realizar comunicações em grande escala sem perder agilidade, controle e qualidade no atendimento.
-
-                                Foi a partir dessa necessidade que o Grupo Aval encontrou no Correio Inteligente uma ferramenta capaz de transformar sua estratégia de comunicação, automatizando os contatos, ampliando o alcance das mensagens e criando melhores condições para que os clientes fossem efetivamente impactados e retornassem às comunicações.
-
-                                O desafio estava lançado: alcançar mais clientes, tornar a comunicação mais eficiente e transformar cada contato em uma nova oportunidade de negociação e recuperação de crédito.</span>
+                            <span className="text-lg text-center mb-10 text-correio-inteligente-200">Com uma carteira de clientes de volume expressivo, o Grupo Aval precisava de uma forma de comunicação capaz de alcançar um número maior de pessoas sem depender de processos manuais. O desafio não era apenas enviar mais mensagens, mas garantir que elas chegassem no momento certo e gerassem retorno real dos clientes. A empresa buscava um parceiro com capacidade de envio em grande escala e suporte dedicado para acompanhar o ritmo da operação. Foi isso que levou o Grupo Aval a encontrar no Correio Inteligente uma solução para transformar sua estratégia de cobrança.</span>
                         </div>
                     </Reveal>
                 </div>
@@ -87,22 +72,18 @@ export default () => {
 
                         <div className="md:flex items-center my-10 px-10">
                             <Reveal direction="left">
-                                <div className="hidden lg:flex lg:min-w-200">
-                                    <Image width={1000} height={1000} src="/handshake.jpeg" className="" alt="" />
+                                <div className="hidden lg:flex lg:min-w-150">
+                                    <Image width={1000} height={1000} src="/aval_case.jpeg" className="" alt="" />
                                 </div>
                             </Reveal>
                             <Reveal direction="right">
                                 <div className="flex flex-col">
-                                    <div className="flex items-center text-center justify-center lg:text-left lg:justify-start lg:ml-40">
+                                    <div className="flex items-center text-center justify-center lg:text-left lg:justify-start lg:ml-30">
                                         <h2 className="bg-linear-to-r from-gray-100 to-correio-inteligente-800 bg-clip-text text-transparent pb-5 text-4xl md:mr-10 md:text-5xl">Como o <span className="font-bold">Correio Inteligente</span> ajudou</h2>
                                     </div>
-                                    <div className="lg:ml-40">
-                                        <span className="flex flex-col text-center mt-10 md:mt-0 lg:text-left text-correio-inteligente-900 text-lg">Para atender às necessidades do Grupo Aval, o Correio Inteligente passou a apoiar a operação de comunicação com uma estrutura mais ágil, automatizada e preparada para grandes volumes de mensagens.
-                                            Por meio da plataforma, foi possível utilizar o WhatsApp como um importante canal de comunicação com os clientes, permitindo a realização de campanhas automatizadas e disparos em escala.</span>
-                                        <span className="text-lg flex text-center lg:text-left text-correio-inteligente-900">Dessa forma, o Grupo Aval ganhou maior capacidade para alcançar sua base de contatos e manter uma comunicação mais frequente e organizada durante os processos de cobrança.
-                                            A automação também possibilitou tornar os contatos mais eficientes, permitindo o envio de mensagens de acordo com diferentes necessidades e momentos da jornada do cliente. Lembretes, notificações e comunicações relacionadas às pendências financeiras passaram a fazer parte de um fluxo mais estruturado, reduzindo a dependência de processos manuais e aumentando a agilidade da operação.</span>
-                                        <span className="flex text-center lg:text-left text-correio-inteligente-900 text-lg">Outro ponto importante foi a possibilidade de acompanhar o desempenho das comunicações realizadas. A análise das mensagens enviadas, entregues, lidas e das interações geradas proporcionou uma visão mais clara sobre o comportamento dos clientes e ajudou a identificar oportunidades para aprimorar continuamente as campanhas.
-                                            Com uma operação mais automatizada e escalável, o Grupo Aval conseguiu ampliar sua capacidade de contato e criar novas oportunidades de interação com os clientes. O Correio Inteligente passou, assim, a contribuir não apenas para o envio das mensagens, mas para uma estratégia de comunicação mais eficiente, capaz de transformar cada contato em uma oportunidade de negociação e recuperação de crédito.</span>
+                                    <div className="lg:ml-30">
+                                        <span className="flex flex-col text-center mt-10 md:mt-0 lg:text-left text-correio-inteligente-900 text-lg">Com o Correio Inteligente, o Grupo Aval passou a contar com uma estrutura de envio em grande escala e suporte dedicado para acompanhar o volume da sua carteira. A plataforma permitiu automatizar campanhas de cobrança pelo WhatsApp, com lembretes e comunicações organizadas em um fluxo estruturado, reduzindo a dependência de processos manuais.
+                                            Outro ponto importante foi o acompanhamento do status das mensagens: enviadas, entregues, lidas e pendentes. Isso deu ao Grupo Aval uma visão mais clara sobre o comportamento dos clientes, ajudando a identificar oportunidades de aprimorar as campanhas continuamente. Com uma operação mais automatizada, o Grupo Aval ampliou sua capacidade de contato e transformou cada mensagem em uma nova oportunidade de negociação e recuperação de crédito.</span>
                                     </div>
                                 </div>
                             </Reveal>
@@ -150,8 +131,11 @@ export default () => {
                     </Reveal>
 
                     <div className="flex md:my-0 my-5 items-center w-150">
-                        <img src="/ceo2.jpeg" className="rounded-bl-4xl rounded-tr-4xl rounded-tl-xl" alt="" />
+                        <video autoPlay controls loop playsInline preload="none" className="absolute h-120 w-120">
+                            <source src="/video_aval.mp4" type="video/mp4" />
+                        </video>
                     </div>
+                    {/* <img src="/ceo2.jpeg" className="rounded-bl-4xl rounded-tr-4xl rounded-tl-xl" alt="" /> */}
 
                 </div>
             </div>

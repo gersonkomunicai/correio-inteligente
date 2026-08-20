@@ -65,7 +65,7 @@ export default function Seguradoras() {
                                 </div>
                                 <div className="flex flex-col w-full">
                                     <p className="text-xl font-bold pl-3">Avisos</p>
-                                    <span className="text-gray-700 pl-3">Envie comunicados de renovação, vencimentos e informações importantes.</span>
+                                    <span className="text-gray-700 pl-3">Envie comunicados institucionais de forma automatizada.</span>
                                 </div>
 
                             </div>
