@@ -4,37 +4,39 @@ import Image from 'next/image'
 
 export default () => {
     return (
-        <div className="flex flex-col w-screen bg-correio-inteligente-200">
-            <div className="w-screen h-screen absolute bg-[url('/aval_2.png')] bg-center bg-cover bg-no-repeat" />
-            {/* <div className="w-100 h-100 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-50 top-30" />
+        <div className="flex flex-col w-screen ">
+            {/* <div className="w-screen h-screen absolute bg-[url('/aval_2.png')] bg-center bg-cover bg-no-repeat" /> */}
+            <div className="flex justify-center w-screen h-screen relative bg-correio-inteligente-200/92">
+                <div className="w-100 h-100 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-50 top-30" />
             <div className="w-80 h-80 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-100 top-20" />
             <div className="w-150 h-150 blur-3xl bg-correio-inteligente-100/20 rotate-45 absolute " />
             <div className="w-10 h-10 blur-lg bg-correio-inteligente-100/20 rotate-45 absolute right-100 bottom-10" />
-            <div className="w-10 h-10 blur-lg bg-correio-inteligente-100/20 rotate-45 absolute left-100 bottom-10" /> */}
-            <div className="lg:flex relative h-auto pt-20 lg:h-screen items-center justify-center bg-correio-inteligente-200/90">
-                <Reveal direction="left">
-                    <div className="lg:flex flex-col">
-                        <div className="flex p-2 lg:p-0 relative items-center justify-center lg:justify-start">
-                            <Image width={80} height={80} src="/aval.png" className="max-w-20" alt="" />
-                            <Ampersand className="ml-2 size-4 text-gray-100" />
-                            <Image width={60} height={80} src="/Iso.png" className="max-h-15" alt="" />
+            <div className="w-10 h-10 blur-lg bg-correio-inteligente-100/20 rotate-45 absolute left-100 bottom-10" />
+                <div className="lg:flex relative container h-auto pt-20 lg:h-screen items-center justify-evenly">
+                    <Reveal direction="left">
+                        <div className="lg:flex flex-col">
+                            <div className="flex p-2 lg:p-0 relative items-center justify-center lg:justify-start">
+                                <Image width={80} height={80} src="/aval.png" className="max-w-20" alt="" />
+                                <Ampersand className="ml-2 size-4 text-gray-100" />
+                                <Image width={60} height={80} src="/Iso.png" className="max-h-15" alt="" />
+                            </div>
+                            <div className="flex flex-col relative h-auto items-center text-center px-4 lg:text-left lg:p-0 lg:max-w-4xl">
+                                <h2 className="text-6xl bg-linear-to-r from-correio-inteligente-900 pb-4 to-correio-inteligente-800 bg-clip-text text-transparent">O <span className="font-bold">Grupo Aval</span> recuperou milhares em crédito com o Correio Inteligente.</h2>
+                                <p className="text-lg text-gray-100">Com campanhas automatizadas pelo WhatsApp, o Grupo Aval aumentou a eficiência da cobrança, recuperou uma parcela significativa de créditos em aberto e agilizou a comunicação com seus clientes.</p>
+                            </div>
+                            <div className="flex w-full lg:justify-start items-center justify-center relative ">
+                                <a href="/fale-conosco" className="flex justify-center my-4 p-5 rounded-full bg-correio-inteligente-900 md:w-60 text-correio-inteligente-200">
+                                    Fale com um especialista
+                                </a>
+                            </div>
                         </div>
-                        <div className="flex flex-col relative h-auto items-center text-center px-4 lg:text-left lg:p-0 lg:max-w-4xl">
-                            <h2 className="text-6xl bg-linear-to-r from-correio-inteligente-900 pb-4 to-correio-inteligente-800 bg-clip-text text-transparent">O <span className="font-bold">Grupo Aval</span> recuperou milhares em crédito com o Correio Inteligente.</h2>
-                            <p className="text-lg text-gray-100">Com campanhas automatizadas pelo WhatsApp, o Grupo Aval aumentou a eficiência da cobrança, recuperou uma parcela significativa de créditos em aberto e agilizou a comunicação com seus clientes.</p>
+                    </Reveal>
+                    <Reveal direction="right">
+                        <div className=" hidden lg:flex items-center lg:justify-between bg-gray-100 h-120 rounded-br-md rounded-bl-4xl rounded-tr-4xl justify-center my-10">
+                            <Image width={1000} height={1000} src="/logo.png" className="bg-top max-w-120 relative" alt="" />
                         </div>
-                        <div className="flex w-full lg:justify-start items-center justify-center relative ">
-                            <a href="/fale-conosco" className="flex justify-center my-4 p-5 rounded-full bg-correio-inteligente-900 md:w-60 text-correio-inteligente-200">
-                                Fale com um especialista
-                            </a>
-                        </div>
-                    </div>
-                </Reveal>
-                <Reveal direction="right">
-                    <div className="lg:ml-10 flex items-center lg:justify-between justify-center ml-4 my-10">
-                        <Image width={1000} height={1000} src="/ceo.jpeg" className="bg-top w-120 h-120 object-cover rounded-br-md rounded-bl-4xl rounded-tr-4xl" alt="" />
-                    </div>
-                </Reveal>
+                    </Reveal>
+                </div>
             </div>
             <div className="flex flex-col h-auto items-center justify-center py-10 bg-gray-100" id='sobreogrupo'>
                 <div className="md:flex p-5 container items-center bg-correio-inteligente-900 rounded-lg md:text-left ">
@@ -111,30 +113,29 @@ export default () => {
                 </div>
             </div>
             <div className="flex flex-col items-center w-full bg-gray-100 h-auto">
-                <div className="md:flex container my-10 justify-around">
-                    <Reveal direction="left">
-                        <div className="flex flex-col w-120">
-                            <h2 className="text-4xl bg-linear-to-r mb-4 text-center from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-5">
-                                Quando a comunicação gera <span className="font-bold">resultados</span>.
-                            </h2>
-                            <Quote className="rotate-180 size-10 w-10 h-10 text-correio-inteligente-200 stroke-0" fill='#888888'></Quote>
-                            <div className="flex pl-10 -mt-3 italic">
-                                <span>Pellntesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus cursus ligula felis, eget rutrum augue mollis ac. Aliquam augue ipsum, egestas sit amet ex eu, blandit maximus felis. Proin sed sodales elit. Curabitur finibus tortor mauris, eu pharetra augue cursus nec.
-                                    In hac habitasse platea dictumst. Aenean imperdiet dolor ac odio sollicitudin fringilla.
-                                    Sed varius augue ac pellentesque posuere. Nunc semper mollis ligula, a fringilla sapien vulputate eu. Fusce venenatis et lacus quis porta. Etiam porttitor non urna aliquam dictum. Vestibulum mi tortor, convallis quis sollicitudin eget, hendrerit vitae lectus. Proin dictum vitae augue eu lobortis. Aenean sed auctor ipsum. Cras ac ante faucibus, mattis urna vitae, dictum massa.</span>
-                            </div>
-                            <div className="flex justify-end">
-                                <Quote className="size-4 w-6 h-6 text-correio-inteligente-200 stroke-0" fill='#888888'></Quote>
-                            </div>
+                <div className="lg:flex container  my-10 lg:justify-between">
 
+                    <div className="flex flex-col lg:max-w-xl">
+                        <h2 className="text-4xl bg-linear-to-r mb-4 text-center from-correio-inteligente-200 to-correio-inteligente-800 bg-clip-text text-transparent p-5">
+                            Quando a comunicação gera <span className="font-bold">resultados</span>.
+                        </h2>
+                        <Quote className="rotate-180 size-10 w-10 h-10 text-correio-inteligente-200 stroke-0" fill='#888888'></Quote>
+                        <div className="flex pl-10 -mt-3 italic">
+                            <span>Pellntesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus cursus ligula felis, eget rutrum augue mollis ac. Aliquam augue ipsum, egestas sit amet ex eu, blandit maximus felis. Proin sed sodales elit. Curabitur finibus tortor mauris, eu pharetra augue cursus nec.
+                                In hac habitasse platea dictumst. Aenean imperdiet dolor ac odio sollicitudin fringilla.
+                                Sed varius augue ac pellentesque posuere. Nunc semper mollis ligula, a fringilla sapien vulputate eu. Fusce venenatis et lacus quis porta. Etiam porttitor non urna aliquam dictum. Vestibulum mi tortor, convallis quis sollicitudin eget, hendrerit vitae lectus. Proin dictum vitae augue eu lobortis. Aenean sed auctor ipsum. Cras ac ante faucibus, mattis urna vitae, dictum massa.</span>
                         </div>
-                    </Reveal>
-
-                    <div className="flex md:my-0 my-5 items-center w-150">
-                        <video autoPlay controls loop playsInline preload="none" className="absolute h-120 w-120">
+                        <div className="flex justify-end">
+                            <Quote className="size-4 w-6 h-6 text-correio-inteligente-200 stroke-0" fill='#888888'></Quote>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <video autoPlay controls loop playsInline preload="none" className="hidden lg:flex h-120 w-120">
                             <source src="/video_aval.mp4" type="video/mp4" />
                         </video>
                     </div>
+
+
                     {/* <img src="/ceo2.jpeg" className="rounded-bl-4xl rounded-tr-4xl rounded-tl-xl" alt="" /> */}
 
                 </div>

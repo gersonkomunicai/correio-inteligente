@@ -3,8 +3,10 @@ import Reveal from "../../../../components/Reveal"
 import Image from 'next/image'
 export default () => {
     return (
-        <div className="flex flex-col">
-            <div className="lg:flex h-auto pt-20 lg:h-screen items-center justify-center bg-correio-inteligente-200">
+        <div className="flex flex-col w-screen">
+            {/* <div className="w-screen h-screen absolute bg-[url('/toledo2.jpg')] bg-center bg-cover bg-no-repeat"/> */}
+            <div className="flex justify-center w-screen h-screen relative bg-correio-inteligente-200/92 ">
+            <div className="lg:flex container h-auto pt-20 lg:h-screen items-center justify-evenly ">
                 <div className="w-100 h-100 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-50 top-30" />
                 <div className="w-80 h-80 blur-2xl bg-correio-inteligente-100/20 rounded-full absolute left-100 top-20" />
                 <div className="w-150 h-150 blur-3xl bg-correio-inteligente-100/20 rotate-45 absolute " />
@@ -29,11 +31,12 @@ export default () => {
                     </div>
                 </Reveal>
                 <Reveal direction="right">
-                    <div className="lg:ml-10 flex items-center justify-center lg:justify-between ml-4 my-10">
-                        <Image width={1000} height={1000} src="/ceo3.jpeg" className="bg-top w-120 h-120 object-cover rounded-br-md rounded-bl-4xl rounded-tr-4xl" alt="" />
+                    <div className="flex items-center justify-center lg:justify-between relative bg-gray-100 h-120 my-10 rounded-br-md rounded-bl-4xl rounded-tr-4xl">
+                        <Image width={1000} height={1000} src="/logoToledo.png" className="lg:flex hidden bg-top w-120 " alt="" />
                     </div>
                 </Reveal>
             </div>
+                </div>
             <div className="flex flex-col h-auto items-center justify-center py-10 bg-gray-100" id='sobreogrupo'>
                 
                 <div className="md:flex p-5 container bg-correio-inteligente-900 rounded-lg md:text-left ">
@@ -69,7 +72,7 @@ export default () => {
                     <div className="p-5 bg-correio-inteligente-200">
                         <div className="md:flex my-10 px-10">
                             <div className="hidden lg:flex lg:min-w-150">
-                                <Image width={1000} height={1000} src="/handshake.jpeg" className="" alt="" />
+                                <Image width={1000} height={1000} src="/matriz.png" className="w-200" alt="" />
                             </div>
                             <Reveal direction="right">
                                 <div className="flex flex-col">
@@ -123,7 +126,7 @@ O acompanhamento em tempo real do status das mensagens enviadas, entregues, lida
 
                     </div>
                     <div className="flex md:my-0 my-5 items-center w-150">
-                        <img src="/ceo4.jpeg" className="rounded-bl-4xl rounded-tr-4xl rounded-tl-xl" alt="" />
+                        <img src="/ceo3.jpeg" className="rounded-bl-4xl rounded-tr-4xl rounded-tl-xl" alt="" />
                     </div>
                 </div>
             </div>
