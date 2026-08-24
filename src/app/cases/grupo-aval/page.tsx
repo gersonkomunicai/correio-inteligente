@@ -72,9 +72,9 @@ export default () => {
                 <div className="flex flex-col items-center w-full h-auto">
                     <div className="p-5 bg-correio-inteligente-200">
 
-                        <div className="md:flex items-center my-10 px-10">
+                        <div className="flex items-center my-10 px-10">
                             <Reveal direction="left">
-                                <div className="hidden lg:flex lg:min-w-150">
+                                <div className="hidden  lg:min-w-150">
                                     <Image width={1000} height={1000} src="/aval_case.jpeg" className="" alt="" />
                                 </div>
                             </Reveal>
@@ -129,7 +129,7 @@ export default () => {
                             <Quote className="size-4 w-6 h-6 text-correio-inteligente-200 stroke-0" fill='#888888'></Quote>
                         </div>
                     </div>
-                    <div className="flex">
+                    <div className="hidden ">
                         <video autoPlay controls loop playsInline preload="none" className="hidden lg:flex h-120 w-120">
                             <source src="/video_aval.mp4" type="video/mp4" />
                         </video>
