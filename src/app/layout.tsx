@@ -5,16 +5,17 @@ import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title: "Correio Inteligente | Operações em Longa Escala",
-  description: "O Correio Inteligente é uma solução com infraestrutura própria que utiliza a API Oficial do Whatsapp para envios em longa escala.",
+  description: "O Correio Inteligente é uma solução que utiliza a API Oficial do Whatsapp para envios em longa escala.",
   openGraph: {
+    siteName: "Correio Inteligente",
     title: "Correio Inteligente | Operações em Longa Escala",
-    description: "O Correio Inteligente é uma solução com infraestrutura própria que utiliza a API Oficial do Whatsapp para envios em longa escala.",
+    description: "O Correio Inteligente é uma solução que utiliza a API Oficial do Whatsapp para envios em longa escala.",
     url: "https://www.correiointeligente.com.br",
     images: [
       {
-        url: 'https://correiointeligente.com.br/Iso.png',
-        width: 100,
-        height: 100,
+        url: 'https://correiointeligente.com.br/logoHorizontalEscura.png',
+        width: 1200,
+        height: 630,
         alt: 'Logo do Correio Inteligente'
       },
     ],
