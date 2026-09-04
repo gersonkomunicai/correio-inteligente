@@ -14,7 +14,7 @@ export default () => {
                     
                     <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1">
                         <span className="text-sm text-correio-inteligente-200">&copy; {anoAtual} Correio Inteligente LTDA</span>
-                        <span className="text-sm text-correio-inteligente-200">contato@konnectai.com.br</span>
+                        <a href="mailto:contato@correiointeligente.com.br" className="text-sm text-correio-inteligente-200">contato@correiointeligente.com.br</a>
                         <div className="flex items-center gap-4">
                             <FaFacebook className="w-6 h-6 text-correio-inteligente-200" />
                             <BsInstagram className="w-5 h-5 text-correio-inteligente-200" />
@@ -28,7 +28,7 @@ export default () => {
                     <p className="font-bold">Endereço</p>
                     <p className="">Rua Coronel Del Prett, 72, CEP 59.584-000, Centro - Touros/RN</p>
                     <p className="font-bold">Contato</p>
-                    <p className="">contato@konnectai.com.br</p>
+                    <a href="mailto:contato@correiointeligente.com.br" className="">contato@correiointeligente.com.br</a>
                     <p className="">{`(84) 99184-9939`}</p>
                     <p className="font-bold">CNPJ</p>
                     <p className="">60.908.586/0001-19</p>
