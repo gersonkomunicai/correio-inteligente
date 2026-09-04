@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://www.correiointeligente.com.br",
     images: [
       {
-        url: 'https://correiointeligente.com.br/logoHorizontalEscura.png',
+        url: 'https://correiointeligente.com.br/logoOpenGraph.png',
         width: 1200,
         height: 630,
         alt: 'Logo do Correio Inteligente'
