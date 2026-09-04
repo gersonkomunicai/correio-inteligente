@@ -1,4 +1,4 @@
-import { BsInstagram } from "react-icons/bs"
+import { BsFacebook, BsInstagram } from "react-icons/bs"
 import { FaFacebook } from "react-icons/fa"
 import Image from 'next/image'
 export default () => {
@@ -8,16 +8,19 @@ export default () => {
             <div className="md:pt-10 h-auto md:h-full justify-around flex flex-col items-center md:items-start">
                 <div className="flex flex-col items-center md:items-start">
                     <Image width={1000} height={1000} src="/logoHorizontalEscura.png" className="w-60 max-w-full" alt="" />
-                    
+
                 </div>
                 <div className="flex flex-col items-center md:items-start mt-6 md:mt-0">
-                    
                     <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1">
                         <span className="text-sm text-correio-inteligente-200">&copy; {anoAtual} Correio Inteligente LTDA</span>
                         <a href="mailto:contato@correiointeligente.com.br" className="text-sm text-correio-inteligente-200">contato@correiointeligente.com.br</a>
-                        <div className="flex items-center gap-4">
-                            <FaFacebook className="w-6 h-6 text-correio-inteligente-200" />
-                            <BsInstagram className="w-5 h-5 text-correio-inteligente-200" />
+                        <div className="flex items-center gap-3">
+                            <a href="">
+                                <BsFacebook className="w-5 h-5 shrink-0 text-correio-inteligente-200" />
+                            </a>
+                            <a href="https://www.instagram.com/correiointeligente/" target="_blank">
+                                <BsInstagram className="w-5 h-5 shrink-0 text-correio-inteligente-200" />
+                            </a>
                         </div>
                     </div>
                     <p className="text-xs text-correio-inteligente-200 mt-2">Todos os direitos reservados</p>

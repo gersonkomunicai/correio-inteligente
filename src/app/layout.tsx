@@ -4,8 +4,23 @@ import Script from "next/script";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Correio Inteligente",
-  description: "Página de informações sobre a plataforma Correio Inteligente",
+  title: "Correio Inteligente | Operações em Longa Escala",
+  description: "O Correio Inteligente é uma solução com infraestrutura própria que utiliza a API Oficial do Whatsapp para envios em longa escala.",
+  openGraph: {
+    title: "Correio Inteligente | Operações em Longa Escala",
+    description: "O Correio Inteligente é uma solução com infraestrutura própria que utiliza a API Oficial do Whatsapp para envios em longa escala.",
+    url: "https://www.correiointeligente.com.br",
+    images: [
+      {
+        url: 'https://correiointeligente.com.br/Iso.png',
+        width: 100,
+        height: 100,
+        alt: 'Logo do Correio Inteligente'
+      },
+    ],
+    locale: 'pt-BR',
+    type: 'website'
+  }
 };
 
 export default function RootLayout({

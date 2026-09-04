@@ -30,7 +30,7 @@ export default function Home() {
               <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left w-full max-w-140">
                 <Image width={1000} height={1000} src="/Iso.png" className="max-h-30 w-30" alt="" />
                 <div>
-                  <h1 className="bg-linear-to-r  relative from-correio-inteligente-900 from-10% to-correio-inteligente-800 bg-clip-text text-transparent">Envie <span className="font-bold">mensagens</span> em escala com <span className="font-bold">segurança</span> e <span className="font-bold">performance</span></h1>
+                  <h1 className="bg-linear-to-r  relative from-correio-inteligente-900 from-10% to-correio-inteligente-800 py-3 bg-clip-text text-transparent">Envie <span className="font-bold">mensagens</span> em escala com <span className="font-bold">segurança</span> e <span className="font-bold">performance</span></h1>
                   <p className=" relative text-lg text-correio-inteligente-900 pt-10">O <span className="font-bold">Correio Inteligente</span> é a infraestrutura nacional de
                     mensageria via <span className="font-bold">API Oficial do
                       WhatsApp</span>, ideal para empresas que precisam se
