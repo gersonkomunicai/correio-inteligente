@@ -4,6 +4,10 @@ import Script from "next/script";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://correiointeligente.com.br"),
+  alternates: {
+    canonical: '/',
+  },
   title: "Correio Inteligente | Operações em Longa Escala",
   description: "O Correio Inteligente é uma solução que utiliza a API Oficial do Whatsapp para envios em longa escala.",
   openGraph: {
