@@ -9,6 +9,7 @@ import ContactForm from "../../components/ContactForm";
 import Reveal from "../../components/Reveal";
 import Image from 'next/image'
 import Navbar from "../../components/Navbar";
+import Hero from "../../components/Hero";
 
 export default function Home() {
 
@@ -20,13 +21,13 @@ export default function Home() {
             <Image width={1000} height={1000} src="/whatsapp.png" className="fixed w-10 md:fixed bottom-10 right-10 md:w-15" alt="" />
           </a>
           <Navbar />
-          <div className="flex h-auto md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-correio-inteligente-200 from-60% to-black px-4">
-            <div className="absolute left-10 -mt-100 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/10" />
+          {/* <div className="flex h-auto md:h-200 py-28 md:py-0 items-center justify-around bg-linear-to-r from-correio-inteligente-200 from-60% to-black px-4"> */}
+            {/* <div className="absolute left-10 -mt-100 w-100 h-100 rounded-full blur-2xl bg-correio-inteligente-100/10" />
             <div className="absolute left-90 mt-120 w-60 h-60 rounded-full blur-2xl bg-correio-inteligente-100/30" />
             <div className="absolute -right-120 w-150 h-150 rounded-full blur-3xl bg-correio-inteligente-100/20" />
             <div className="absolute -mt-130 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
-            <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" />
-            <div className="flex flex-col  justify-center md:flex-row items-center gap-10">
+            <div className="absolute ml-100 -mb-170 w-10 h-10 rotate-45 blur-sm bg-correio-inteligente-100/20" /> */}
+            {/* <div className="flex flex-col  justify-center md:flex-row items-center gap-10">
               <Reveal direction="left" className="flex flex-col items-center md:items-start text-center md:text-left w-full max-w-140">
                 <Image width={1000} height={1000} src="/Iso.png" className="max-h-30 w-30" alt="" />
                 <div>
@@ -46,7 +47,10 @@ export default function Home() {
                   <Image width={1000} height={1000} src="/7.png" className="hidden lg:max-h-160 relative lg:flex justify-end w-auto max-h-200" alt="" />
                 </div>
               </Reveal>
-            </div>
+            </div> */}
+          {/* </div> */}
+          <div>
+            <Hero/>
           </div>
           <div className="flex flex-col items-center text-correio-inteligente-500 justify-center bg-[url('/background-waves.jpg')] h-auto md:h-120 py-16 md:py-0 bg-cover bg-no-repeat bg-center px-4">
             <Reveal>
