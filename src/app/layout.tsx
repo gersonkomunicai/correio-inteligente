@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import Footer from "../../components/Footer";
+import CookieConsent from "../../components/CookieConsent";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://correiointeligente.com.br"),
@@ -59,7 +60,7 @@ export default function RootLayout({
         )}
         <main>
           {children}
-
+          <CookieConsent/>
         </main>
         <footer>
           <Footer></Footer>
