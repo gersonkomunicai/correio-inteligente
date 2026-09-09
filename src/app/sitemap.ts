@@ -2,7 +2,7 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.correiointeligente.com.br'
+  const baseUrl = 'https://correiointeligente.com.br'
 
   const segmentos = ['bancos', 'governos', 'varejo', 'educacao', 'seguradoras']
   const cases = ['grupo-aval', 'toledo-piza']
