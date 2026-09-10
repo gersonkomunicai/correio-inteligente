@@ -46,14 +46,21 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col overflow-x-hidden" suppressHydrationWarning>
         {gtmId && (
           <Script id="consent-default" strategy="beforeInteractive">
-            {`window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('consent', 'default', {
-                'analytics_storage': 'denied',
-                'ad_storage': 'denied',
-                'ad_user_data': 'denied',
-                'ad_personalization': 'denied'
-            });`}
+            {`(function() {
+    var match = document.cookie.split('; ').find(function(row) {
+      return row.startsWith('cookie_consent=');
+    });
+    var consent = match ? match.split('=')[1] : 'denied';
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': consent,
+      'ad_storage': consent,
+      'ad_user_data': consent,
+      'ad_personalization': consent
+    });
+  })();`}
           </Script>
         )}
         {gtmId && (
