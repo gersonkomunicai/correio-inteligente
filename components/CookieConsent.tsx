@@ -29,6 +29,13 @@ export default function CookieConsent() {
     const existing = getCookie(COOKIE_NAME);
     if (!existing) {
       setVisible(true);
+    } else {
+      gtag('consent', 'update', {
+        'analytics_storage': existing,
+        'ad_storage': existing,
+        'ad_user_data': existing,
+        'ad_personalization': existing,
+      });
     }
   }, []);
 
