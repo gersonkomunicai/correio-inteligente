@@ -3,6 +3,11 @@
 
 import { useState, useEffect } from 'react';
 
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
 const COOKIE_NAME = 'cookie_consent';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 180; // 180 dias em segundos
 
@@ -27,10 +32,20 @@ export default function CookieConsent() {
     }
   }, []);
 
+
+  function gtag(...args: any[]) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(args);
+  }
   function handleChoice(choice: 'granted' | 'denied') {
     setCookie(COOKIE_NAME, choice);
     setVisible(false);
-    // Aqui, mais pra frente, vamos avisar o GTM/Consent Mode da escolha
+    gtag('consent', 'update', {
+      'analytics_storage': choice,
+      'ad_storage': choice,
+      'ad_user_data': choice,
+      'ad_personalization': choice,
+    });
   }
 
   if (!visible) return null;
