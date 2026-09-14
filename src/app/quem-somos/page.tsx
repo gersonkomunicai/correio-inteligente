@@ -18,7 +18,7 @@ export default () => {
                     <Navbar />
                 </Reveal>
                 <div className="flex relative w-full items-center pl-7 container h-screen">
-                    <div className="flex justify-start max-w-4xl pl-7 mt-25 lg:mt-20 text-left flex-col">
+                    <div className="flex justify-start max-w-4xl pl-7 mt-25 text-left flex-col">
                         <Reveal>
                             <span className="lg:text-lg text-md text-gray-100">QUEM SOMOS</span>
                         </Reveal>

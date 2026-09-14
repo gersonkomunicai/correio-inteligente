@@ -35,7 +35,6 @@ export default () => {
                     <p className="">{`(84) 99184-9939`}</p>
                     <p className="font-bold">CNPJ</p>
                     <p className="">60.908.586/0001-19</p>
-
                 </div>
                 <div className="flex flex-col items-center md:items-start md:ml-10 w-full max-w-60">
                     <p className="font-bold">Redes Sociais</p>
