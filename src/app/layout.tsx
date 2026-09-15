@@ -41,7 +41,6 @@ export default function RootLayout({
       className='h-full antialiased overflow-x-hidden'
     >
       <head>
-        <meta name="facebook-domain-verification" content="aat0y2z5bs4lp3flb5zqxbeoeu5s32" />
       </head>
       <body className="min-h-full flex flex-col overflow-x-hidden" suppressHydrationWarning>
         {gtmId && (
