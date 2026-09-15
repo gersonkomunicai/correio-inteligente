@@ -15,7 +15,7 @@ export default () => {
                         <span className="text-sm text-correio-inteligente-200">&copy; {anoAtual} Correio Inteligente LTDA</span>
                         <a href="mailto:contato@correiointeligente.com.br" className="text-sm text-correio-inteligente-200">contato@correiointeligente.com.br</a>
                         <div className="flex items-center gap-3">
-                            <a href="">
+                            <a href="https://www.facebook.com/profile.php?id=61591738121062">
                                 <BsFacebook className="w-5 h-5 shrink-0 text-correio-inteligente-200" />
                             </a>
                             <a href="https://www.instagram.com/correiointeligente/" target="_blank">
@@ -39,7 +39,7 @@ export default () => {
                 <div className="flex flex-col items-center md:items-start md:ml-10 w-full max-w-60">
                     <p className="font-bold">Redes Sociais</p>
                     <a href={`https://www.instagram.com/correiointeligente`} target="_blank" className="mt-2">Instagram</a>
-                    <a href={`https://www.facebook.com/correiointeligente`} target="_blank" className="mt-2">Facebook</a>
+                    <a href={`https://www.facebook.com/profile.php?id=61591738121062`} target="_blank" className="mt-2">Facebook</a>
                     <a href={`https://www.linkedin.com/company/grupo-komunica%C3%AD`} className="mt-2">Linkedin</a>
                 </div>
             </div>
